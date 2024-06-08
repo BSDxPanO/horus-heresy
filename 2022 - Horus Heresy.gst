@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="108" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="109" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -246,7 +246,9 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
           <description>All models with both the Infantry Unit Type and the Legiones Astartes (Salamanders) in a Detachment using this Rite of War ignore all modifiers to their Leadership when making Pinning tests.</description>
         </rule>
         <rule name="Infantry Unit Type" hidden="false" id="ed36-77cb-5da7-3298" publicationId="e77a-823a-da94-16b9" page="195">
-          <alias>Infantry</alias>
+          <alias>
+            <undefined>Infantry</undefined>
+          </alias>
           <description>An Infantry unit may only include or be joined by models of the Infantry or Primarch Unit Type, unless a special rule states otherwise.</description>
         </rule>
       </rules>
@@ -7918,15 +7920,15 @@ A. No.</description>
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Rending (6+), Pinning</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Rending (6+), Pinning</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="a6e2-dc5c-8407-59f7" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Large Blast (5&quot;)"/>
+            <modifier type="set" field="name" value="Massive Blast (7&quot;)"/>
           </modifiers>
         </infoLink>
         <infoLink id="cdba-bc58-026e-7fe5" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
