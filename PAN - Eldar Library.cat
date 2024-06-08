@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="515a-e417-5b0e-409e" name="Eldar Library" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="106" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="515a-e417-5b0e-409e" name="PAN - Eldar Library" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="106" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Aeldari Missile Launcher" hidden="false" id="ff88-f901-14f0-3eee" publicationId="8666-c70e-13e4-5f7a" page="153" collective="false">
       <costs>
