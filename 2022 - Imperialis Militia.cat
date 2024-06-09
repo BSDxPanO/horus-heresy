@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="38" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="39" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -8094,7 +8094,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
-            <entryLink id="2e66-ab8b-9d9a-4c8e" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
+            <entryLink id="2e66-ab8b-9d9a-4c8e" name="Gravis Heavy Lascannon" hidden="false" collective="false" import="true" targetId="6fbe-c56e-096c-ae9b" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -8355,9 +8355,9 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e3b5-d8ed-5651-5a34" name="Turret Mounted Gravis Autocannons" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e3b5-d8ed-5651-5a34" name="Turret Mounted Exterminator Autocannon" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="708d-23d9-2423-6b39" name="Gravis Autocannon" hidden="false" collective="false" import="true" targetId="8a23-e57d-b4a8-14a9" type="selectionEntry">
+                <entryLink id="708d-23d9-2423-6b39" name="Exterminator Autocannon" hidden="false" collective="false" import="true" targetId="e6ba-20c6-a716-e947" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75c9-1817-3cfb-581a" type="min"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2717-fa93-bbc2-eae9" type="max"/>
@@ -8368,9 +8368,9 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="43ef-8220-97f6-530e" name="Turret Mounted Gravis Lascannons" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="43ef-8220-97f6-530e" name="Turret Mounted Gravis Heavy Lascannons" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="637d-6160-842a-f400" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
+                <entryLink id="637d-6160-842a-f400" name="Gravis Heavy Lascannon" hidden="false" collective="false" import="true" targetId="6fbe-c56e-096c-ae9b" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f52a-34fb-9b25-4e21" type="min"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f17-f646-62e6-5d54" type="max"/>

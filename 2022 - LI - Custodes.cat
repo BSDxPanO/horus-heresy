@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1701" name="LI - Custodes" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1701" name="LI - Custodes" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="ccca-a9de-0cd9-f8be" name="Legio Custodes" hidden="false">
       <infoLinks>
@@ -2075,6 +2075,14 @@
                         <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Reduce the Strength characteristic of Shooting Attacks made against a unit in which the majority of models have a Tarsus Buckler by -2 (to a minimum of 1).</characteristic>
                       </characteristics>
                     </profile>
+                    <profile name="Tarsus Buckler" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="02fd-2c5d-d970-2ea5" publicationId="69b6-7620-84c6-68a9" page="177">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
+                      </characteristics>
+                    </profile>
                   </profiles>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -2732,13 +2740,13 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f944-64cf-5589-d29a" name="Infernus Firepike" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f944-64cf-5589-d29a" name="Infernus Firepike" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="173">
       <profiles>
         <profile id="8ee5-48ce-ca14-40e4" name="Infernus Firepike" publicationId="15a4-fc68-502d-48a9" page="143" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Torrent (9&quot;)</characteristic>
           </characteristics>
         </profile>
@@ -2755,7 +2763,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2b1d-a84d-9b3f-8ad6" name="Infernus Firepike" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="2b1d-a84d-9b3f-8ad6" name="Infernus Firepike" hidden="false" collective="true" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="173">
       <infoLinks>
         <infoLink id="17b5-35b3-97b8-7b9f" name="Infernus Firepike" hidden="false" targetId="8ee5-48ce-ca14-40e4" type="profile"/>
         <infoLink id="ef92-d64b-522a-5966" name="Torrent (X)" hidden="false" targetId="5cfb-fc94-e6db-43b8" type="rule">
@@ -2872,14 +2880,14 @@
         <infoLink id="0f26-d359-62f5-1219" name="Corvae Las-Pulser" targetId="c5f6-786b-5a20-f429" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry id="7bd8-c2b4-b888-f3df" name="Adrathic Devastator" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7bd8-c2b4-b888-f3df" name="Adrathic Devastator" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="172">
       <profiles>
         <profile id="7ef4-fbf7-4a3e-6373" name="Adrathic Devastator" publicationId="15a4-fc68-502d-48a9" page="145" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Instant Death, Armourbane (Ranged), Gets Hot</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Instant Death, Armourbane (Ranged), Gets Hot, Breaching (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2891,12 +2899,17 @@
             <modifier type="set" field="name" value="Armourbane (Ranged)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Breaching (X)" id="8556-ff77-559e-b5eb" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0425-2ab6-977c-8b81" name="Adrathic Devastator" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="0425-2ab6-977c-8b81" name="Adrathic Devastator" hidden="false" collective="true" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="172">
       <infoLinks>
         <infoLink id="630b-a533-0aeb-07af" name="Adrathic Devastator" hidden="false" targetId="7ef4-fbf7-4a3e-6373" type="profile"/>
         <infoLink id="2453-39c8-ad6d-7270" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
@@ -2906,6 +2919,11 @@
         </infoLink>
         <infoLink id="50e6-bf83-2bdc-2445" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
         <infoLink id="a3c0-c554-95f8-f7ac" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink name="Breaching (X)" id="d3ad-aec1-698b-f931" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -2988,18 +3006,18 @@
     </selectionEntry>
     <selectionEntry id="0f39-7a65-86f9-e0c0" name="Telemon Cestus and in-built Proteus Plasma Projectors" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
-        <selectionEntry id="a2b8-1e1f-5094-fe17" name="Telemon Cestus" hidden="false" collective="true" import="true" type="upgrade">
+        <selectionEntry id="a2b8-1e1f-5094-fe17" name="Telemon Cestus" hidden="false" collective="true" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="177">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c56-818e-3c8d-4558" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d6f-2162-5a4f-d8b0" type="max"/>
           </constraints>
           <profiles>
-            <profile id="377d-10d8-9548-a5ac" name="Telemon Cestus" publicationId="15a4-fc68-502d-48a9" page="150" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+            <profile id="377d-10d8-9548-a5ac" name="Telemon Cestus" publicationId="69b6-7620-84c6-68a9" page="177" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Specialist Weapon, Sunder</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Specialist Weapon, Sunder, Brutal (3)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3043,11 +3061,11 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e6cc-a982-98c3-3889" name="Arachnus Storm Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e6cc-a982-98c3-3889" name="Arachnus Storm Cannon" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="174">
       <profiles>
         <profile id="2c20-7354-c2a9-d6e5" name="Arachnus Storm Cannon" publicationId="15a4-fc68-502d-48a9" page="143" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Lance, Exoshock (6+)</characteristic>
@@ -4031,14 +4049,14 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <categoryLink targetId="7f9b-c5ed-7edb-02dc" id="a7ad-2abb-426d-8981" name="Lumbering Sub-type" primary="false"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry id="2357-23af-0317-1a79" name="Adrastus Bolt Caliver" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2357-23af-0317-1a79" name="Adrastus Bolt Caliver" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="173">
       <profiles>
         <profile id="1658-9859-8604-bf91" name="Adrastus Bolt Caliver - (Bolt Volley)" publicationId="15a4-fc68-502d-48a9" page="145" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 4, Shred, Pinning</characteristic>
           </characteristics>
         </profile>
         <profile id="c953-8e34-9c71-92e2" name="Adrastus Bolt Caliver - (Disintegrator)" publicationId="15a4-fc68-502d-48a9" page="146" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
