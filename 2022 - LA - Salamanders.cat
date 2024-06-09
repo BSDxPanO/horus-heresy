@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="40" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="41" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
   <entryLinks>
     <entryLink id="93d2-b1cb-b684-a9b3" name="XVIII: Salamanders" hidden="false" collective="false" import="false" targetId="c805-ca3a-ff93-5e2f" type="selectionEntry">
       <modifiers>
@@ -3381,19 +3381,24 @@
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-crafted, Two-handed, Armourbane (Melee), Instant Death</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-crafted, Two-handed, Armourbane (Melee), Instant Death, Brutal (2)</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink id="3838-94ec-e581-075c" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
             <infoLink id="3096-ed64-c1de-5585" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-            <infoLink id="1721-bb9b-d3c2-a547" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+            <infoLink id="1721-bb9b-d3c2-a547" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Brutal (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="5a92-5530-1be3-6d87" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+            <infoLink id="6769-2faf-cfba-a737" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Armourbane (Melee)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="5a92-5530-1be3-6d87" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -4296,24 +4301,23 @@
         <categoryLink targetId="3f99-ad1b-740b-862e" id="86b9-e65d-f24a-e97e" primary="false" name="The Awakening Fire (Chaplain)"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="ad7a-6a4c-6cc0-a007" name="Darkstar Falling" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ad7a-6a4c-6cc0-a007" name="Darkstar Falling" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="176">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b12d-de34-e96b-d4b0" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="950b-f722-41c3-dd89" type="max"/>
           </constraints>
           <profiles>
-            <profile id="56af-6142-3b02-9ee6" name="Darkstar Falling" publicationId="d0df-7166-5cd3-89fd" page="70" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+            <profile id="56af-6142-3b02-9ee6" name="Darkstar Falling" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two handed, Unwieldy</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two handed</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink id="7d13-8a2a-aa1c-b384" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-            <infoLink id="d978-604d-a917-e108" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>

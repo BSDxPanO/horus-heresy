@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="37" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="38" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -4946,24 +4946,29 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             </infoLink>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="8c2a-6820-36b9-8ad0" name="Charonite Claws" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="8c2a-6820-36b9-8ad0" name="Charonite Claws" hidden="false" collective="true" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="177">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f974-f8c4-1293-7967" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f71-2c3f-0d97-a230" type="max"/>
               </constraints>
               <profiles>
-                <profile id="6573-9a7d-f256-722e" name="Charonite Claws" publicationId="15a4-fc68-502d-48a9" page="150" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                <profile id="6573-9a7d-f256-722e" name="Charonite Claws" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+3</characteristic>
                     <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Rending (6+)</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Rending (6+), Murderous Strike (6+)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink id="b3d1-aa5a-19e8-07da" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-                <infoLink id="6eed-a41b-73e9-6cd5" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+                <infoLink id="6eed-a41b-73e9-6cd5" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Murderous Strike (6+)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="db73-365d-3d04-2468" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
                   <modifiers>
                     <modifier type="set" field="name" value="Rending (6+)"/>
                   </modifiers>
@@ -7198,9 +7203,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="fb93-5d17-0d26-e0a4" name="Two Turret Mounted Gravis Autocannons" hidden="false" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="fb93-5d17-0d26-e0a4" name="Turret Mounted Exterminator Autocannon" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
-                        <entryLink id="2f8a-4ca4-f95e-5314" name="Gravis Autocannon" hidden="false" collective="false" import="true" targetId="8a23-e57d-b4a8-14a9" type="selectionEntry">
+                        <entryLink id="2f8a-4ca4-f95e-5314" name="Exterminator Autocannon" hidden="false" collective="false" import="true" targetId="e6ba-20c6-a716-e947" type="selectionEntry">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06ee-c70e-4301-c69b" type="min"/>
                             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0830-5f1f-4b1f-ee46" type="max"/>
@@ -7211,9 +7216,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="4472-8cb0-1c2b-90a6" name="Turret Mounted Gravis Lascannons" hidden="false" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="4472-8cb0-1c2b-90a6" name="Turret Mounted Gravis Heavy Lascannons" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
-                        <entryLink id="85bf-2522-ddd1-409b" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
+                        <entryLink id="85bf-2522-ddd1-409b" name="Gravis Heavy Lascannon" hidden="false" collective="false" import="true" targetId="6fbe-c56e-096c-ae9b" type="selectionEntry">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="122a-7c8e-e02b-6e6f" type="min"/>
                             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc68-3087-d760-bef8" type="max"/>
@@ -8430,7 +8435,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink id="3388-068b-9209-4592" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
+                <entryLink id="3388-068b-9209-4592" name="Gravis Heavy Lascannon" hidden="false" collective="false" import="true" targetId="6fbe-c56e-096c-ae9b" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
@@ -10160,18 +10165,18 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185"/>
                   </costs>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Proteus Laser Destroyer" hidden="false" id="6b62-613b-1dd7-2d50">
+                    <selectionEntry type="upgrade" import="true" name="Proteus Laser Destroyer" hidden="false" id="6b62-613b-1dd7-2d50" publicationId="69b6-7620-84c6-68a9" page="174">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3037-2971-417b-29d5-min" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3037-2971-417b-29d5-max" includeChildSelections="false"/>
                       </constraints>
                       <profiles>
-                        <profile name="Proteus Laser Destroyer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="be6b-c2ce-7ff4-af70">
+                        <profile name="Proteus Laser Destroyer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="be6b-c2ce-7ff4-af70" publicationId="69b6-7620-84c6-68a9" page="174">
                           <characteristics>
                             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
                             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
                             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Twin-linked, Exoshock (6+), Gets Hot</characteristic>
+                            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 3, Twin-linked, Exoshock (6+), Gets Hot, Sunder</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -10182,7 +10187,9 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                             <modifier type="set" value="Exoshock (6+)" field="name"/>
                           </modifiers>
                         </infoLink>
-                        <infoLink name="Gets Hot" hidden="false" id="d96b-f5f2-2a89-af93" type="rule" targetId="679f-9d97-5ace-a652"/>
+                        <infoLink name="Ordnance" hidden="false" id="d96b-f5f2-2a89-af93" type="rule" targetId="6c55-22c8-1b01-2105"/>
+                        <infoLink name="Gets Hot" hidden="false" id="d5f9-c046-7805-dc64" type="rule" targetId="679f-9d97-5ace-a652"/>
+                        <infoLink name="Sunder" hidden="false" id="8dbc-11fa-2e48-622f" type="rule" targetId="20e2-75cf-bc16-cd8f"/>
                       </infoLinks>
                       <modifiers>
                         <modifier type="set" value="Centreline (Front) Mounted Proteus Laser Destroyer" field="name"/>
@@ -11201,34 +11208,76 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         <categoryLink id="ee2c-9ed9-6d30-f2f7" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="aae7-cba1-91ac-8636" name="Praetor Launcher" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="aae7-cba1-91ac-8636" name="Praetor Launcher" hidden="false" collective="false" import="true" type="model" publicationId="69b6-7620-84c6-68a9" page="172">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cd5-8266-e417-0882" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3c9-e405-6ac5-1e79" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="52a7-5459-a9c2-6561" name="Praetor Launcher" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Massive Blast (7&quot;), Pinning, Rending (6+)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="63ca-7f5c-c71c-9f53" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Rending (+6)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="7797-a84c-7d76-dc64" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-            <infoLink id="e67d-23f0-37cb-d3c2" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-            <infoLink id="c6d7-6678-3236-f99b" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
-          </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Praetor Launcher - Firestorm Munitions" hidden="false" id="3e3e-fb33-7b74-e2dc">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d5f-cadb-4527-a0b7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf13-1987-ae10-fedc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Praetor Launcher - Firestorm Munitions" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="1a88-f6bf-6bdf-2711">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 2, Barrage, Massive Blast (7&quot;), Pinning, Rending (5+), Shell Shock (2), Ignores Cover</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Barrage" id="6ea7-ce45-aae8-f7e6" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+                <infoLink name="Blast" id="0286-42c6-712e-21b9" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Massive Blast (7&quot;)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Ignores Cover" id="2f73-bf77-9e07-70c8" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+                <infoLink name="Shell Shock (X)" id="3523-dc8a-97ea-de8b" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Shell Shock (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Rending (X)" id="78d7-8758-c501-7be2" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Rending (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Praetor Launcher - Foehammer Munitions" hidden="false" id="f614-0a2a-85ca-a01c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d9b-bb2f-9075-c1be" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b859-539e-57bf-d12b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Praetor Launcher - Firestorm Munitions" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="1cf2-f677-3429-3a9b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 12, Guided Fire, Breaching (5+), Ignores Cover</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Guided Fire" id="c338-1eb5-99ff-b073" hidden="false" targetId="fa1e-0112-943e-b1f6" type="rule"/>
+                <infoLink name="Ignores Cover" id="8521-af80-59e2-c877" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+                <infoLink name="Breaching (X)" id="2b67-99ca-2c96-9da7" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Breaching (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>

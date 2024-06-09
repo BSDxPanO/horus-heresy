@@ -28,6 +28,7 @@
     <publication name="Legacies of The Age of Darkness Solar Auxilia 1.1" hidden="false" id="3fc0-bf46-1f1-eff9" shortName="Legacies Solar Aux"/>
     <publication name="Free Rules for the Solar Auxilia Aethon Heavy Sentinel" hidden="false" id="2d3f-82d2-9db5-ca6d" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2024/02/ZwQB9kBXZA3CyHN4.pdf" publicationDate="February 27th 2024" shortName="Aethon Heavy Sentinel Datasheet" publisher="Warhammer Community"/>
     <publication name="Campaigns in the Age of Darkness - The Battle for Beta-Garmon" hidden="false" id="d882-d2a-5da1-92c4" shortName="CotAoD - BBG" publicationDate="April 2024"/>
+    <publication name="Liber Panoptica" id="69b6-7620-84c6-68a9" hidden="false" shortName="Pano"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
@@ -246,9 +247,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
           <description>All models with both the Infantry Unit Type and the Legiones Astartes (Salamanders) in a Detachment using this Rite of War ignore all modifiers to their Leadership when making Pinning tests.</description>
         </rule>
         <rule name="Infantry Unit Type" hidden="false" id="ed36-77cb-5da7-3298" publicationId="e77a-823a-da94-16b9" page="195">
-          <alias>
-            <undefined>Infantry</undefined>
-          </alias>
+          <alias/>
           <description>An Infantry unit may only include or be joined by models of the Infantry or Primarch Unit Type, unless a special rule states otherwise.</description>
         </rule>
       </rules>
@@ -3119,7 +3118,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5806-ef3b-dd6a-e6d9" name="Fellblade Accelerator Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5806-ef3b-dd6a-e6d9" name="Fellblade Accelerator Autocannon" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="172">
       <selectionEntries>
         <selectionEntry id="515b-7f86-b7c6-9472" name="Fellblade Accelerator Autocannon - HE shell" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3132,12 +3131,22 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">100&quot;</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;)</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Pinning, Rending (6+)</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="f475-5c5f-0dbd-b4ae" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+            <infoLink id="f475-5c5f-0dbd-b4ae" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+              <modifiers>
+                <modifier type="set" value="Massive Blast (7&quot;)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Rending (X)" id="4678-cb3c-243e-4de6" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+              <modifiers>
+                <modifier type="set" value="Rending (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Pinning" id="1a02-8c5e-72d1-df5b" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -3154,7 +3163,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">100&quot;</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Armourbane (Ranged), Exoshock (4+), Blast (3&quot;)</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 2, Armourbane (Ranged), Exoshock (4+), Blast (3&quot;), Brutal (3)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3168,6 +3177,11 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
             <infoLink id="4b60-cd78-348f-5527" name="Exoshock (X)" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Exoshock (4+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Brutal (X)" id="1da1-cbd2-6cd9-7192" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84">
+              <modifiers>
+                <modifier type="set" value="Brutal (3)" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -3369,14 +3383,14 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1d4a-05a3-1589-915d" name="Demolisher Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1d4a-05a3-1589-915d" name="Demolisher Cannon" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="172">
       <profiles>
         <profile id="f5a9-6aec-67dc-68a8" name="Demolisher Cannon" publicationId="a716-c1c4-7b26-8424" page="129" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Blast (3&quot;), Sunder, Rending (6+), Brutal (3)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Blast (3&quot;), Sunder, Rending (6+), Brutal (3), Wrecker</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3392,20 +3406,25 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
             <modifier type="set" field="name" value="Brutal (3)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="5587-6f00-32f2-2bde" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="5587-6f00-32f2-2bde" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" value="Blast (3&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Wrecker" id="f854-cdd0-21b2-b033" hidden="false" type="rule" targetId="ba77-a802-55df-da67"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7102-6014-a965-bfd9" name="Morbus Bombard" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7102-6014-a965-bfd9" name="Morbus Bombard" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="172">
       <profiles>
         <profile id="e14f-7df5-75a8-3eb4" name="Morbus Bombard" publicationId="a716-c1c4-7b26-8424" page="129" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Pinning, Rending (6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Pinning, Rending (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3414,16 +3433,20 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         <infoLink id="f867-b7e8-b5b7-5da4" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="c707-ba08-3a99-43c5" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Rending (6+)"/>
+            <modifier type="set" field="name" value="Rending (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="0353-491e-5923-d050" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="0353-491e-5923-d050" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" value="Large Blast (5&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="441d-218c-b34e-5cc5" name="Dreadhammer Siege Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="441d-218c-b34e-5cc5" name="Dreadhammer Siege Cannon" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="172">
       <profiles>
         <profile id="91ef-b4db-c05f-ffc0" name="Dreadhammer Siege Cannon" publicationId="a716-c1c4-7b26-8424" page="129" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
@@ -3446,7 +3469,12 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
             <modifier type="set" field="name" value="Brutal (4)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="52e7-00cc-66f2-71b5" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="52e7-00cc-66f2-71b5" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" value="Large Blast (5&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Wrecker" id="b883-8924-70eb-cd7d" hidden="false" type="rule" targetId="ba77-a802-55df-da67"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -3723,10 +3751,10 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
     </selectionEntry>
     <selectionEntry id="aa3c-f5a5-9ce9-1497" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="true" import="true" type="upgrade">
       <profiles>
-        <profile id="71e6-ddb0-279a-7101" name="Grenade launcher - Krak (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="71e6-ddb0-279a-7101" name="Grenade launcher - Krak (Secondary)" publicationId="69b6-7620-84c6-68a9" page="173" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
           </characteristics>
@@ -3933,19 +3961,19 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4ab1-ee7c-0ab2-8372" name="Grav-Flux Bombard" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4ab1-ee7c-0ab2-8372" name="Grav-Flux Bombard" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="173">
       <profiles>
         <profile id="9703-1b92-8083-0b29" name="Grav-Flux Bombard" publicationId="a716-c1c4-7b26-8424" page="131" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1,  Large Blast (5&quot;), †Graviton Collapse, Torsion Crusher, Ignores Cover, Concussive (1)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), †Graviton Collapse, Torsion Crusher, Ignores Cover, Concussive (1), Haywire</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="bbbb-18a8-0f9b-d084" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="bbbb-18a8-0f9b-d084" name="Haywire" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule"/>
         <infoLink id="0e9f-cc9d-d76a-0abf" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="45cf-4851-7209-02f5" name="Graviton Collapse" hidden="false" targetId="60d8-5964-8671-7f3b" type="rule"/>
         <infoLink id="d186-5492-2c42-c67f" name="Torsion Crusher" hidden="false" targetId="2cef-a40d-97b8-7d4e" type="rule"/>
@@ -3955,6 +3983,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
             <modifier type="set" field="name" value="Concussive (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="4c8e-cf41-a91c-7c99" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -4694,20 +4723,21 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="273e-a288-f4cf-3b49" name="Aiolos Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="273e-a288-f4cf-3b49" name="Aiolos Missile Launcher" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="174">
       <profiles>
         <profile id="99f3-d4aa-bfa7-b51f" name="Aiolos Missile Launcher" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Pinning, Guided Fire</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Pinning, Guided Fire, Auto-Servo Tracking</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="b15a-98ae-991a-0074" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-        <infoLink id="a42a-07dd-64d7-6bb6" name="Guided Fire" hidden="false" targetId="fa1e-0112-943e-b1f6" type="rule"/>
+        <infoLink id="a42a-07dd-64d7-6bb6" name="Auto-Servo Tracking" hidden="false" targetId="52b5-0ffa-5187-27bb" type="rule"/>
+        <infoLink id="ce40-8b1d-e01e-91d1" name="Guided Fire" hidden="false" targetId="fa1e-0112-943e-b1f6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5197,38 +5227,46 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ff4d-6e1b-7b44-9b72" name="Volkite Macro-Saker" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ff4d-6e1b-7b44-9b72" name="Volkite Macro-Saker" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="174">
       <profiles>
         <profile id="f429-67a3-5a34-0d16" name="Volkite Macro-Saker" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Deflagrate</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Deflagrate, Pinning</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="0ac3-d8c3-8f94-1c3c" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+        <infoLink id="0ac3-d8c3-8f94-1c3c" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="7f9e-418f-3ee2-d5f5" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1dd6-131a-0cbb-2682" name="Volkite Carronade" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1dd6-131a-0cbb-2682" name="Volkite Carronade" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="174">
       <profiles>
         <profile id="024e-ffa5-f6b5-7f54" name="Volkite Carronade" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Heavy Beam, Deflagrate</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Heavy Beam, Deflagrate, Rending (5+), Pinning, Wrecker</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="0465-bee9-7341-c411" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
-        <infoLink id="0f06-d62d-b66b-e22d" name="Heavy Beam" hidden="false" targetId="24e7-27da-9bf7-f096" type="rule"/>
+        <infoLink id="0f06-d62d-b66b-e22d" name="Wrecker" hidden="false" targetId="ba77-a802-55df-da67" type="rule"/>
+        <infoLink id="b2c0-db54-e713-cd08" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" value="Rending (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="8cb3-cdd2-3a16-61cf" name="Heavy Beam" hidden="false" targetId="24e7-27da-9bf7-f096" type="rule"/>
+        <infoLink id="fc63-ba25-1cb0-7083" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5353,12 +5391,12 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
     </selectionEntry>
     <selectionEntry id="6331-c1b9-bf0e-d0e5" name="Lascutter" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="4842-51db-06f9-fab0" name="Lascutter (Melee)" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="4842-51db-06f9-fab0" name="Lascutter (Melee)" publicationId="69b6-7620-84c6-68a9" page="177" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Cumbersome</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Makeshift Weapon</characteristic>
           </characteristics>
         </profile>
         <profile id="49ab-6f93-8196-2742" name="Lascutter (Ranged)" publicationId="a716-c1c4-7b26-8424" page="135" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -5371,8 +5409,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="f5ef-dca2-d5db-da55" name="Cumbersome" hidden="false" targetId="d89a-c10e-8a7a-92c3" type="rule"/>
-        <infoLink id="9021-907a-39ae-9a79" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+        <infoLink id="9021-907a-39ae-9a79" name="Makeshift Weapon" hidden="false" targetId="d950-43fe-9279-5e63" type="rule"/>
         <infoLink id="1278-31e8-99c8-c4f3" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Armourbane (Ranged)"/>
@@ -6261,21 +6298,21 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="08be-6994-6a63-6279" name="Gravis Power Fist" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="08be-6994-6a63-6279" name="Gravis Power Fist" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="176">
       <profiles>
         <profile id="241a-1ea4-36bc-b71a" name="Gravis Power Fist" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (3)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="0884-1374-db93-6a71" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Brutal (3)"/>
+            <modifier type="set" field="name" value="Brutal (2)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -7008,25 +7045,35 @@ Four single Blast Shields</characteristic>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4e4f-456f-8cee-10a4" name="Spicula Rocket System" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4e4f-456f-8cee-10a4" name="Spicula Rocket System" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="174">
       <profiles>
-        <profile id="4e04-6964-0774-0e3f" name="Spicula Rocket System" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="4e04-6964-0774-0e3f" name="Spicula Rocket System" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Rending (6+), Limited Ammunition</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Rending (5+), Limited Ammunition, Pinning, Shell Shock (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="09a4-d9af-5f82-acbd" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-        <infoLink id="7f37-cf10-19fd-1fe7" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+        <infoLink id="09a4-d9af-5f82-acbd" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Rending (6+)"/>
+            <modifier type="set" value="Massive Blast (7&quot;)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink id="30b8-5e9e-d525-510d" name="Limited Ammunition" hidden="false" targetId="9f09-5cb8-c3ea-c3f8" type="rule"/>
+        <infoLink id="7f37-cf10-19fd-1fe7" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="30b8-5e9e-d525-510d" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="9969-9e77-b94b-9c70" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="0370-404c-93a4-ea82" name="Limited Ammunition" hidden="false" targetId="9f09-5cb8-c3ea-c3f8" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -7447,20 +7494,24 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="454e-eb44-05fc-0471" name="Belicosa Volcano Cannon" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="454e-eb44-05fc-0471" name="Belicosa Volcano Cannon" publicationId="69b6-7620-84c6-68a9" page="174" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="ff92-564d-36b8-a808" name="Belicosa Volcano Cannon" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">120&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">14</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Blast (10&quot;), Sunder</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Blast (10&quot;), Ignores Cover</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="91b8-90d5-181e-2d3c" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-        <infoLink id="d9b8-712e-2590-361f" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink id="91b8-90d5-181e-2d3c" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" value="Apocalyptic Blast (10&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="d9b8-712e-2590-361f" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
         <infoLink id="927a-e169-b324-3e09" name="Destroyer" hidden="false" targetId="44d6-09b2-3bd3-b2d6" type="rule"/>
       </infoLinks>
       <costs>
@@ -7494,12 +7545,12 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
     </selectionEntry>
     <selectionEntry id="f610-008f-5046-ea99" name="Graviton Ram" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="3e1c-ee75-1b61-ee8c" name="Graviton Ram (Melee)" publicationId="bde1-6db1-163b-3b76" page="116" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="3e1c-ee75-1b61-ee8c" name="Graviton Ram (Melee)" publicationId="69b6-7620-84c6-68a9" page="176" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Concussive (2)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Concussive (2), Brutal (2)</characteristic>
           </characteristics>
         </profile>
         <profile id="1b9d-98a0-4f71-a759" name="Graviton Ram (Ranged)" publicationId="bde1-6db1-163b-3b76" page="116" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -7530,6 +7581,11 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
         <infoLink id="978d-b745-6af5-6a62" name="Grav Wave" hidden="false" targetId="1cc2-eaee-8bcf-96d3" type="rule"/>
         <infoLink id="b66c-55a9-9b19-09eb" name="Graviton Pulse" hidden="false" targetId="5b9c-2738-616c-abdf" type="rule"/>
         <infoLink id="e1d3-162f-73eb-5323" name="Haywire" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule"/>
+        <infoLink id="4d37-3535-28e9-86a9" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -7593,20 +7649,26 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1071-7d27-420c-07b9" name="Laser Blaster" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1071-7d27-420c-07b9" name="Laser Blaster" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="174">
       <profiles>
         <profile id="09b8-b387-4c58-d09d" name="Laser Blaster" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">96&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Large Blast (5&quot;)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 2, Large Blast (5&quot;), Twin-linked, Ignores Cover</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="16ce-5549-b619-a651" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-        <infoLink id="96dd-fa04-b4c6-d7c6" name="Destroyer" hidden="false" targetId="44d6-09b2-3bd3-b2d6" type="rule"/>
+        <infoLink id="16ce-5549-b619-a651" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" value="Large Blast (5&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="96dd-fa04-b4c6-d7c6" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+        <infoLink id="7c24-9afe-130e-5693" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink id="c1ee-0cc1-5654-418c" name="Destroyer" hidden="false" targetId="44d6-09b2-3bd3-b2d6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -7742,14 +7804,14 @@ A. No.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c666-29f6-42da-2e07" name="Plasma Blastgun" publicationId="bde1-6db1-163b-3b76" page="118" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c666-29f6-42da-2e07" name="Plasma Blastgun" publicationId="69b6-7620-84c6-68a9" page="174" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="4dc5-1b5b-a916-9adb" name="Plasma Blastgun" publicationId="bde1-6db1-163b-3b76" page="118" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Breaching (4+), Reactor Overload</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Rending (4+), Reactor Overload</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7767,13 +7829,13 @@ A. No.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2121-ee7c-8ac9-5133" name="Power Blade Array" publicationId="bde1-6db1-163b-3b76" page="122" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2121-ee7c-8ac9-5133" name="Power Blade Array" publicationId="69b6-7620-84c6-68a9" page="176" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="3a2b-2c15-46b8-f8f8" name="Power Blade Array" publicationId="bde1-6db1-163b-3b76" page="122" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+)</characteristic>
           </characteristics>
         </profile>
@@ -7789,20 +7851,27 @@ A. No.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3234-492f-9ebf-f23c" name="Shock Charger" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3234-492f-9ebf-f23c" name="Shock Charger" publicationId="69b6-7620-84c6-68a9" page="176" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="6a03-3816-0065-83ff" name="Shock Charger" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Brutal (X)" id="b394-90cd-d62c-21bd" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84">
+          <modifiers>
+            <modifier type="set" value="Brutal (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="178d-8a3a-bfda-7443" name="Siege Wrecker" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -7870,19 +7939,19 @@ A. No.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b953-83d7-6cc1-5695" name="Vulcan Mega-Bolter" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b953-83d7-6cc1-5695" name="Vulcan Mega-Bolter" publicationId="69b6-7620-84c6-68a9" page="173" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="5adb-5031-bfdf-fa27" name="Vulcan Mega-Bolter" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 15, Pinning, Shell Shock (1)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 15, Pinning, Shell Shock (1), Reactor Overload</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="4e4f-59d7-cea8-fa2f" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="4e4f-59d7-cea8-fa2f" name="Reactor Overload" hidden="false" targetId="a073-b86c-7bc1-d3f9" type="rule"/>
         <infoLink id="0619-3f5c-4161-0e0b" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Shell Shock (1)"/>
@@ -7914,21 +7983,21 @@ A. No.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0541-5826-5219-c190" name="Baneblade Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0541-5826-5219-c190" name="Baneblade Cannon" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="172">
       <profiles>
         <profile id="ab97-57d4-692d-6b96" name="Baneblade Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Rending (6+), Pinning</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Rending (6+), Pinning</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="a6e2-dc5c-8407-59f7" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Large Blast (5&quot;)"/>
+            <modifier type="set" field="name" value="Massive Blast (7&quot;)"/>
           </modifiers>
         </infoLink>
         <infoLink id="cdba-bc58-026e-7fe5" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
@@ -7942,11 +8011,11 @@ A. No.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="31be-efe6-23a8-6cb5" name="Tremor Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="31be-efe6-23a8-6cb5" name="Tremor Cannon" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="172">
       <profiles>
         <profile id="4034-3296-9cf1-6843" name="Tremor Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Pinning, Shell Shock (2)</characteristic>
@@ -7970,11 +8039,11 @@ A. No.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9e29-78c7-836f-8fc0" name="Hellhammer cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9e29-78c7-836f-8fc0" name="Hellhammer cannon" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="172">
       <profiles>
         <profile id="1ad7-8c18-9aa1-5b66" name="Hellhammer cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Sunder, Rending (5+), Brutal (3)</characteristic>
@@ -8003,14 +8072,14 @@ A. No.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aafc-7435-8805-0e0f" name="Medusa Mortar" publicationId="d0df-7166-5cd3-89fd" page="26" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="aafc-7435-8805-0e0f" name="Medusa Mortar" publicationId="69b6-7620-84c6-68a9" page="172" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="27dd-e9b5-2f18-b4fa" name="Medusa Mortar" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Pinning, Rending (6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Pinning, Rending (6+), Brutal (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8027,19 +8096,24 @@ A. No.</description>
             <modifier type="set" field="name" value="Rending (6+)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="6437-b77a-0402-50e3" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cc2e-df5f-1778-29d8" name="Earthshaker cannon" publicationId="d0df-7166-5cd3-89fd" page="25" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="cc2e-df5f-1778-29d8" name="Earthshaker cannon" publicationId="69b6-7620-84c6-68a9" page="172" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="e374-d732-4d08-5952" name="Earthshaker cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">240&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;-240&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Shred, Pinning</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Shred, Pinning, Breaching (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8052,6 +8126,11 @@ A. No.</description>
         </infoLink>
         <infoLink id="23ca-c48c-ae3b-073a" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="8f76-4b67-7105-c838" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink name="Breaching (X)" id="8ca0-9088-2a5b-91ed" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8082,24 +8161,31 @@ A. No.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0885-325b-5583-2942" name="Talonis HE missile" publicationId="d0df-7166-5cd3-89fd" page="27" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0885-325b-5583-2942" name="Talonis HE missile" publicationId="69b6-7620-84c6-68a9" page="174" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="1f0e-4b8b-32cf-29fe" name="Talonis HE missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Ignores Cover, Pinning, Shell Shock (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="8ff6-0615-0d8a-ac80" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+        <infoLink id="8ff6-0615-0d8a-ac80" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="9b56-aa8e-8a5b-7b2e" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Large Blast (5&quot;)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="5cde-7d9a-5a37-73e5" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3974-97c4-3d76-2fde" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+        <infoLink id="180e-a354-1ec3-89bc" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8167,7 +8253,7 @@ A. No.</description>
         <infoLink id="8e9f-be33-224b-961b" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
         <infoLink id="7761-21ff-412e-6181" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="5a4d-9a53-9faf-fbda" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-        <infoLink id="4dc3-e17b-d90a-f373" name="Grenade launcher - Krak (Secondary)" targetId="71e6-ddb0-279a-7101" type="profile"/>
+        <infoLink id="4dc3-e17b-d90a-f373" name="Grenade launcher - Krak (Secondary)" targetId="71e6-ddb0-279a-7101" type="profile" publicationId="69b6-7620-84c6-68a9" page="173"/>
         <infoLink id="beb1-60fd-93a6-0eda" name="Grenade launcher - Frag (Secondary)" targetId="5bff-6214-348d-0536" type="profile"/>
       </infoLinks>
       <costs>
@@ -8356,20 +8442,29 @@ A. No.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7638-4f76-51f0-b0fa" name="Battle Cannon" publicationId="d0df-7166-5cd3-89fd" page="29" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7638-4f76-51f0-b0fa" name="Battle Cannon" publicationId="69b6-7620-84c6-68a9" page="172" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="7d29-66bb-2c6c-bd1f" name="Battle Cannon" publicationId="d0df-7166-5cd3-89fd" page="29" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Pinning</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Pinning, Breaching (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="1b98-e720-d21f-5c12" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-        <infoLink id="3460-c89e-6aaa-a409" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="3460-c89e-6aaa-a409" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" value="Large Blast (5&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="3c39-930e-2c0e-7a7a" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -9298,14 +9393,14 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8339-4003-fe88-b536" name="Adrathic Destructor" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8339-4003-fe88-b536" name="Adrathic Destructor" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="172">
       <profiles>
         <profile id="e7e2-d04f-4361-8e89" name="Adrathic Destructor" publicationId="15a4-fc68-502d-48a9" page="145" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Instant Death, Armourbane (Ranged), Gets Hot</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Instant Death, Armourbane (Ranged), Gets Hot, Breaching (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9317,6 +9412,11 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           </modifiers>
         </infoLink>
         <infoLink id="b1fa-07a0-2176-f6fb" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+        <infoLink name="Breaching (X)" id="1284-382e-3f7d-6662" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -9361,7 +9461,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7bb3-794e-c334-4136" name="Adrathic Destructor" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="7bb3-794e-c334-4136" name="Adrathic Destructor" hidden="false" collective="true" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="172">
       <infoLinks>
         <infoLink id="11ef-8068-e1ba-6875" name="Adrathic Destructor" hidden="false" targetId="e7e2-d04f-4361-8e89" type="profile"/>
         <infoLink id="2411-0a28-63ff-3d71" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
@@ -9369,6 +9469,11 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <infoLink id="1313-d4ac-6cbd-9b6c" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Armourbane (Ranged)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="3f4d-2938-db4d-1d1b" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -9553,10 +9658,10 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
     </selectionEntry>
     <selectionEntry id="e0f3-3743-a9d0-f5f1" name="Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="9edf-5b4f-f269-c98e" name="Grenade launcher - Krak" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="9edf-5b4f-f269-c98e" name="Grenade launcher - Krak" publicationId="69b6-7620-84c6-68a9" page="173" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
           </characteristics>
@@ -9583,7 +9688,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <infoLink id="a07c-976c-787c-7e39" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="2013-d374-760f-d5e6" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="76f0-c871-4618-dc2a" name="Grenade launcher - Frag" hidden="false" targetId="7223-39b1-9ee8-bbc0" type="profile"/>
-        <infoLink id="b1e5-639f-5e03-46d4" name="Grenade launcher - Krak" hidden="false" targetId="9edf-5b4f-f269-c98e" type="profile"/>
+        <infoLink id="b1e5-639f-5e03-46d4" name="Grenade launcher - Krak" hidden="false" targetId="9edf-5b4f-f269-c98e" type="profile" publicationId="69b6-7620-84c6-68a9" page="173"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -9625,20 +9730,33 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7106-774e-c031-6902" name="Stormhammer Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7106-774e-c031-6902" name="Stormhammer Cannon" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="172">
       <profiles>
         <profile id="c65a-2132-c8cd-1696" name="Stormhammer Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordinance 1, Massive Blast (7&quot;)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Shred, Rending (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Rending (X)" id="ad3a-364b-a635-d5c4" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+          <modifiers>
+            <modifier type="set" value="Rending (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Blast" id="412a-f47b-0718-c011" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8">
+          <modifiers>
+            <modifier type="set" value="Massive Blast (7&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shred" id="1d83-aea3-b4dd-3117" hidden="false" type="rule" targetId="5e7e-1628-8174-6f2c"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="f0aa-947f-f493-f566" name="Shotgun" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -9922,7 +10040,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
     </selectionEntry>
     <selectionEntry id="45c9-9a1d-f466-3750" name="Ripper Gun" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="d96e-4b18-3f2e-e6ae" name="Ripper Gun" publicationId="48c2-d023-0069-001a" page="38" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="d96e-4b18-3f2e-e6ae" name="Ripper Gun (Ranged)" publicationId="48c2-d023-0069-001a" page="38" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -9930,10 +10048,26 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 5</characteristic>
           </characteristics>
         </profile>
+        <profile id="048d-67f5-5a1f-5902" name="Ripper Gun (Melee)" publicationId="69b6-7620-84c6-68a9" page="177" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reaping Blow (1), Two-handed</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Two-handed" id="af0a-40ef-52ab-f249" hidden="false" type="rule" targetId="4c23-e863-a569-7617"/>
+        <infoLink name="Reaping Blow (X)" id="c4a2-63db-3061-0000" hidden="false" type="rule" targetId="bd8c-4f52-d682-1b40">
+          <modifiers>
+            <modifier type="set" value="Reaping Blow (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="bbc4-b218-ade0-80a1" name="Thunderstub" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -10210,13 +10344,13 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3926-1557-4647-d4a6" name="Melta Lance" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3926-1557-4647-d4a6" name="Melta Lance" publicationId="69b6-7620-84c6-68a9" hidden="false" collective="false" import="true" type="upgrade" page="177">
       <profiles>
         <profile id="46cf-0663-3bf0-f33f" name="Melta Lance" publicationId="48c2-d023-0069-001a" page="41" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Ungainly, Lance, Sudden Strike (2), Two-handed, One Use</characteristic>
           </characteristics>
         </profile>
@@ -10304,6 +10438,13 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
     <selectionEntry id="7862-1fb7-b3ac-a22e" name="Ripper Gun" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0633-c3e7-20ca-9c9f" name="Ripper Gun" hidden="false" targetId="d96e-4b18-3f2e-e6ae" type="profile"/>
+        <infoLink name="Ripper Gun (Melee)" id="7d8f-13ea-d166-d0c9" hidden="false" type="profile" targetId="048d-67f5-5a1f-5902"/>
+        <infoLink name="Reaping Blow (X)" id="38cb-3c51-e8b0-ec8f" hidden="false" type="rule" targetId="bd8c-4f52-d682-1b40">
+          <modifiers>
+            <modifier type="set" value="Reaping Blow (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Two-handed" id="3015-36e3-297a-4cd2" hidden="false" type="rule" targetId="4c23-e863-a569-7617"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -10520,34 +10661,48 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="88d5-d893-4635-8331" name="Macharius Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="88d5-d893-4635-8331" name="Macharius Battlecannon" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="172">
       <profiles>
         <profile id="7056-8c38-d328-db0b" name="Macharius Battlecannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Twin-linked, Pinning</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Twin-linked, Pinning, Shell Shock (1), Breaching (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="dba4-3c89-1d3c-611e" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="dba4-3c89-1d3c-611e" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" value="Large Blast (5&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
         <infoLink id="39be-2e93-8bc1-68e6" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
         <infoLink id="8a6b-a6f2-9a43-b785" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink name="Shell Shock (X)" id="d6cc-5edc-f0cb-f313" hidden="false" type="rule" targetId="46b7-63a1-941c-96a5">
+          <modifiers>
+            <modifier type="set" value="Shell Shock (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="7e01-5b2f-18ec-a361" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8cd-670f-9284-a723" name="Macharius Vanquisher Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8cd-670f-9284-a723" name="Macharius Vanquisher Cannon" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="172">
       <profiles>
         <profile id="f9d2-536a-bffa-513e" name="Macharius Vanquisher Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder, Brutal (2), Twin-linked</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder, Brutal (2), Twin-linked, Exoshock (4+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10559,28 +10714,33 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </modifiers>
         </infoLink>
         <infoLink id="33f7-504d-efe2-5e55" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink name="Exoshock (X)" id="166b-1ed9-1c16-36a9" hidden="false" type="rule" targetId="69ca-318a-b47a-7a3c">
+          <modifiers>
+            <modifier type="set" value="Exoshock (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7d8e-670f-dcd8-2e86" name="Macharius Rotary Bolt Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7d8e-670f-dcd8-2e86" name="Macharius Rotary Bolt Cannon" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="173">
       <profiles>
         <profile id="f431-9fbb-df6b-b8cc" name="Macharius Rotary Bolt Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 10, Breaching (6+), Pinning, Twin-linked</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 10, Pinning, Shell Shock (1), Reactor Overload</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="18b3-e92f-ee03-2f72" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink id="18b3-e92f-ee03-2f72" name="Reactor Overload" hidden="false" targetId="a073-b86c-7bc1-d3f9" type="rule"/>
         <infoLink id="fa80-5b06-ce2a-bca3" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-        <infoLink id="96e1-ad1a-b636-69a" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+        <infoLink id="96e1-ad1a-b636-69a" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Breaching (6+)"/>
+            <modifier type="set" field="name" value="Shell Shock (1)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -10661,6 +10821,108 @@ Be aware that we are actively trying to find a solution to this, but it is less 
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry id="9af6-433c-1f10-2874" name="Conversion Destructor" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="173">
+      <profiles>
+        <profile id="ae53-e7fa-a5e6-a2a3" name="Conversion Destructor (1)" publicationId="a716-c1c4-7b26-8424" page="131" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Up to 18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Blind</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="82e5-9ede-f72d-d24b" name="Conversion Destructor (2)" publicationId="a716-c1c4-7b26-8424" page="131" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">More than 18&quot;-42&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Blind, Sunder</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ed8e-b2aa-1f77-70b6" name="Conversion Destructor (3)" publicationId="a716-c1c4-7b26-8424" page="131" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">More than 42&quot;-72&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Blind, Sunder, Wrecker</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="776d-46a8-aa50-98a6" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink id="7535-bddb-449b-b561" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" value="Large Blast (5&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="eb5e-a227-066e-2a8a" name="Blind" hidden="false" targetId="d836-747d-07d6-2b63" type="rule"/>
+        <infoLink id="4f00-9b4c-67be-6991" name="Wrecker" hidden="false" targetId="ba77-a802-55df-da67" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Exterminator Autocannon" hidden="false" id="e6ba-20c6-a716-e947" publicationId="69b6-7620-84c6-68a9" page="172">
+      <profiles>
+        <profile name="Exterminator Autocannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="50cd-55b2-8a88-93b2">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Rending (5+), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="99b5-e931-1fd5-bb4a" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+        <infoLink name="Rending (X)" id="45ab-8660-aa10-8072" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+          <modifiers>
+            <modifier type="set" value="Rending (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="91c1-e19f-0699-b0a6" name="Magna-Melta Array" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="174">
+      <profiles>
+        <profile id="a22e-f1ce-92de-f2ab" name="Magna-Melta Array" publicationId="69b6-7620-84c6-68a9" page="174" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Armourbane (Melta), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6af7-deec-37b1-6f37" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink id="8af4-db0b-9035-f965" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Melta)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6fbe-c56e-096c-ae9b" name="Gravis Heavy Lascannon" hidden="false" collective="false" import="true" type="upgrade" publicationId="69b6-7620-84c6-68a9" page="174">
+      <profiles>
+        <profile id="8af1-3305-5a1c-ff74" name="Gravis Lascannon" publicationId="a716-c1c4-7b26-8424" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8e3d-61cf-5177-65f8" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -16963,6 +17225,13 @@ A Detachment with this Oath may not be selected as part of any army that include
 
 
 This does not allow those models to select Warlord Traits, Rites of War, Consul Types, Praetor upgrades, or other options available to models with that variant of the Legiones Astartes (X) special rule and does not allow the Detachment to include units restricted to Detachments of that Faction.</description>
+    </rule>
+    <rule name="Auto-Servo Tracking" id="52b5-0ffa-5187-27bb" hidden="false" publicationId="69b6-7620-84c6-68a9" page="166">
+      <description>A weapon with this Special Rule can fire at a different target to the
+other weapons the model is armed with.</description>
+    </rule>
+    <rule name="Makeshift Weapon" id="d950-43fe-9279-5e63" hidden="false" page="167" publicationId="69b6-7620-84c6-68a9">
+      <description>A model equipped with a weapon with this Special Rule may only make a single attack at Initiative Step 1 with it, and may not gain a bonus attack for Charging or from any Special Rules that would normally grant additional Attacks.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
