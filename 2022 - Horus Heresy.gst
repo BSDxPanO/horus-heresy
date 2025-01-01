@@ -417,6 +417,14 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
 • Cavalry models are not slowed down by Difficult Terrain, even when Charging. However, Cavalry models treat all Difficult Terrain as Dangerous Terrain instead.
 • Cavalry models move 3D6&quot; when Falling Back, rather than 2D6&quot;.
 • No model that is not also of the Cavalry Unit Type may join a unit that includes a Cavalry model.</description>
+          <modifiers>
+            <modifier type="append" value="
+• For the purposes of any rules that consider number of models in a unit (such as Rampage), a Cavalry model counts as a number of models equal to its starting Wounds Characteristic." field="description" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </rule>
       </rules>
       <infoLinks>
@@ -508,6 +516,15 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
 • Successful Wounds inflicted by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Automata Unit Type.
 • A unit that includes one or more models with the Automata Unit Type may not make Reactions.
 • No model that is not also of the Automata Unit Type may join a unit that includes an Automata model.</description>
+          <modifiers>
+            <modifier type="append" value="
+• For the purposes of any rules that consider number of models in a unit (such as Rampage), an Automata model counts as a number of models equal to its starting Wounds Characteristic.
+Failed To Wound rolls made against a unit with the Automata Unit Type by a weapon with the Ordnance type or the Sunder Special Rule may be re-rolled." field="description" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </rule>
       </rules>
       <infoLinks>
@@ -616,6 +633,15 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
 • A model with the Dreadnought Unit Type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction.
 • A model of the Dreadnought type may fire Heavy and Ordnance weapons and counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
 • No model that is not also of the Dreadnought Unit Type may join a unit that includes a Dreadnought model.</description>
+          <modifiers>
+            <modifier type="append" value="
+• For the purposes of any rules that consider number of models in a unit (such as Rampage), a Dreadnought model counts as a number of models equal to its starting Wounds Characteristic.
+Failed To Wound rolls made against a unit with the Dreadnought Unit Type by a weapon with the Ordnance type or the Sunder Special Rule may be re-rolled." field="description" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </rule>
       </rules>
       <infoLinks>
@@ -685,6 +711,17 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
 • Any Hits inflicted on a model of the Daemon Unit Type by a weapon with the Force special rule gain the Instant Death special rule as well.
 • All Daemon models are immune to the effects of the Fear special rule, automatically pass Pinning and Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a Daemon unit fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no Saves of any kind allowed.
 • No model that is not also of the Daemon Unit Type may join a unit that includes a Daemon model.</description>
+          <modifiers>
+            <modifier type="set" value="• All Daemon models have their Strength and Toughness modified by a value determined by the current Game Turn: +1 on Game Turns 1 &amp; 2, +/-0 on Game Turns 3 &amp; 4, -1 on Game Turns 5 &amp; 6, and -2 on Game Turns 7+.
+• All Daemon models have the Fear (1) special rule.
+• Any Hits inflicted on a model of the Daemon Unit Type by a weapon with the Force special rule gain the Instant Death special rule as well.
+• All Daemon models are immune to the effects of the Fear special rule, automatically pass Pinning and Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a Daemon unit fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no Saves of any kind allowed.
+• No model that is not also of the Daemon Unit Type or the Corrupted Unit Sub-type may join a unit that includes a Daemon model." field="description" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f495-b627-df49-4b76" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </rule>
       </rules>
       <infoLinks>
@@ -2617,7 +2654,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
             <selectionEntry type="upgrade" import="true" name="Balance Change" hidden="false" id="1231-877a-96d9-cacd" sortIndex="4">
               <rules>
                 <rule name="Liber Panoptica Balance Change" id="c69c-6c66-fbe4-ace4" hidden="false" publicationId="9fab-fea7-a93c-2074" page="68">
-                  <description>Any changes designated as “Balance Changes” are the Panoptica team&apos;s efforts to make the game more balanced, and ensure fair and fun game play for all</description>
+                  <description>Any changes designated as “Balance Changes” are the Panoptica team&apos;s efforts to make the game more balanced, and ensure fair and fun game play for all</description>
                 </rule>
               </rules>
               <entryLinks>
