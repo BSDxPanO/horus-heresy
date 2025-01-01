@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy x Panoptica" revision="121" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy x Panoptica" revision="124" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -30,6 +30,7 @@
     <publication name="Campaigns in the Age of Darkness - The Battle for Beta-Garmon" hidden="false" id="d882-d2a-5da1-92c4" shortName="CotAoD - BBG" publicationDate="April 2024"/>
     <publication name="Exemplary Battles of the Age of Darkness - The Assault on Castrum Velx" id="2489-0c1d-8ed5-2515" hidden="false" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2024/06/zxc5pjdMmgEBrmJT.pdf" publicationDate="2024-06-11" publisher="Warhammer Community"/>
     <publication name="Campaigns in the Age of Darkness - Martian Civil War" id="4934-46f7-208b-b4af" hidden="false" shortName="CotAoD - MCW" publicationDate="Sept 2024"/>
+    <publication name="Liber Panoptica" id="9fab-fea7-a93c-2074" hidden="false" shortName="Pano" publisherUrl="https://hh-ageofdarkness.itch.io/liberpanoptica" publicationDate="24/12/2024"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
@@ -2587,6 +2588,54 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Liber Panoptica" id="f37c-15d4-dc41-090c" hidden="false" defaultSelectionEntryId="5192-eee4-e820-75e4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="No Panoptica Changes" hidden="false" id="5192-eee4-e820-75e4" sortIndex="1"/>
+            <selectionEntry type="upgrade" import="true" name="FAQ" hidden="false" id="043f-1465-cb5b-ca28" sortIndex="2">
+              <rules>
+                <rule name="Liber Panoptica FAQ" id="a4ed-c798-bc2f-af7f" hidden="false" publicationId="9fab-fea7-a93c-2074" page="68">
+                  <description>Any changes designated as “FAQ” are, in the Panoptica team&apos;s opinion, clarifications of existing functionality to make the intentions clearer and the effects simpler to understand.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Errata" hidden="false" id="f495-b627-df49-4b76" sortIndex="3">
+              <rules>
+                <rule name="Liber Panoptica Errata" id="f7ef-bfcf-2c6e-2863" hidden="false" publicationId="9fab-fea7-a93c-2074" page="68">
+                  <description>Any changes designated as “Errata” are clearly broken or otherwise overlooked rules which needed a refactoring in a simple and approachable manner. These changes will not change the overall function of rules or units, but will ensure no ambiguity or confusion can occur during game play.</description>
+                </rule>
+              </rules>
+              <entryLinks>
+                <entryLink import="true" name="FAQ" hidden="false" id="f29b-9634-0f92-8d98" type="selectionEntry" targetId="043f-1465-cb5b-ca28">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="70fb-775f-c3d2-d9a3-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70fb-775f-c3d2-d9a3-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Balance Change" hidden="false" id="1231-877a-96d9-cacd" sortIndex="4">
+              <rules>
+                <rule name="Liber Panoptica Balance Change" id="c69c-6c66-fbe4-ace4" hidden="false" publicationId="9fab-fea7-a93c-2074" page="68">
+                  <description>Any changes designated as “Balance Changes” are the Panoptica team&apos;s efforts to make the game more balanced, and ensure fair and fun game play for all</description>
+                </rule>
+              </rules>
+              <entryLinks>
+                <entryLink import="true" name="Errata" hidden="false" id="5f96-6ef7-5155-e0a4" type="selectionEntry" targetId="f495-b627-df49-4b76">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f31-cd93-39db-b201-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f31-cd93-39db-b201-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1bec-2baf-c5af-0131-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bec-2baf-c5af-0131-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="7d8-ddbf-ce7b-78f9">
       <categoryLinks>
