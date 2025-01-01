@@ -2687,7 +2687,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1bec-2baf-c5af-0131-min" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1bec-2baf-c5af-0131-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bec-2baf-c5af-0131-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
