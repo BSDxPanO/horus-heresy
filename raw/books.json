@@ -35,5 +35,23 @@
         "target_file_name": "2022 - LA - Blood Angels.cat"
       }
     ]
+  },
+  {
+    "file_name": "Liber-Panoptica_PAGES_v5.3.pdf",
+    "pub_id": "9fab-fea7-a93c-2074",
+    "priority": 1,
+    "target_file_name": "Panoptica Library.cat",
+    "page_ranges": [
+      {
+        "start": 126,
+        "end": 129,
+        "type": "special_rule_pages"
+      },
+      {
+        "start": 132,
+        "end": 137,
+        "type": "weapon_profile_pages"
+      }
+    ]
   }
 ]
