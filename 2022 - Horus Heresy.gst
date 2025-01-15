@@ -1163,7 +1163,32 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
       </rules>
     </categoryEntry>
     <categoryEntry id="7f9b-c5ed-7edb-02dc" name="Lumbering Sub-type" hidden="false"/>
-    <categoryEntry id="4e84-2d57-4986-2b23" name="Flyer Sub-type" hidden="false"/>
+    <categoryEntry id="4e84-2d57-4986-2b23" name="Flyer Sub-type" hidden="false">
+      <rules>
+        <rule name="Flyer Errata (Pano 5.3 pg 73)" id="7b30-3354-f76b-563b" hidden="true" publicationId="9fab-fea7-a93c-2074" page="73">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>Add the following to the end of Flyers and Other Models (Page 218):
+
+&quot;If a flyer is forced to end its move with its base within 1&quot; of an enemy model and is unable to be placed anywhere else (such as if has suffered a Crew Stunned result) then the flyer must move the shortest possible distance to avoid the enemy model and be placed over 1&quot; away from it.&quot;</description>
+        </rule>
+        <rule name="Flyer Balance Change (Pano 5.3 pg 73)" id="b8ba-decc-1853-6add" hidden="true" publicationId="9fab-fea7-a93c-2074" page="73">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f495-b627-df49-4b76" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>All models with this Unit Type gain the Countermeasures Special Rule.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry id="7b0a-a743-a8da-3a39" name="Transport Sub-type" hidden="false"/>
     <categoryEntry id="7381-1130-ca6e-1806" name="Super-heavy Sub-type" hidden="false">
       <modifiers>
