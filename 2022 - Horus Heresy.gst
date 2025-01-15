@@ -159,16 +159,20 @@
 • Primarchs are not affected by special rules that negatively modify their Characteristics (other than Wounds) and, in addition, Primarchs always resolve Snap Shots at their normal BS.
 • Any Hits inflicted by a Primarch, as part of either Shooting Attacks or in close combat, are allocated by the Primarch’s controlling player and not the controlling player of the target unit. These Hits should form a separate Wound Pool.
 • If an army includes any Primarch models, then one of those models must be chosen as the army’s Warlord.</description>
-          <modifiers>
-            <modifier type="set" value="• All Primarchs have the following special rules: Independent Character, Eternal Warrior, Fearless, It Will Not Die (5+), Bulky (4), and Relentless. In addition, all models with the Primarch unit type always count as Character models.
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Pano 5.3 pg 73" field="annotation"/>
+                <modifier type="set" value="• All Primarchs have the following special rules: Independent Character, Eternal Warrior, Fearless, It Will Not Die (5+), Bulky (4), and Relentless. In addition, all models with the Primarch unit type always count as Character models.
 • Primarchs are not affected by special rules that negatively modify their Characteristics (other than Wounds) and, in addition, Primarchs always resolve Snap Shots at their normal BS.
 • Primarchs have the Precision Strikes (2+) and Precision Shots (2+) Special Rules, and may choose to use these rules when attacking even when ordinarily they would be prevented from doing so, including when making Snap Shots.
-• If an army includes any Primarch models, then one of those models must be chosen as the army’s Warlord." field="description" join="">
+• If an army includes any Primarch models, then one of those models must be chosen as the army’s Warlord." field="description" join=""/>
+              </modifiers>
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </rule>
       </rules>
       <infoLinks>
@@ -427,14 +431,18 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
 • Cavalry models are not slowed down by Difficult Terrain, even when Charging. However, Cavalry models treat all Difficult Terrain as Dangerous Terrain instead.
 • Cavalry models move 3D6&quot; when Falling Back, rather than 2D6&quot;.
 • No model that is not also of the Cavalry Unit Type may join a unit that includes a Cavalry model.</description>
-          <modifiers>
-            <modifier type="append" value="
-• For the purposes of any rules that consider number of models in a unit (such as Rampage), a Cavalry model counts as a number of models equal to its starting Wounds Characteristic." field="description" join="">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="
+• For the purposes of any rules that consider number of models in a unit (such as Rampage), a Cavalry model counts as a number of models equal to its starting Wounds Characteristic." field="description" join=""/>
+                <modifier type="set" value="Pano 5.3 pg 72" field="annotation"/>
+              </modifiers>
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </rule>
       </rules>
       <infoLinks>
@@ -526,15 +534,19 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
 • Successful Wounds inflicted by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Automata Unit Type.
 • A unit that includes one or more models with the Automata Unit Type may not make Reactions.
 • No model that is not also of the Automata Unit Type may join a unit that includes an Automata model.</description>
-          <modifiers>
-            <modifier type="append" value="
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Pano 5.3 pg 73" field="annotation"/>
+                <modifier type="append" value="
 • For the purposes of any rules that consider number of models in a unit (such as Rampage), an Automata model counts as a number of models equal to its starting Wounds Characteristic.
-Failed To Wound rolls made against a unit with the Automata Unit Type by a weapon with the Ordnance type or the Sunder Special Rule may be re-rolled." field="description" join="">
+Failed To Wound rolls made against a unit with the Automata Unit Type by a weapon with the Ordnance type or the Sunder Special Rule may be re-rolled." field="description" join=""/>
+              </modifiers>
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </rule>
       </rules>
       <infoLinks>
@@ -643,15 +655,19 @@ Failed To Wound rolls made against a unit with the Automata Unit Type by a weapo
 • A model with the Dreadnought Unit Type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction.
 • A model of the Dreadnought type may fire Heavy and Ordnance weapons and counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
 • No model that is not also of the Dreadnought Unit Type may join a unit that includes a Dreadnought model.</description>
-          <modifiers>
-            <modifier type="append" value="
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Pano 5.3 pg 72" field="annotation"/>
+                <modifier type="append" value="
 • For the purposes of any rules that consider number of models in a unit (such as Rampage), a Dreadnought model counts as a number of models equal to its starting Wounds Characteristic.
-Failed To Wound rolls made against a unit with the Dreadnought Unit Type by a weapon with the Ordnance type or the Sunder Special Rule may be re-rolled." field="description" join="">
+Failed To Wound rolls made against a unit with the Dreadnought Unit Type by a weapon with the Ordnance type or the Sunder Special Rule may be re-rolled." field="description" join=""/>
+              </modifiers>
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </rule>
       </rules>
       <infoLinks>
@@ -721,17 +737,21 @@ Failed To Wound rolls made against a unit with the Dreadnought Unit Type by a we
 • Any Hits inflicted on a model of the Daemon Unit Type by a weapon with the Force special rule gain the Instant Death special rule as well.
 • All Daemon models are immune to the effects of the Fear special rule, automatically pass Pinning and Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a Daemon unit fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no Saves of any kind allowed.
 • No model that is not also of the Daemon Unit Type may join a unit that includes a Daemon model.</description>
-          <modifiers>
-            <modifier type="set" value="• All Daemon models have their Strength and Toughness modified by a value determined by the current Game Turn: +1 on Game Turns 1 &amp; 2, +/-0 on Game Turns 3 &amp; 4, -1 on Game Turns 5 &amp; 6, and -2 on Game Turns 7+.
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Pano 5.3 pg 73" field="annotation"/>
+                <modifier type="set" value="• All Daemon models have their Strength and Toughness modified by a value determined by the current Game Turn: +1 on Game Turns 1 &amp; 2, +/-0 on Game Turns 3 &amp; 4, -1 on Game Turns 5 &amp; 6, and -2 on Game Turns 7+.
 • All Daemon models have the Fear (1) special rule.
 • Any Hits inflicted on a model of the Daemon Unit Type by a weapon with the Force special rule gain the Instant Death special rule as well.
 • All Daemon models are immune to the effects of the Fear special rule, automatically pass Pinning and Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a Daemon unit fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no Saves of any kind allowed.
-• No model that is not also of the Daemon Unit Type or the Corrupted Unit Sub-type may join a unit that includes a Daemon model." field="description" join="">
+• No model that is not also of the Daemon Unit Type or the Corrupted Unit Sub-type may join a unit that includes a Daemon model." field="description" join=""/>
+              </modifiers>
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="f495-b627-df49-4b76" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </rule>
       </rules>
       <infoLinks>
@@ -931,7 +951,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         </infoLink>
       </infoLinks>
       <rules>
-        <rule name="Characters Mixed Saves (Pano Change)" id="78f5-2fb4-6f3d-1cda" hidden="true" publicationId="9fab-fea7-a93c-2074" page="73">
+        <rule name="Characters Mixed Saves (Pano 5.3 pg 73)" id="78f5-2fb4-6f3d-1cda" hidden="true" publicationId="9fab-fea7-a93c-2074" page="73">
           <description>“When the Controlling Player is assigning Wounds caused by Shooting Attacks, models with the Character Unit Sub-type may only have a number of Wounds allocated to them from each Shooting Attack equal to that model&apos;s unmodified Initiative Characteristic. When the Controlling Player is assigning Wounds in the Fight Sub-phase, models with the Character Unit Sub-type may only have a number of Wounds allocated to them by their Controlling Player equal to that model&apos;s unmodified Initiative Characteristic.
 If a Wound would be assigned to the Controlling Player&apos;s model by the Opposing Player, then the Opposing Player may assign Wounds as they wish. If the model is removed as a casualty before all allocated Wounds have been Saved, then the Controlling Player must re-allocate these as normal. For example, if a Legion Tactical Squad suffered ten Wounds from a Shooting Attack before Saving Throws were made, the Tactical Squad Sergeant could only have a maximum of four Wounds allocated to them by the Controlling Player to make Saving Throws against.</description>
           <modifiers>
@@ -17725,14 +17745,18 @@ Hellstorm weapons have the word ‘Hellstorm’ instead of a range on their weap
     <rule id="e1d7-0fe8-59f4-af89" name="Antigrav Sub-type" publicationId="e77a-823a-da94-16b9" page="196" hidden="false">
       <description>• A unit that includes only models with the Antigrav sub-type may ignore the effects of any and all terrain it passes over during movement, including passing over vertical terrain and Impassable Terrain without penalty or restriction. However, such units may not begin or end their movement in Impassable Terrain, and if beginning or ending their movement in Dangerous Terrain must take Dangerous Terrain tests as normal.
 • Models with the Antigrav sub-type may never benefit from Cover Saves of any kind.</description>
-      <modifiers>
-        <modifier type="set" value="• Models with the Antigrav Sub-type may move over friendly and enemy models, but cannot end their move on top of either. They may also move over all terrain, ignoring all penalties for Difficult Terrain and Dangerous Terrain. However, if a moving model with the Antigrav Sub-type starts or ends its move in Difficult Terrain or Dangerous Terrain, it must take a Dangerous Terrain test. An Antigrav model can even end its move over Impassable Terrain if it is possible to actually place the model on top of it, but if it does so it must take a Dangerous Terrain test. If an Antigrav model is forced to end its move over friendly or enemy models, move the model the minimum distance so that no models are left underneath it.
-• Models with the Antigrav sub-type may never benefit from Cover Saves of any kind." field="description" join="">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="Pano 5.3 pg 73" field="annotation"/>
+            <modifier type="set" value="• Models with the Antigrav Sub-type may move over friendly and enemy models, but cannot end their move on top of either. They may also move over all terrain, ignoring all penalties for Difficult Terrain and Dangerous Terrain. However, if a moving model with the Antigrav Sub-type starts or ends its move in Difficult Terrain or Dangerous Terrain, it must take a Dangerous Terrain test. An Antigrav model can even end its move over Impassable Terrain if it is possible to actually place the model on top of it, but if it does so it must take a Dangerous Terrain test. If an Antigrav model is forced to end its move over friendly or enemy models, move the model the minimum distance so that no models are left underneath it.
+• Models with the Antigrav sub-type may never benefit from Cover Saves of any kind." field="description" join=""/>
+          </modifiers>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </rule>
     <rule id="63d3-5fef-7c8e-e881" name="Skimmers" publicationId="e77a-823a-da94-16b9" page="214" hidden="false">
       <description>Unlike most other Vehicles, Skimmers have flying bases under their hull. However, distances are still measured to and from the Skimmer’s hull, with the exception of the Vehicle’s weapons, which all work as normal. The base of a Skimmer is effectively ignored, except for when the Skimmer is being Charged or Rammed, in which case, models may move into contact with the Vehicle’s hull, its base or both.
