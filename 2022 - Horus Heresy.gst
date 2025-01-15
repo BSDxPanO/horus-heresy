@@ -1420,11 +1420,49 @@ Reactions:
 - May only make Reactions in response to – Super Heavy Vehicles, Lumbering Flyers, Knights and Titans or any model with 8+ wounds.
 - May not perform Death or Glory Reactions</description>
         </rule>
+        <rule name="Knights and Titans Pano additions (5.3 pg 73)" id="a211-5d88-2f4d-04d8" hidden="true" publicationId="9fab-fea7-a93c-2074" page="73">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>Any model with either the Knight or Titan Unit Type gain the Hammer of Wrath (3) Special Rule.
+Add the following to the end of the Knights and Titans and Assaults section:
+“A Knight or Titan may make a Charge move against a model in area terrain, ignoring vertical distances - treat the model being charged as though it is on the ground floor for the purposes of distances. A Knight or Titan may make a melee attack against a model whose base is within 1” horizontally of their own, regardless of vertical distance.”
+Add the following to the end of the third paragraph of the Knights and Titans and Assaults section:
+“In addition, a Knight or Titan gains +2 Attacks for being equipped with two Melee weapons, instead of the normal +1 it would gain for having Two Weapons (page 184).”
+</description>
+        </rule>
       </rules>
+      <infoLinks>
+        <infoLink name="Hammer of Wrath (X)" id="956b-fe3e-1b51-8094" hidden="true" type="rule" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="replace" value="(3)" field="name" arg="(X)"/>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </categoryEntry>
     <categoryEntry id="4280-2d8-16c6-d60b" name="Titan Sub-type" hidden="false">
       <infoLinks>
         <infoLink name="Knights and Titans" hidden="false" type="rule" id="400b-3ae9-44d5-6df1" targetId="d0e-e683-6ab9-4f0"/>
+        <infoLink name="Hammer of Wrath (X)" id="c9c6-1e8a-166c-effb" hidden="true" type="rule" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="replace" value="(3)" field="name" arg="(X)"/>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Knights and Titans Pano additions (5.3 pg 73)" id="0b11-8b76-2a5c-181b" hidden="true" type="rule" targetId="a211-5d88-2f4d-04d8"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry name="Unique Sub-type" hidden="false" id="aa94-5c65-d1f1-46a4"/>
@@ -17712,6 +17750,18 @@ Wounds from Precision Strikes are allocated against a model (or models) of the a
     </rule>
     <rule id="cd2a-0a2b-315e-d39a" name="Slow Vehicles" publicationId="e77a-823a-da94-16b9" page="214" hidden="false">
       <description>When rolling on the Vehicle Damage table to resolve Hits against a Slow Vehicle, roll an additional D6 and before determining the result discard the highest single dice rolled. In addition, when a Slow Vehicle moves, other than to pivot in place, it is always considered to have moved at Cruising Speed regardless of how many inches it moves.</description>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="
+When rolling on the Vehicle Damage table to resolve Hits against a Slow Vehicle, roll an additional D6 and before determining the result discard the highest single dice rolled. In addition, when a Slow Vehicle moves at Cruising Speed, it may only fire Snap Shots, regardless of the normal rules for Vehicles and Shooting." field="description" join=""/>
+            <modifier type="set" value="Pano 5.3 pg 73" field="annotation"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </rule>
     <rule id="1570-c21a-881f-8b8a" name="Unwieldy" publicationId="e77a-823a-da94-16b9" page="249" hidden="false">
       <description>A model attacking with this weapon Piles-in and fights at Initiative step 1, unless it has the Dreadnought Unit Type or Monstrous sub-type.</description>
