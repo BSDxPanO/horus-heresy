@@ -165,7 +165,7 @@
                 <modifier type="set" value="Pano 5.3 pg 73" field="annotation"/>
                 <modifier type="set" value="• All Primarchs have the following special rules: Independent Character, Eternal Warrior, Fearless, It Will Not Die (5+), Bulky (4), and Relentless. In addition, all models with the Primarch unit type always count as Character models.
 • Primarchs are not affected by special rules that negatively modify their Characteristics (other than Wounds) and, in addition, Primarchs always resolve Snap Shots at their normal BS.
-• Primarchs have the Precision Strikes (2+) and Precision Shots (2+) Special Rules, and may choose to use these rules when attacking even when ordinarily they would be prevented from doing so, including when making Snap Shots.
+• Primarchs have the Precision Strikes (2+) and Precision Shots (2+) Special Rules, and may choose to use these rules when attacking even when ordinarily they would be prevented from doing so, including when making Snap Shots.
 • If an army includes any Primarch models, then one of those models must be chosen as the army’s Warlord." field="description" join=""/>
               </modifiers>
               <conditions>
@@ -434,8 +434,7 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier type="append" value="
-• For the purposes of any rules that consider number of models in a unit (such as Rampage), a Cavalry model counts as a number of models equal to its starting Wounds Characteristic." field="description" join=""/>
+                <modifier type="append" value=" • For the purposes of any rules that consider number of models in a unit (such as Rampage), a Cavalry model counts as a number of models equal to its starting Wounds Characteristic." field="description" join=""/>
                 <modifier type="set" value="Pano 5.3 pg 72" field="annotation"/>
               </modifiers>
               <conditions>
@@ -659,9 +658,7 @@ Failed To Wound rolls made against a unit with the Automata Unit Type by a weapo
             <modifierGroup type="and">
               <modifiers>
                 <modifier type="set" value="Pano 5.3 pg 72" field="annotation"/>
-                <modifier type="append" value="
-• For the purposes of any rules that consider number of models in a unit (such as Rampage), a Dreadnought model counts as a number of models equal to its starting Wounds Characteristic.
-Failed To Wound rolls made against a unit with the Dreadnought Unit Type by a weapon with the Ordnance type or the Sunder Special Rule may be re-rolled." field="description" join=""/>
+                <modifier type="append" value=" • For the purposes of any rules that consider number of models in a unit (such as Rampage), a Dreadnought model counts as a number of models equal to its starting Wounds Characteristic. Failed To Wound rolls made against a unit with the Dreadnought Unit Type by a weapon with the Ordnance type or the Sunder Special Rule may be re-rolled." field="description" join=""/>
               </modifiers>
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
@@ -952,8 +949,8 @@ Conversely, if an Independent Character joins a unit after that unit has been th
       </infoLinks>
       <rules>
         <rule name="Characters Mixed Saves (Pano 5.3 pg 73)" id="78f5-2fb4-6f3d-1cda" hidden="true" publicationId="9fab-fea7-a93c-2074" page="73">
-          <description>“When the Controlling Player is assigning Wounds caused by Shooting Attacks, models with the Character Unit Sub-type may only have a number of Wounds allocated to them from each Shooting Attack equal to that model&apos;s unmodified Initiative Characteristic. When the Controlling Player is assigning Wounds in the Fight Sub-phase, models with the Character Unit Sub-type may only have a number of Wounds allocated to them by their Controlling Player equal to that model&apos;s unmodified Initiative Characteristic.
-If a Wound would be assigned to the Controlling Player&apos;s model by the Opposing Player, then the Opposing Player may assign Wounds as they wish. If the model is removed as a casualty before all allocated Wounds have been Saved, then the Controlling Player must re-allocate these as normal. For example, if a Legion Tactical Squad suffered ten Wounds from a Shooting Attack before Saving Throws were made, the Tactical Squad Sergeant could only have a maximum of four Wounds allocated to them by the Controlling Player to make Saving Throws against.</description>
+          <description>“When the Controlling Player is assigning Wounds caused by Shooting Attacks, models with the Character Unit Sub-type may only have a number of Wounds allocated to them from each Shooting Attack equal to that model&apos;s unmodified Initiative Characteristic. When the Controlling Player is assigning Wounds in the Fight Sub-phase, models with the Character Unit Sub-type may only have a number of Wounds allocated to them by their Controlling Player equal to that model&apos;s unmodified Initiative Characteristic.
+If a Wound would be assigned to the Controlling Player&apos;s model by the Opposing Player, then the Opposing Player may assign Wounds as they wish. If the model is removed as a casualty before all allocated Wounds have been Saved, then the Controlling Player must re-allocate these as normal. For example, if a Legion Tactical Squad suffered ten Wounds from a Shooting Attack before Saving Throws were made, the Tactical Squad Sergeant could only have a maximum of four Wounds allocated to them by the Controlling Player to make Saving Throws against.</description>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -1175,7 +1172,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
           </modifiers>
           <description>Add the following to the end of Flyers and Other Models (Page 218):
 
-&quot;If a flyer is forced to end its move with its base within 1&quot; of an enemy model and is unable to be placed anywhere else (such as if has suffered a Crew Stunned result) then the flyer must move the shortest possible distance to avoid the enemy model and be placed over 1&quot; away from it.&quot;</description>
+&quot;If a flyer is forced to end its move with its base within 1&quot; of an enemy model and is unable to be placed anywhere else (such as if has suffered a Crew Stunned result) then the flyer must move the shortest possible distance to avoid the enemy model and be placed over 1&quot; away from it.&quot;</description>
         </rule>
         <rule name="Flyer Balance Change (Pano 5.3 pg 73)" id="b8ba-decc-1853-6add" hidden="true" publicationId="9fab-fea7-a93c-2074" page="73">
           <modifiers>
@@ -1185,7 +1182,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
               </conditions>
             </modifier>
           </modifiers>
-          <description>All models with this Unit Type gain the Countermeasures Special Rule.</description>
+          <description>All models with this Unit Type gain the Countermeasures Special Rule.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -1608,15 +1605,15 @@ In addition, the Leadership Characteristic of a model with the Anathema Unit Sub
     <categoryEntry name="Ruinous Cybernetica" id="7b4a-8a9b-3ef3-01d0" hidden="false" publicationId="4934-46f7-208b-b4af" page="151">
       <rules>
         <rule name="Ruinous Cybernetica" id="5acc-f755-c152-07f7" hidden="false" publicationId="4934-46f7-208b-b4af" page="151">
-          <description>At the start of the controlling player&apos;s Shooting phase, that player can make a Leadership test for any units made up entirely of models with this special rule.
+          <description>At the start of the controlling player&apos;s Shooting phase, that player can make a Leadership test for any units made up entirely of models with this special rule.
 
-If that test is passed, until the end of the turn: 
+If that test is passed, until the end of the turn: 
 
-All models in the unit are not subject to the Programmed Behaviour provision, as detailed in the Cybernetica Unit Sub-type.
+All models in the unit are not subject to the Programmed Behaviour provision, as detailed in the Cybernetica Unit Sub-type.
 
-At the start of the Charge sub-phase, a Charge must be declared for this unit if there is an enemy unit within 2&quot;, and the closest enemy unit must always be selected as the target of this Charge if possible (if multiple eligible units are equally distant then the controlling player must select one of those eligible units to be the target of the Charge).
+At the start of the Charge sub-phase, a Charge must be declared for this unit if there is an enemy unit within 2&quot;, and the closest enemy unit must always be selected as the target of this Charge if possible (if multiple eligible units are equally distant then the controlling player must select one of those eligible units to be the target of the Charge).
 
-If that test is failed, the unit suffers one Wound, allocated by the controlling player. No Saving Throws or Damage Mitigation rolls of any kind may be made against this Wound.</description>
+If that test is failed, the unit suffers one Wound, allocated by the controlling player. No Saving Throws or Damage Mitigation rolls of any kind may be made against this Wound.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -2748,14 +2745,14 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
             <selectionEntry type="upgrade" import="true" name="FAQ" hidden="false" id="043f-1465-cb5b-ca28" sortIndex="2">
               <rules>
                 <rule name="Liber Panoptica FAQ" id="a4ed-c798-bc2f-af7f" hidden="false" publicationId="9fab-fea7-a93c-2074" page="68">
-                  <description>Any changes designated as “FAQ” are, in the Panoptica team&apos;s opinion, clarifications of existing functionality to make the intentions clearer and the effects simpler to understand.</description>
+                  <description>Any changes designated as “FAQ” are, in the Panoptica team&apos;s opinion, clarifications of existing functionality to make the intentions clearer and the effects simpler to understand.</description>
                 </rule>
               </rules>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Errata" hidden="false" id="f495-b627-df49-4b76" sortIndex="3">
               <rules>
                 <rule name="Liber Panoptica Errata" id="f7ef-bfcf-2c6e-2863" hidden="false" publicationId="9fab-fea7-a93c-2074" page="68">
-                  <description>Any changes designated as “Errata” are clearly broken or otherwise overlooked rules which needed a refactoring in a simple and approachable manner. These changes will not change the overall function of rules or units, but will ensure no ambiguity or confusion can occur during game play.</description>
+                  <description>Any changes designated as “Errata” are clearly broken or otherwise overlooked rules which needed a refactoring in a simple and approachable manner. These changes will not change the overall function of rules or units, but will ensure no ambiguity or confusion can occur during game play.</description>
                 </rule>
               </rules>
               <entryLinks>
@@ -11147,11 +11144,11 @@ Be aware that we are actively trying to find a solution to this, but it is less 
     <selectionEntry type="upgrade" import="true" name="Shattered Legions" hidden="false" id="9950-2cd2-fd88-9bb1">
       <rules>
         <rule name="Shattered Legions Detachments" id="79f1-6428-98a0-b454" hidden="false" publicationId="d882-d2a-5da1-92c4" page="134">
-          <description>A Shattered Legions Detachment is a Detachment with the Legiones Astartes Faction, in which every unit has the Legiones Astartes (Shattered Legions) special rule. A Shattered Legions Detachment must be the army’s Primary Detachment, and an army whose Primary Detachment is a Shattered Legions Detachment cannot include any other Detachments. A Shattered Legions Detachment may not include any models with the Primarch or Daemon Primarch Unit Types.
-When you add a Shattered Legions Detachment to your army, you must select either two or three different Legions from the following and note them on your army roster:
-• Dark Angels • Emperor’s Children • Iron Warriors • White Scars • Space Wolves • Imperial Fists • Night Lords • Blood Angels • Iron Hands • World Eaters • Ultramarines • Death Guard • Thousand Sons • Sons of Horus • Word Bearers • Salamanders • Raven Guard • Alpha Legion
-Every model in this Detachment must represent one of your selected Legions. A model ‘represents’ a Legion when it clearly displays the Legion iconography and heraldry of that Legion. If any model does not clearly display iconography or colours that obviously identify it as a member of a single specific Legion, then it represents no Legion and is not counted for determining the Majority or Minority of a unit (see page 135 ). The number of models in a unit that represent each Legion is at your discretion, but each unit on your army roster must contain models representing as many of your selected Legions as possible (e.g., a unit with two models must represent two different Legions and a unit of three or more models must contain at least one model representing each selected Legion).
-Models with the Independent Character special rule can select options (excluding Legiones Consularis upgrades) from the Armoury page of the Legion they are representing as if they had the equivalent version of the Legiones Astartes (X) special rule. For example, a model with the Independent Character special rule that is representing the Imperial Fists Legion could select options from the Armoury of the Imperial Fists pages of Liber Astartes as if they had the Legiones Astartes (Imperial Fists) special rule. Note that restrictions based on Allegiance will still apply.</description>
+          <description>A Shattered Legions Detachment is a Detachment with the Legiones Astartes Faction, in which every unit has the Legiones Astartes (Shattered Legions) special rule. A Shattered Legions Detachment must be the army’s Primary Detachment, and an army whose Primary Detachment is a Shattered Legions Detachment cannot include any other Detachments. A Shattered Legions Detachment may not include any models with the Primarch or Daemon Primarch Unit Types.
+When you add a Shattered Legions Detachment to your army, you must select either two or three different Legions from the following and note them on your army roster:
+• Dark Angels • Emperor’s Children • Iron Warriors • White Scars • Space Wolves • Imperial Fists • Night Lords • Blood Angels • Iron Hands • World Eaters • Ultramarines • Death Guard • Thousand Sons • Sons of Horus • Word Bearers • Salamanders • Raven Guard • Alpha Legion
+Every model in this Detachment must represent one of your selected Legions. A model ‘represents’ a Legion when it clearly displays the Legion iconography and heraldry of that Legion. If any model does not clearly display iconography or colours that obviously identify it as a member of a single specific Legion, then it represents no Legion and is not counted for determining the Majority or Minority of a unit (see page 135 ). The number of models in a unit that represent each Legion is at your discretion, but each unit on your army roster must contain models representing as many of your selected Legions as possible (e.g., a unit with two models must represent two different Legions and a unit of three or more models must contain at least one model representing each selected Legion).
+Models with the Independent Character special rule can select options (excluding Legiones Consularis upgrades) from the Armoury page of the Legion they are representing as if they had the equivalent version of the Legiones Astartes (X) special rule. For example, a model with the Independent Character special rule that is representing the Imperial Fists Legion could select options from the Armoury of the Imperial Fists pages of Liber Astartes as if they had the Legiones Astartes (Imperial Fists) special rule. Note that restrictions based on Allegiance will still apply.</description>
         </rule>
         <rule name="Legiones Astartes (Shattered Legions)" id="c1cf-0560-c663-4994" hidden="false" publicationId="d882-d2a-5da1-92c4" page="135">
           <description>LEGIONES ASTARTES (SHATTERED LEGIONS)
@@ -11162,29 +11159,29 @@ All models with this special rule are subject to the following provisions:
 excluding Legiones Astartes (Shattered Legions), unless another rule states otherwise.</description>
         </rule>
         <rule name="Majority and Minority" id="487a-bdca-ae8c-f9bc" hidden="false" page="135" publicationId="d882-d2a-5da1-92c4">
-          <description>For the purposes of determining which bonuses are available to units that include models with the Legiones Astartes (Shattered Legions) special rule, at the start of each Phase the controlling player will need to determine which of their selected Legions has the greatest number among the models in that unit:
-Majority – The Legion that is represented by the greatest number of models in the unit is said to be in the Majority If the number is tied between two or more Legions then the controlling player can select one of the tied Legions to be the Majority.
-Minority – The Legion that is represented by the fewest models in the unit is said to be in the Minority. If the number is tied between two or more Legions then the controlling player can select one of the tied Legions to be the Minority.
-When counting models in a unit, all models are counted no matter what unit type they have – excepting only Dedicated Transports which are not considered part of the unit. Models that include multiple crew or operators as part of a single model, such as Legion Javelins, are considered to represent the Legion whose icons or colours are displayed on the main component of that model. For example, a Legion Javelin that has two crew models, one in Raven Guard colours and one in Salamanders colours, represents the Legion whose colours are on the Javelin itself, ignoring the crew.
-The calculated Majority and Minority Legions apply until the end of that Phase, and so do not require recalculating during a Phase as units take casualties and models are removed.
+          <description>For the purposes of determining which bonuses are available to units that include models with the Legiones Astartes (Shattered Legions) special rule, at the start of each Phase the controlling player will need to determine which of their selected Legions has the greatest number among the models in that unit:
+Majority – The Legion that is represented by the greatest number of models in the unit is said to be in the Majority If the number is tied between two or more Legions then the controlling player can select one of the tied Legions to be the Majority.
+Minority – The Legion that is represented by the fewest models in the unit is said to be in the Minority. If the number is tied between two or more Legions then the controlling player can select one of the tied Legions to be the Minority.
+When counting models in a unit, all models are counted no matter what unit type they have – excepting only Dedicated Transports which are not considered part of the unit. Models that include multiple crew or operators as part of a single model, such as Legion Javelins, are considered to represent the Legion whose icons or colours are displayed on the main component of that model. For example, a Legion Javelin that has two crew models, one in Raven Guard colours and one in Salamanders colours, represents the Legion whose colours are on the Javelin itself, ignoring the crew.
+The calculated Majority and Minority Legions apply until the end of that Phase, and so do not require recalculating during a Phase as units take casualties and models are removed.
 
 
 Designer’s Note:
 Calculating Majority and Minority
-While you should calculate the Majority and Minority Legions in each unit at the start of each Phase, in practicality, you might find it easier to only worry about calculating which traits apply when it becomes relevant in a given Phase, such as the first time you select that unit to make attacks, or the first time that unit is targeted by an enemy unit. You may also find that if, for example, you have not selected any Legions whose traits interact with the Movement phase, then it is not necessary to calculate the Majority and Minority Legions during that Phase. Similarly, in your opponent’s Shooting phase, you may find it easier to calculate the Majority and Minority Legions the first time a unit from your army is selected as the target of a Shooting Attack, or the first time it is eligible to make a Reaction. In your opponent’s Assault phase, you may find many of your units are not Locked in Combat or eligible to be Charged (because there are no enemy units within range) and so it will not be necessary to calculate the Majority and Minority Legions for those units during that Phase. This approach will save some time during the battle, and ensure you do not spend time calculating which rules apply to a unit that will not need to use them during that Phase. This process of judgement will become easier as you fight more battles with your Shattered Legions army and become more familiar with when and how the traits for your selected Legions become active or relevant within the various Phases of a battle.</description>
+While you should calculate the Majority and Minority Legions in each unit at the start of each Phase, in practicality, you might find it easier to only worry about calculating which traits apply when it becomes relevant in a given Phase, such as the first time you select that unit to make attacks, or the first time that unit is targeted by an enemy unit. You may also find that if, for example, you have not selected any Legions whose traits interact with the Movement phase, then it is not necessary to calculate the Majority and Minority Legions during that Phase. Similarly, in your opponent’s Shooting phase, you may find it easier to calculate the Majority and Minority Legions the first time a unit from your army is selected as the target of a Shooting Attack, or the first time it is eligible to make a Reaction. In your opponent’s Assault phase, you may find many of your units are not Locked in Combat or eligible to be Charged (because there are no enemy units within range) and so it will not be necessary to calculate the Majority and Minority Legions for those units during that Phase. This approach will save some time during the battle, and ensure you do not spend time calculating which rules apply to a unit that will not need to use them during that Phase. This process of judgement will become easier as you fight more battles with your Shattered Legions army and become more familiar with when and how the traits for your selected Legions become active or relevant within the various Phases of a battle.</description>
         </rule>
         <rule name="Mutable Tactics" id="0709-363e-95d8-afd6" hidden="false" publicationId="d882-d2a-5da1-92c4" page="137">
-          <description>In the following section you will find Mutable Tactics traits for each Legion that can be represented in your Shattered Legions force. Each set of Mutable Tactics traits has four rules, each of which may apply to a unit that contains models representing that Legion, based on whether that Legion is in the Majority in that unit, in the Minority in that unit, or represented by a model with the Independent Character special rule. Each set of Mutable Tactics traits also details a Flaw which may apply to the unit under certain circumstances.
+          <description>In the following section you will find Mutable Tactics traits for each Legion that can be represented in your Shattered Legions force. Each set of Mutable Tactics traits has four rules, each of which may apply to a unit that contains models representing that Legion, based on whether that Legion is in the Majority in that unit, in the Minority in that unit, or represented by a model with the Independent Character special rule. Each set of Mutable Tactics traits also details a Flaw which may apply to the unit under certain circumstances.
 Hero Traits
-Models with both the Legiones Astartes (Shattered Legions) and Independent Character special rules gain the &apos;Hero&apos; trait for the Legion they are representing. If such a model joins a unit composed entirely of models with the Legiones Astartes (Shattered Legions) special rule, it is also bound by the ‘Major’ and ‘Minor’ traits that apply to that unit, as well as any ‘Flaw’ traits.
+Models with both the Legiones Astartes (Shattered Legions) and Independent Character special rules gain the &apos;Hero&apos; trait for the Legion they are representing. If such a model joins a unit composed entirely of models with the Legiones Astartes (Shattered Legions) special rule, it is also bound by the ‘Major’ and ‘Minor’ traits that apply to that unit, as well as any ‘Flaw’ traits.
 Models with the Vehicle Unit Type can never benefit from Hero traits.
 Major, Minor and Flaw Traits
-Models with the Legiones Astartes (Shattered Legions) special rule, but not the Independent Character special rule, gain traits depending on both the Legion that they represent and the composition of the unit that they are part of:
-• All models with the Legiones Astartes (Shattered Legions) special rule in a unit composed entirely of models representing a single Legion gain the Minor benefits shown under the Mutable Tactics traits for that Legion and suffer from the Flaw listed for that Legion.
-• All models with the Legiones Astartes (Shattered Legions) special rule in a unit composed of models representing two or more different Legions gain the Major benefit from the Mutable Tactics traits for the Legion represented by the majority of models and the Minor benefit from the Mutable Tactics traits for the Legion represented by the minority of models in that unit. In addition, all models with the Legiones Astartes (Shattered Legions) special rule in that unit also suffer the Flaw from the Mutable Tactics traits of the Legion with the minority of models in the unit.
-• Units composed of a single model, or units that are split after deployment (such as a Legion Contemptor Dreadnought Talon) with the Legiones Astartes (Shattered Legions) special rule, gain the Minor Mutable Tactics trait of the Legion they represent and also the Flaw of the Legion they represent.
-Note that as detailed above, the Majority and Minority Legions in a unit are determined at the start of the Phase, and so the benefits gained will not change and Majority and Minority Legions do not need to be recalculated during a Phase as casualties are removed.
-Where the effects of a Mutable Tactics trait contradict another, Flaws take priority over all other traits and Major traits take priority over Minor traits. If a trait requires a Leadership test to be taken for a unit which does not have a Leadership Characteristic, treat that unit’s Leadership Characteristic as ‘10’.</description>
+Models with the Legiones Astartes (Shattered Legions) special rule, but not the Independent Character special rule, gain traits depending on both the Legion that they represent and the composition of the unit that they are part of:
+• All models with the Legiones Astartes (Shattered Legions) special rule in a unit composed entirely of models representing a single Legion gain the Minor benefits shown under the Mutable Tactics traits for that Legion and suffer from the Flaw listed for that Legion.
+• All models with the Legiones Astartes (Shattered Legions) special rule in a unit composed of models representing two or more different Legions gain the Major benefit from the Mutable Tactics traits for the Legion represented by the majority of models and the Minor benefit from the Mutable Tactics traits for the Legion represented by the minority of models in that unit. In addition, all models with the Legiones Astartes (Shattered Legions) special rule in that unit also suffer the Flaw from the Mutable Tactics traits of the Legion with the minority of models in the unit.
+• Units composed of a single model, or units that are split after deployment (such as a Legion Contemptor Dreadnought Talon) with the Legiones Astartes (Shattered Legions) special rule, gain the Minor Mutable Tactics trait of the Legion they represent and also the Flaw of the Legion they represent.
+Note that as detailed above, the Majority and Minority Legions in a unit are determined at the start of the Phase, and so the benefits gained will not change and Majority and Minority Legions do not need to be recalculated during a Phase as casualties are removed.
+Where the effects of a Mutable Tactics trait contradict another, Flaws take priority over all other traits and Major traits take priority over Minor traits. If a trait requires a Leadership test to be taken for a unit which does not have a Leadership Characteristic, treat that unit’s Leadership Characteristic as ‘10’.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -17788,8 +17785,7 @@ Wounds from Precision Strikes are allocated against a model (or models) of the a
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="set" value="
-When rolling on the Vehicle Damage table to resolve Hits against a Slow Vehicle, roll an additional D6 and before determining the result discard the highest single dice rolled. In addition, when a Slow Vehicle moves at Cruising Speed, it may only fire Snap Shots, regardless of the normal rules for Vehicles and Shooting." field="description" join=""/>
+            <modifier type="set" value=" When rolling on the Vehicle Damage table to resolve Hits against a Slow Vehicle, roll an additional D6 and before determining the result discard the highest single dice rolled. In addition, when a Slow Vehicle moves at Cruising Speed, it may only fire Snap Shots, regardless of the normal rules for Vehicles and Shooting." field="description" join=""/>
             <modifier type="set" value="Pano 5.3 pg 73" field="annotation"/>
           </modifiers>
           <conditions>
@@ -17834,8 +17830,8 @@ Hellstorm weapons have the word ‘Hellstorm’ instead of a range on their weap
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="Pano 5.3 pg 73" field="annotation"/>
-            <modifier type="set" value="• Models with the Antigrav Sub-type may move over friendly and enemy models, but cannot end their move on top of either. They may also move over all terrain, ignoring all penalties for Difficult Terrain and Dangerous Terrain. However, if a moving model with the Antigrav Sub-type starts or ends its move in Difficult Terrain or Dangerous Terrain, it must take a Dangerous Terrain test. An Antigrav model can even end its move over Impassable Terrain if it is possible to actually place the model on top of it, but if it does so it must take a Dangerous Terrain test. If an Antigrav model is forced to end its move over friendly or enemy models, move the model the minimum distance so that no models are left underneath it.
-• Models with the Antigrav sub-type may never benefit from Cover Saves of any kind." field="description" join=""/>
+            <modifier type="set" value="• Models with the Antigrav Sub-type may move over friendly and enemy models, but cannot end their move on top of either. They may also move over all terrain, ignoring all penalties for Difficult Terrain and Dangerous Terrain. However, if a moving model with the Antigrav Sub-type starts or ends its move in Difficult Terrain or Dangerous Terrain, it must take a Dangerous Terrain test. An Antigrav model can even end its move over Impassable Terrain if it is possible to actually place the model on top of it, but if it does so it must take a Dangerous Terrain test. If an Antigrav model is forced to end its move over friendly or enemy models, move the model the minimum distance so that no models are left underneath it.
+            • Models with the Antigrav sub-type may never benefit from Cover Saves of any kind." field="description" join=""/>
           </modifiers>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
