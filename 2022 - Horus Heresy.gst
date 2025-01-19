@@ -165,7 +165,7 @@
                 <modifier type="set" value="Pano 5.3 pg 73" field="annotation"/>
                 <modifier type="set" value="• All Primarchs have the following special rules: Independent Character, Eternal Warrior, Fearless, It Will Not Die (5+), Bulky (4), and Relentless. In addition, all models with the Primarch unit type always count as Character models.
 • Primarchs are not affected by special rules that negatively modify their Characteristics (other than Wounds) and, in addition, Primarchs always resolve Snap Shots at their normal BS.
-• Primarchs have the Precision Strikes (2+) and Precision Shots (2+) Special Rules, and may choose to use these rules when attacking even when ordinarily they would be prevented from doing so, including when making Snap Shots.
+• Primarchs have the Precision Strikes (2+) and Precision Shots (2+) Special Rules, and may choose to use these rules when attacking even when ordinarily they would be prevented from doing so, including when making Snap Shots.
 • If an army includes any Primarch models, then one of those models must be chosen as the army’s Warlord." field="description" join=""/>
               </modifiers>
               <conditions>
@@ -434,8 +434,7 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier type="append" value="
-• For the purposes of any rules that consider number of models in a unit (such as Rampage), a Cavalry model counts as a number of models equal to its starting Wounds Characteristic." field="description" join=""/>
+                <modifier type="append" value=" • For the purposes of any rules that consider number of models in a unit (such as Rampage), a Cavalry model counts as a number of models equal to its starting Wounds Characteristic." field="description" join=""/>
                 <modifier type="set" value="Pano 5.3 pg 72" field="annotation"/>
               </modifiers>
               <conditions>
@@ -659,9 +658,7 @@ Failed To Wound rolls made against a unit with the Automata Unit Type by a weapo
             <modifierGroup type="and">
               <modifiers>
                 <modifier type="set" value="Pano 5.3 pg 72" field="annotation"/>
-                <modifier type="append" value="
-• For the purposes of any rules that consider number of models in a unit (such as Rampage), a Dreadnought model counts as a number of models equal to its starting Wounds Characteristic.
-Failed To Wound rolls made against a unit with the Dreadnought Unit Type by a weapon with the Ordnance type or the Sunder Special Rule may be re-rolled." field="description" join=""/>
+                <modifier type="append" value=" • For the purposes of any rules that consider number of models in a unit (such as Rampage), a Dreadnought model counts as a number of models equal to its starting Wounds Characteristic. Failed To Wound rolls made against a unit with the Dreadnought Unit Type by a weapon with the Ordnance type or the Sunder Special Rule may be re-rolled." field="description" join=""/>
               </modifiers>
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
@@ -952,8 +949,8 @@ Conversely, if an Independent Character joins a unit after that unit has been th
       </infoLinks>
       <rules>
         <rule name="Characters Mixed Saves (Pano 5.3 pg 73)" id="78f5-2fb4-6f3d-1cda" hidden="true" publicationId="9fab-fea7-a93c-2074" page="73">
-          <description>“When the Controlling Player is assigning Wounds caused by Shooting Attacks, models with the Character Unit Sub-type may only have a number of Wounds allocated to them from each Shooting Attack equal to that model&apos;s unmodified Initiative Characteristic. When the Controlling Player is assigning Wounds in the Fight Sub-phase, models with the Character Unit Sub-type may only have a number of Wounds allocated to them by their Controlling Player equal to that model&apos;s unmodified Initiative Characteristic.
-If a Wound would be assigned to the Controlling Player&apos;s model by the Opposing Player, then the Opposing Player may assign Wounds as they wish. If the model is removed as a casualty before all allocated Wounds have been Saved, then the Controlling Player must re-allocate these as normal. For example, if a Legion Tactical Squad suffered ten Wounds from a Shooting Attack before Saving Throws were made, the Tactical Squad Sergeant could only have a maximum of four Wounds allocated to them by the Controlling Player to make Saving Throws against.</description>
+          <description>“When the Controlling Player is assigning Wounds caused by Shooting Attacks, models with the Character Unit Sub-type may only have a number of Wounds allocated to them from each Shooting Attack equal to that model&apos;s unmodified Initiative Characteristic. When the Controlling Player is assigning Wounds in the Fight Sub-phase, models with the Character Unit Sub-type may only have a number of Wounds allocated to them by their Controlling Player equal to that model&apos;s unmodified Initiative Characteristic.
+If a Wound would be assigned to the Controlling Player&apos;s model by the Opposing Player, then the Opposing Player may assign Wounds as they wish. If the model is removed as a casualty before all allocated Wounds have been Saved, then the Controlling Player must re-allocate these as normal. For example, if a Legion Tactical Squad suffered ten Wounds from a Shooting Attack before Saving Throws were made, the Tactical Squad Sergeant could only have a maximum of four Wounds allocated to them by the Controlling Player to make Saving Throws against.</description>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -1175,7 +1172,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
           </modifiers>
           <description>Add the following to the end of Flyers and Other Models (Page 218):
 
-&quot;If a flyer is forced to end its move with its base within 1&quot; of an enemy model and is unable to be placed anywhere else (such as if has suffered a Crew Stunned result) then the flyer must move the shortest possible distance to avoid the enemy model and be placed over 1&quot; away from it.&quot;</description>
+&quot;If a flyer is forced to end its move with its base within 1&quot; of an enemy model and is unable to be placed anywhere else (such as if has suffered a Crew Stunned result) then the flyer must move the shortest possible distance to avoid the enemy model and be placed over 1&quot; away from it.&quot;</description>
         </rule>
         <rule name="Flyer Balance Change (Pano 5.3 pg 73)" id="b8ba-decc-1853-6add" hidden="true" publicationId="9fab-fea7-a93c-2074" page="73">
           <modifiers>
@@ -1185,7 +1182,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
               </conditions>
             </modifier>
           </modifiers>
-          <description>All models with this Unit Type gain the Countermeasures Special Rule.</description>
+          <description>All models with this Unit Type gain the Countermeasures Special Rule.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -2767,14 +2764,14 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
             <selectionEntry type="upgrade" import="true" name="FAQ" hidden="false" id="043f-1465-cb5b-ca28" sortIndex="2">
               <rules>
                 <rule name="Liber Panoptica FAQ" id="a4ed-c798-bc2f-af7f" hidden="false" publicationId="9fab-fea7-a93c-2074" page="68">
-                  <description>Any changes designated as “FAQ” are, in the Panoptica team&apos;s opinion, clarifications of existing functionality to make the intentions clearer and the effects simpler to understand.</description>
+                  <description>Any changes designated as “FAQ” are, in the Panoptica team&apos;s opinion, clarifications of existing functionality to make the intentions clearer and the effects simpler to understand.</description>
                 </rule>
               </rules>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Errata" hidden="false" id="f495-b627-df49-4b76" sortIndex="3">
               <rules>
                 <rule name="Liber Panoptica Errata" id="f7ef-bfcf-2c6e-2863" hidden="false" publicationId="9fab-fea7-a93c-2074" page="68">
-                  <description>Any changes designated as “Errata” are clearly broken or otherwise overlooked rules which needed a refactoring in a simple and approachable manner. These changes will not change the overall function of rules or units, but will ensure no ambiguity or confusion can occur during game play.</description>
+                  <description>Any changes designated as “Errata” are clearly broken or otherwise overlooked rules which needed a refactoring in a simple and approachable manner. These changes will not change the overall function of rules or units, but will ensure no ambiguity or confusion can occur during game play.</description>
                 </rule>
               </rules>
               <entryLinks>
@@ -17806,8 +17803,7 @@ Wounds from Precision Strikes are allocated against a model (or models) of the a
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="set" value="
-When rolling on the Vehicle Damage table to resolve Hits against a Slow Vehicle, roll an additional D6 and before determining the result discard the highest single dice rolled. In addition, when a Slow Vehicle moves at Cruising Speed, it may only fire Snap Shots, regardless of the normal rules for Vehicles and Shooting." field="description" join=""/>
+            <modifier type="set" value=" When rolling on the Vehicle Damage table to resolve Hits against a Slow Vehicle, roll an additional D6 and before determining the result discard the highest single dice rolled. In addition, when a Slow Vehicle moves at Cruising Speed, it may only fire Snap Shots, regardless of the normal rules for Vehicles and Shooting." field="description" join=""/>
             <modifier type="set" value="Pano 5.3 pg 73" field="annotation"/>
           </modifiers>
           <conditions>
@@ -17852,8 +17848,8 @@ Hellstorm weapons have the word ‘Hellstorm’ instead of a range on their weap
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="Pano 5.3 pg 73" field="annotation"/>
-            <modifier type="set" value="• Models with the Antigrav Sub-type may move over friendly and enemy models, but cannot end their move on top of either. They may also move over all terrain, ignoring all penalties for Difficult Terrain and Dangerous Terrain. However, if a moving model with the Antigrav Sub-type starts or ends its move in Difficult Terrain or Dangerous Terrain, it must take a Dangerous Terrain test. An Antigrav model can even end its move over Impassable Terrain if it is possible to actually place the model on top of it, but if it does so it must take a Dangerous Terrain test. If an Antigrav model is forced to end its move over friendly or enemy models, move the model the minimum distance so that no models are left underneath it.
-• Models with the Antigrav sub-type may never benefit from Cover Saves of any kind." field="description" join=""/>
+            <modifier type="set" value="• Models with the Antigrav Sub-type may move over friendly and enemy models, but cannot end their move on top of either. They may also move over all terrain, ignoring all penalties for Difficult Terrain and Dangerous Terrain. However, if a moving model with the Antigrav Sub-type starts or ends its move in Difficult Terrain or Dangerous Terrain, it must take a Dangerous Terrain test. An Antigrav model can even end its move over Impassable Terrain if it is possible to actually place the model on top of it, but if it does so it must take a Dangerous Terrain test. If an Antigrav model is forced to end its move over friendly or enemy models, move the model the minimum distance so that no models are left underneath it.
+            • Models with the Antigrav sub-type may never benefit from Cover Saves of any kind." field="description" join=""/>
           </modifiers>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
