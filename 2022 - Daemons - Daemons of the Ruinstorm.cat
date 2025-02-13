@@ -3281,6 +3281,16 @@ During a Reaction made in any Phase, a player may not choose to activate a model
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (3), Sunder, Immaterial Blades (AP1)</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="Melee, Brutal (3), Sunder, Immaterial Blades (AP1), Lance,Exoshock (5+)" field="2f86-c8b4-b3b4-3ff9"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
