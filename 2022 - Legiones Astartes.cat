@@ -953,6 +953,17 @@ Additional rules are given to units based on Legion and Unit.</description>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Two-handed, Haywire</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="x2" field="24d9-b8e1-a355-2458"/>
+                <modifier type="set" value="Melee, Unwieldy, Haywire, Two-Handed" field="2f86-c8b4-b3b4-3ff9"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -2249,6 +2260,16 @@ During a Reaction made in any Phase, a player may not choose to activate a model
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Shred, Murderous Strike (5+), Unwieldy</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="Melee, Two-Handed, Shred, Murderous Strike (5+), Unwieldy,Breaching (5+)" field="2f86-c8b4-b3b4-3ff9"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -11561,6 +11582,17 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
           <categoryLinks>
             <categoryLink targetId="4280-4963-02b5-e31d" id="3790-1a33-4134-b628" name="Dreadnought Unit Type" primary="false"/>
           </categoryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="200" field="costs" join=""/>
+                <modifier type="set" value="Pano 5.3 pg 80" field="annotation"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry id="d5ac-3da6-a69b-f6b8" name="Fury of the Ancients Compulsory Troops" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>

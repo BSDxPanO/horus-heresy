@@ -188,6 +188,16 @@ When deployed onto the battlefield (either at the start of the battle or when ar
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="Melee, Shred, Sunder, Brutal (3)" field="2f86-c8b4-b3b4-3ff9"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -6207,6 +6217,17 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Sunder</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="1" field="f7a6-e0d8-7973-cd8d"/>
+                <modifier type="set" value="Melee, Brutal (4)" field="2f86-c8b4-b3b4-3ff9"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -6843,6 +6864,16 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Deflagrate</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="Heavy 8, Deflagrate" field="2f86-c8b4-b3b4-3ff9"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <costs>
