@@ -191,7 +191,7 @@ When deployed onto the battlefield (either at the start of the battle or when ar
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Melee, Shred, Sunder, Brutal (3)" field="2f86-c8b4-b3b4-3ff9"/>
@@ -6220,7 +6220,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="1" field="f7a6-e0d8-7973-cd8d"/>
@@ -6867,7 +6867,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Heavy 8, Deflagrate" field="2f86-c8b4-b3b4-3ff9"/>

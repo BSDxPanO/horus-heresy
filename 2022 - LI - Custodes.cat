@@ -2756,7 +2756,7 @@
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="4" field="f7a6-e0d8-7973-cd8d"/>
@@ -3077,7 +3077,7 @@
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="24&quot;" field="95ba-cda7-b831-6066"/>
