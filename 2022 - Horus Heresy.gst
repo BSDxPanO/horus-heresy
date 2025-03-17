@@ -3734,7 +3734,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Ordnance 1, Blast (3&quot;), Sunder, Rending (5+), Brutal (3), Wrecker" field="2f86-c8b4-b3b4-3ff9"/>
@@ -3773,7 +3773,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Ordnance 1, Barrage, Large Blast (5&quot;), Pinning, Rending (5+)" field="2f86-c8b4-b3b4-3ff9"/>
@@ -3808,7 +3808,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Ordnance 1, Large Blast (5&quot;), Sunder, Rending (4+), Brutal (4),Wrecker" field="2f86-c8b4-b3b4-3ff9"/>
@@ -4352,7 +4352,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Heavy 1, Large Blast (5&quot;), †Graviton Collapse, Torsion Crusher,Ignores Cover, Concussive (1), Haywire" field="2f86-c8b4-b3b4-3ff9"/>
@@ -5122,7 +5122,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Heavy 3, Pinning, Guided Fire, Auto-Servo Tracking" field="2f86-c8b4-b3b4-3ff9"/>
@@ -5635,7 +5635,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Heavy 8, Deflagrate, Pinning" field="2f86-c8b4-b3b4-3ff9"/>
@@ -5663,7 +5663,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Ordnance 1, Heavy Beam, Deflagrate, Rending (5+), Pinning,Wrecker" field="2f86-c8b4-b3b4-3ff9"/>
@@ -6721,7 +6721,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Melee, Brutal (2)" field="2f86-c8b4-b3b4-3ff9"/>
@@ -6914,7 +6914,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Melee, Shred, Two-Handed, Rupture (6+)" field="2f86-c8b4-b3b4-3ff9"/>
@@ -7488,7 +7488,7 @@ Four single Blast Shields</characteristic>
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Ordnance 1, Massive Blast (7&quot;), Rending (5+), Limited Ammunition,Pinning, Shell Shock (1)" field="2f86-c8b4-b3b4-3ff9"/>
@@ -7939,7 +7939,7 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Destroyer 1, Apocalyptic Blast (10&quot;), Ignores Cover" field="2f86-c8b4-b3b4-3ff9"/>
@@ -8095,7 +8095,7 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="12" field="24d9-b8e1-a355-2458"/>
@@ -8251,7 +8251,7 @@ A. No.</description>
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Ordnance 1, Massive Blast (7&quot;), Rending (4+), Reactor Overload,Plasma Burn" field="2f86-c8b4-b3b4-3ff9"/>
@@ -8286,7 +8286,7 @@ A. No.</description>
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="3" field="f7a6-e0d8-7973-cd8d"/>
@@ -8318,7 +8318,7 @@ A. No.</description>
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Melee, Brutal (2)" field="2f86-c8b4-b3b4-3ff9"/>
@@ -8542,7 +8542,7 @@ A. No.</description>
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Ordnance 1, Barrage, Large Blast (5&quot;), Pinning, Rending (5+),Brutal (2)" field="2f86-c8b4-b3b4-3ff9"/>
@@ -10479,7 +10479,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="-" field="95ba-cda7-b831-6066"/>
@@ -10577,7 +10577,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="Heavy 1, Blast (3&quot;), Barrage, Pinning, Rupture (5+)" field="2f86-c8b4-b3b4-3ff9"/>
@@ -10792,7 +10792,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="1" field="f7a6-e0d8-7973-cd8d"/>
@@ -11156,7 +11156,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <modifierGroups>
             <modifierGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="True" includeChildSelections="True"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
               </conditions>
               <modifiers>
                 <modifier type="set" value="36&quot;" field="95ba-cda7-b831-6066"/>
