@@ -3,11 +3,6 @@
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="dadb-f5a9-20c8-f415" value="2">
-          <conditions>
-            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="atLeast"/>
-          </conditions>
-        </modifier>
         <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
           <conditions>
             <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
@@ -2456,6 +2451,9 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="e6d1-76d1-a4c4-54e1" type="selectionEntry" targetId="3d50-2f85-06ff-6aee"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4451,7 +4449,7 @@ This unit may be upgraded freely as described in their profile, though they may 
         <profile id="844f-1242-2d23-343d" name="Ordinatus Ulator" publicationId="bde1-6db1-163b-3b76" page="56" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy)</characteristic>
-            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">-</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
             <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
@@ -5248,8 +5246,9 @@ At the beginning of each of the controlling player’s Shooting phases for the r
                 <modifier type="set" field="name" value="Fleet (2)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="196a-55c1-60d7-e3f5" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
+            <infoLink id="196a-55c1-60d7-e3f5" name="Night Vision" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule"/>
             <infoLink id="6162-7615-565a-e57c" name="Armiger and Moirax Talons" hidden="false" targetId="d840-fbd0-352e-b33e" type="rule"/>
+            <infoLink id="988d-df47-86a2-e3ea" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="549e-6e01-3698-1119" name="May exchange its Volkite Veuglaire for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="f3e6-3c6a-b16a-b315">

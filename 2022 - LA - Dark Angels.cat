@@ -3974,7 +3974,11 @@ Selenite Shard-bolt Pistol</description>
           <infoLinks>
             <infoLink id="0788-0df4-c608-ff0f" name="Marshal of the Crown" hidden="false" targetId="7b52-e033-811f-dd15" type="profile">
               <modifiers>
-                <modifier type="set" field="name" value="Marshal of the Crown (Dreadwing)"/>
+                <modifier type="set" field="name" value="Marshal of the Crown (Dreadwing)">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="any" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </infoLink>
           </infoLinks>

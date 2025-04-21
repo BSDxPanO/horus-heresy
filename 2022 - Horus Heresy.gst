@@ -518,7 +518,7 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
       <rules>
         <rule id="e02b-5fd3-aa3b-4fc4" name="Skirmish Sub-type" publicationId="817a-6288-e016-7469" page="95" hidden="false">
           <description>• A unit that includes only models with the Skirmish Sub-type has a unit coherency range of 3&quot; rather than 2&quot;
-• A unit that includes only models with the Skirmish Sub-type increases all Cover Saves granted by tarrian by one (i.e, from 6+ to 5+). This only increase existing Cover Saves and does not grant one when in terrain that does not normally grant Cover Saves. This rule cannot increase a Cover Save to better than 2+.</description>
+• A unit that includes only models with the Skirmish Sub-type increases all Cover Saves granted by terrian by one (i.e, from 6+ to 5+). This only increase existing Cover Saves and does not grant one when in terrain that does not normally grant Cover Saves. This rule cannot increase a Cover Save to better than 2+.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -920,7 +920,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </categoryEntry>
     <categoryEntry id="0ea2-efb5-b7af-226e" name="Fast Sub-type" hidden="false">
       <rules>
-        <rule id="2cbf-c1a1-844a-6456" name="Fast Vehicles" hidden="false">
+        <rule id="2cbf-c1a1-844a-6456" name="Fast Vehicles" hidden="true">
           <description>When a Fast Vehicle moves, other than to pivot in place, it is always considered to have moved at Combat Speed regardless of how many inches it moves, unless it chooses to move Flat-out.
 In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</description>
         </rule>
@@ -1119,7 +1119,17 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6098-fe90-8855-def8" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="4303-1348-cce4-9501" name="Antigrav Sub-type" hidden="false"/>
+    <categoryEntry id="4303-1348-cce4-9501" name="Antigrav Sub-type" hidden="false">
+      <rules>
+        <rule name="Antigrav Sub-type" id="d33c-5dd3-b848-885d" hidden="false">
+          <description>The following rules apply to all models with the Antigrav
+sub-type:
+• A unit that includes only models with the Antigrav sub-type may ignore the effects of any and all terrain it passes over during movement, including passing over vertical terrain and Impassable Terrain without penalty
+or restriction. However, such units may not begin or end their movement in Impassable Terrain, and if beginning or ending their movement in Dangerous Terrain must take Dangerous Terrain tests as normal.
+• Models with the Antigrav sub-type may never benefit from Cover Saves of any kind.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry id="e333-681c-ddca-24f6" name="Crusade" hidden="false"/>
     <categoryEntry id="4aca-2849-7f41-0200" name="SA or IM Unit" hidden="false">
       <modifiers>
@@ -1456,7 +1466,7 @@ In addition, the Leadership Characteristic of a model with the Anathema Unit Sub
         <rule name="Ruinous Cybernetica" id="5acc-f755-c152-07f7" hidden="false" publicationId="4934-46f7-208b-b4af" page="151">
           <description>At the start of the controlling player&apos;s Shooting phase, that player can make a Leadership test for any units made up entirely of models with this special rule.
 
-If that test is passed, until the end of the turn: 
+If that test is passed, until the end of the turn:
 
 All models in the unit are not subject to the Programmed Behaviour provision, as detailed in the Cybernetica Unit Sub-type.
 
@@ -1942,6 +1952,12 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
             </modifier>
             <modifier type="set" value="0" field="a59f-bf8a-6c0a-c006">
               <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="807e-0cf8-7f28-7b6d" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Questoris household has no HQ choices</comment>
+            </modifier>
+            <modifier type="set" value="0" field="e335-2401-dec4-2d28">
+              <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
               </conditions>
               <comment>In Disgrace All Are Equal</comment>
@@ -2090,6 +2106,12 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
               </conditions>
               <comment>In Disgrace All Are Equal</comment>
             </modifier>
+            <modifier type="set" value="0" field="efa5-391f-c0d5-86f2">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="807e-0cf8-7f28-7b6d" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Questoris household has no HQ choices</comment>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="efa5-391f-c0d5-86f2" type="min"/>
@@ -2125,9 +2147,6 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
           </constraints>
         </categoryLink>
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="a036-22f7-6cbf-6ebd"/>
-      </constraints>
     </forceEntry>
     <forceEntry id="5430-5be1-1613-be44" name="ZM 1. Mortalis Assault Force Organisation Chart" hidden="false">
       <categoryLinks>
@@ -2238,7 +2257,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b005-74c0-bea4-d9bb"/>
           </constraints>
           <modifiers>
-            <modifier type="set" value="2" field="ced2-b32d-8ebf-c863">
+            <modifier type="set" value="6" field="ced2-b32d-8ebf-c863">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
               </conditions>
@@ -2252,7 +2271,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
         </categoryLink>
         <categoryLink id="5993-fb7c-61e3-5ebe" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1123-aa10-36fb-11cb" type="max"/>
+            <constraint field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1123-aa10-36fb-11cb" type="max"/>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="59b1-dec2-1330-6a5a" type="min"/>
           </constraints>
           <modifiers>
@@ -2588,7 +2607,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="7d8-ddbf-ce7b-78f9">
+    <selectionEntry type="upgrade" import="true" name="How to add an allied or lord of war detachment" hidden="false" id="7d8-ddbf-ce7b-78f9">
       <categoryLinks>
         <categoryLink targetId="ed41-7006-3494-4c24" id="8e06-717c-a608-c888" primary="true" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;"/>
       </categoryLinks>
@@ -2596,13 +2615,18 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edec-c227-3cb6-85ff"/>
       </constraints>
       <rules>
-        <rule name="LoW (where are they?) THIS ENTRY CAN BE REMOVED FROM YOUR ROSTER WITHOUT ISSUE" hidden="false" id="b1e1-9f1d-7934-c233">
-          <description>To add Lords of War you now need to add the additional detachment to your list. To do this:
+        <rule name="How to add an allied or lord of war detachment THIS ENTRY CAN BE REMOVED FROM YOUR ROSTER WITHOUT ISSUE" hidden="false" id="b1e1-9f1d-7934-c233">
+          <description>To add Lords of War or allied detachments, you now need to add the additional detachment to your list. To do this:
+In New Recruit:
+* Select List Options in the top right corner. 
+* Select &quot;Add Force&quot;
+* Select the appropriate faction.
+* Select the appropriate optional detachment (lord of war or allied) to add it to your list.
 
-A - On Mobile, after adding your initial detachment, press the + sign at the bottom left
-B - On Desktop after adding your first force then just press add force again
-Then choose the army you wish to have a lord of war from, then pick &quot;Lord of War Detachment&quot;. This allows the choice of any LoW from any army as per the rules of HH2 (apart from the new Ruinstorm Deamons one can only be taken in a Lord of War Detachment for Ruinstorm Daemons).
-THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEFULLY EVERYONE WILL BE USED TO WHERE THE NEW LOCATION IS, AND I DON’T GET 100S OF BUG REPORTS FROM PEOPLE NOT BEING ABLE TO FIND THEIR LOW</description>
+On Battlescribe Mobile, after adding your initial detachment, press the + sign at the bottom left
+On Battlescribe Desktop, after adding your first force then just press add force again
+
+Then choose the army you wish to have a lord of war from, then pick &quot;Lord of War Detachment&quot;. This allows the choice of any LoW from any army as per the rules of HH2 (apart from the new Ruinstorm Deamons one can only be taken in a Lord of War Detachment for Ruinstorm Daemons).</description>
         </rule>
       </rules>
       <modifiers>
@@ -4100,7 +4124,6 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       </profiles>
       <infoLinks>
         <infoLink id="bbbb-18a8-0f9b-d084" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-        <infoLink id="0e9f-cc9d-d76a-0abf" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="45cf-4851-7209-02f5" name="Graviton Collapse" hidden="false" targetId="60d8-5964-8671-7f3b" type="rule"/>
         <infoLink id="d186-5492-2c42-c67f" name="Torsion Crusher" hidden="false" targetId="2cef-a40d-97b8-7d4e" type="rule"/>
         <infoLink id="1183-84e2-fdd7-3006" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
@@ -7453,7 +7476,7 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47f0-bba9-6d89-9baa" type="equalTo"/>
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="58a7-8821-3cd9-c73" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
                 <condition type="equalTo" value="1" field="selections" scope="roster" childId="092d-3716-36f8-8988" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -7474,14 +7497,9 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="0" field="5617-ada9-bf10-f9b0">
+        <modifier type="set" value="0" field="ff71-da3d-5afc-3d74">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="0" field="1028-fef6-d630-344c">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7490,6 +7508,7 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4024-fa03-dada-cc4b" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0dff-37d2-448b-45a6" type="min"/>
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="1028-fef6-d630-344c" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ff71-da3d-5afc-3d74" includeChildSelections="false"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -7506,7 +7525,6 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ae-8da7-ad16-cea6" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c74-7db8-469e-8327" type="max"/>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dadb-f5a9-20c8-f415" type="max"/>
       </constraints>
       <profiles>
         <profile id="9e5f-b65f-2f13-f24e" name="Advanced Reaction: Scornful Fire" publicationId="bde1-6db1-163b-3b76" page="17" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">

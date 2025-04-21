@@ -2818,7 +2818,6 @@
       <categoryLinks>
         <categoryLink id="2107-cb19-8471-dcc7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="7bb4-00df-bb76-55c2" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
-        <categoryLink id="4cf1-6f09-8cae-9d30" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="6a40-f9ed-c05d-5013" name="Termite Assault Drill" hidden="true" collective="false" import="false" targetId="cb30-307a-f0d7-3b13" type="selectionEntry">
