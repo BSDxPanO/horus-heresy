@@ -3326,9 +3326,7 @@
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier type="set" value="Shooting Attacks made using a weapon with the Heavy type by a
-model with a Ferrum Occularis gain the Sunder Special Rule, as long as
-the attack is not made as part of a Reaction or a Snap Shot." field="347e-ee4a-764f-6be3" join=""/>
+                <modifier type="set" value="Shooting Attacks made using a weapon with the Heavy type by a model with a Ferrum Occularis gain the Sunder Special Rule, as long as the attack is not made as part of a Reaction or a Snap Shot." field="347e-ee4a-764f-6be3" join=""/>
                 <modifier type="set" value="Pano 5.3 pg 95" field="annotation"/>
               </modifiers>
               <conditions>
@@ -3993,7 +3991,7 @@ the attack is not made as part of a Reaction or a Snap Shot." field="347e-ee4a-7
                   <modifierGroups>
                     <modifierGroup type="and">
                       <modifiers>
-                        <modifier type="set" value=" A unit that includes at least one model with an Omni-Scope has the Night Vision Special Rule. In addition, when a unit that includes one or more models equipped with an Omni-Scope makes the Interceptor Advanced Reaction , the reaction does not cost the Controlling Player a point from their Reaction Allotment . This does not allow the unit to make more than one Reaction per Phase, but does allow the Controlling Player to exceed the normal three Reactions limit in a given Phase." field="347e-ee4a-764f-6be3" join=""/>
+                        <modifier type="set" value=" A unit that includes at least one model with an Omni-Scope has the Night Vision Special Rule. In addition, when a unit that includes one or more models equipped with an Omni-Scope makes the Interceptor Advanced Reaction , the reaction does not cost the Controlling Player a point from their Reaction Allotment . This does not allow the unit to make more than one Reaction per Phase, but does allow the Controlling Player to exceed the normal three Reactions limit in a given Phase." field="347e-ee4a-764f-6be3" join=""/>
                         <modifier type="set" value="Pano 5.3 pg 88" field="annotation"/>
                       </modifiers>
                       <conditions>

@@ -3305,6 +3305,25 @@ During a Reaction made in any Phase, a player may not choose to activate a model
             <modifier type="set" value="Immaterial Blades (AP1)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Lance" hidden="false" type="rule" targetId="3d6b-9e0b-56f0-8a1e" id="3358-216c-4527-8c11">
+          <modifiers>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Exoshock (X)" hidden="false" type="rule" targetId="69ca-318a-b47a-7a3c" id="4836-98c2-4bdb-bec2">
+          <modifiers>
+            <modifier type="set" field="name" value="Exoshock (5+)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Immaterial Flame" hidden="false" id="9d38-bbef-bc48-2ac1" collective="true">

@@ -2285,6 +2285,16 @@ During a Reaction made in any Phase, a player may not choose to activate a model
           </modifiers>
         </infoLink>
         <infoLink id="9fe6-a3ce-3122-885f" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+        <infoLink name="Breaching (X)" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c" id="2316-ae23-49e6-8efd">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (5+)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>

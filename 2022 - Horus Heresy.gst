@@ -3756,10 +3756,21 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           </modifiers>
         </infoLink>
         <infoLink id="5587-6f00-32f2-2bde" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink name="Wrecker" hidden="false" type="rule" targetId="ba77-a802-55df-da67" id="3145-af47-4f99-8f5d">
+          <modifiers>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <comment>!BSC Errors from 20250421-1839
+Rule needs changed from &apos;Rending (6+)&apos; to &apos;Rending (5+)&apos;</comment>
     </selectionEntry>
     <selectionEntry id="7102-6014-a965-bfd9" name="Morbus Bombard" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3795,6 +3806,8 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <comment>!BSC Errors from 20250421-1839
+Rule needs changed from &apos;Rending (6+)&apos; to &apos;Rending (5+)&apos;</comment>
     </selectionEntry>
     <selectionEntry id="441d-218c-b34e-5cc5" name="Dreadhammer Siege Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3830,6 +3843,15 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           </modifiers>
         </infoLink>
         <infoLink id="52e7-00cc-66f2-71b5" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink name="Wrecker" hidden="false" type="rule" targetId="ba77-a802-55df-da67" id="a058-d986-4a4d-82ba">
+          <modifiers>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -4371,10 +4393,21 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
             <modifier type="set" field="name" value="Concussive (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Haywire" hidden="false" type="rule" targetId="1dd4-7a75-5c59-8425" id="2e41-fbd9-4ecf-a4cb">
+          <modifiers>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <comment>!BSC Errors from 20250421-1839
+Could not find rule: †Graviton Collapse</comment>
     </selectionEntry>
     <selectionEntry id="b252-5a86-6e0f-218b" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -5134,6 +5167,15 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <infoLinks>
         <infoLink id="b15a-98ae-991a-0074" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="a42a-07dd-64d7-6bb6" name="Guided Fire" hidden="false" targetId="fa1e-0112-943e-b1f6" type="rule"/>
+        <infoLink name="Auto-Servo Tracking" hidden="false" type="rule" targetId="9539-a183-36d3-142e" id="b14c-b2bb-4f4f-a72f">
+          <modifiers>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5646,6 +5688,15 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       </profiles>
       <infoLinks>
         <infoLink id="0ac3-d8c3-8f94-1c3c" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+        <infoLink name="Pinning" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2" id="3a75-ff72-4d13-b043">
+          <modifiers>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5675,6 +5726,34 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <infoLinks>
         <infoLink id="0465-bee9-7341-c411" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
         <infoLink id="0f06-d62d-b66b-e22d" name="Heavy Beam" hidden="false" targetId="24e7-27da-9bf7-f096" type="rule"/>
+        <infoLink name="Rending (X)" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d" id="7cb1-ede4-424c-b59e">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (5+)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2" id="abfa-3829-400a-9bea">
+          <modifiers>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Wrecker" hidden="false" type="rule" targetId="ba77-a802-55df-da67" id="eef0-012d-41e4-895e">
+          <modifiers>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -6740,6 +6819,8 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <comment>!BSC Errors from 20250421-1839
+Rule needs changed from &apos;Brutal (3)&apos; to &apos;Brutal (2)&apos;</comment>
     </selectionEntry>
     <selectionEntry id="30c2-57eb-5bbe-be0b" name="Charnabal Sabre" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -6926,6 +7007,16 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
       <infoLinks>
         <infoLink id="5931-51a2-d990-afd6" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
         <infoLink id="c515-b7df-cd3f-c684" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+        <infoLink name="Rupture (X)" hidden="false" type="rule" targetId="e360-2be9-404b-9915" id="4762-129d-4000-84f4">
+          <modifiers>
+            <modifier type="set" field="name" value="Rupture (6+)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -7505,10 +7596,31 @@ Four single Blast Shields</characteristic>
           </modifiers>
         </infoLink>
         <infoLink id="30b8-5e9e-d525-510d" name="Limited Ammunition" hidden="false" targetId="9f09-5cb8-c3ea-c3f8" type="rule"/>
+        <infoLink name="Pinning" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2" id="8b01-6fa5-44d5-8fc5">
+          <modifiers>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shell Shock (X)" hidden="false" type="rule" targetId="46b7-63a1-941c-96a5" id="5f93-646c-4480-81b8">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (1)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <comment>!BSC Errors from 20250421-1839
+Rule needs changed from &apos;Rending (6+)&apos; to &apos;Rending (5+)&apos;</comment>
     </selectionEntry>
     <selectionEntry id="85b9-4e50-af11-c295" name="Chainaxe" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -7952,10 +8064,21 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
         <infoLink id="91b8-90d5-181e-2d3c" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="d9b8-712e-2590-361f" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
         <infoLink id="927a-e169-b324-3e09" name="Destroyer" hidden="false" targetId="44d6-09b2-3bd3-b2d6" type="rule"/>
+        <infoLink name="Ignores Cover" hidden="false" type="rule" targetId="fdb5-59e2-c446-1cbc" id="8c9c-12a4-4420-aba1">
+          <modifiers>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <comment>!BSC Errors from 20250421-1839
+Could not find rule: Apocalyptic Blast (10&quot;)</comment>
     </selectionEntry>
     <selectionEntry id="12c4-10db-40e2-04c4" name="Gatling Blaster" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -8108,6 +8231,25 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
       <infoLinks>
         <infoLink id="16ce-5549-b619-a651" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="96dd-fa04-b4c6-d7c6" name="Destroyer" hidden="false" targetId="44d6-09b2-3bd3-b2d6" type="rule"/>
+        <infoLink name="Twin-linked" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe" id="9478-2dbb-4598-8ba2">
+          <modifiers>
+            <modifier type="set" field="name" value="Twin-Linked"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Ignores Cover" hidden="false" type="rule" targetId="fdb5-59e2-c446-1cbc" id="5d40-1cb0-48e4-bc71">
+          <modifiers>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8269,6 +8411,25 @@ A. No.</description>
           </modifiers>
         </infoLink>
         <infoLink id="72f0-facd-626f-b9c5" name="Reactor Overload" hidden="false" targetId="a073-b86c-7bc1-d3f9" type="rule"/>
+        <infoLink name="Rending (X)" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d" id="1152-8c3a-43d3-abeb">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (4+)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Plasma Burn" hidden="false" type="rule" targetId="efaa-c932-9788-9ade" id="6b6d-f2b3-48d5-86ce">
+          <modifiers>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8330,6 +8491,18 @@ A. No.</description>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Brutal (X)" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84" id="8bfd-29be-4e74-a790">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="178d-8a3a-bfda-7443" name="Siege Wrecker" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -8564,10 +8737,22 @@ A. No.</description>
             <modifier type="set" field="name" value="Rending (6+)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Brutal (X)" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84" id="4b35-f98a-4d88-bee4">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <comment>!BSC Errors from 20250421-1839
+Rule needs changed from &apos;Rending (6+)&apos; to &apos;Rending (5+)&apos;</comment>
     </selectionEntry>
     <selectionEntry id="cc2e-df5f-1778-29d8" name="Earthshaker cannon" publicationId="d0df-7166-5cd3-89fd" page="25" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -10494,6 +10679,28 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Reaping Blow (X)" hidden="false" type="rule" targetId="bd8c-4f52-d682-1b40" id="f975-fbd1-4005-8bb9">
+          <modifiers>
+            <modifier type="set" field="name" value="Reaping Blow (1)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Two-handed" hidden="false" type="rule" targetId="4c23-e863-a569-7617" id="03f9-e2c6-4261-997a">
+          <modifiers>
+            <modifier type="set" field="name" value="Two-Handed"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="bbc4-b218-ade0-80a1" name="Thunderstub" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -10590,6 +10797,16 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <infoLink id="31b2-27ab-63b5-48b7" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="f8d5-d63e-7260-958b" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
         <infoLink id="58b7-2695-ba0d-8156" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink name="Rupture (X)" hidden="false" type="rule" targetId="e360-2be9-404b-9915" id="5c41-9977-4d75-af46">
+          <modifiers>
+            <modifier type="set" field="name" value="Rupture (5+)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -10816,6 +11033,8 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <comment>!BSC Errors from 20250421-1839
+Could not find rule: One Use</comment>
     </selectionEntry>
     <selectionEntry id="2be3-0a08-2333-10a8" name="Militia Lance" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
@@ -11173,6 +11392,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <infoLink id="96e1-ad1a-b636-69a" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Breaching (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shell Shock (X)" hidden="false" type="rule" targetId="46b7-63a1-941c-96a5" id="3d32-aac4-4c8c-a41d">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (1)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -18057,8 +18286,7 @@ Hellstorm weapons have the word ‘Hellstorm’ instead of a range on their weap
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="Pano 5.3 pg 73" field="annotation"/>
-            <modifier type="set" value="• Models with the Antigrav Sub-type may move over friendly and enemy models, but cannot end their move on top of either. They may also move over all terrain, ignoring all penalties for Difficult Terrain and Dangerous Terrain. However, if a moving model with the Antigrav Sub-type starts or ends its move in Difficult Terrain or Dangerous Terrain, it must take a Dangerous Terrain test. An Antigrav model can even end its move over Impassable Terrain if it is possible to actually place the model on top of it, but if it does so it must take a Dangerous Terrain test. If an Antigrav model is forced to end its move over friendly or enemy models, move the model the minimum distance so that no models are left underneath it.
-            • Models with the Antigrav sub-type may never benefit from Cover Saves of any kind." field="description" join=""/>
+            <modifier type="set" value="• Models with the Antigrav Sub-type may move over friendly and enemy models, but cannot end their move on top of either. They may also move over all terrain, ignoring all penalties for Difficult Terrain and Dangerous Terrain. However, if a moving model with the Antigrav Sub-type starts or ends its move in Difficult Terrain or Dangerous Terrain, it must take a Dangerous Terrain test. An Antigrav model can even end its move over Impassable Terrain if it is possible to actually place the model on top of it, but if it does so it must take a Dangerous Terrain test. If an Antigrav model is forced to end its move over friendly or enemy models, move the model the minimum distance so that no models are left underneath it.             • Models with the Antigrav sub-type may never benefit from Cover Saves of any kind." field="description" join=""/>
           </modifiers>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
