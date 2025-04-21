@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="42" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="47" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -2094,6 +2094,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
             <modifier type="set" field="name" value="Furious Charge (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Support Squad" id="f5bd-db7e-ccbe-3e39" hidden="false" type="rule" targetId="768e-56d6-ca52-24ae"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8fac-77b4-81d8-0791" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -2477,7 +2478,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
                 <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
                 <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
               </characteristics>
@@ -2594,6 +2595,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink import="true" name="Shotgun" hidden="false" id="5e24-38b9-0ffb-f023" collective="false" targetId="f0aa-947f-f493-f566" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="cf27-57a0-e409-0525" name="2) May Take" hidden="false" collective="false" import="true">
@@ -6236,7 +6238,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       <profiles>
         <profile id="a27e-cead-d573-2463" name="Arvus Transport" publicationId="48c2-d023-0069-001a" page="25" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
-            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer, Thiird-line, Hover, Transport)</characteristic>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer, Third-line, Hover, Transport)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">20</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
             <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
@@ -7568,9 +7570,6 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
-          <entryLinks>
-            <entryLink id="d424-2660-1a6e-ae95" name="Provenance Options" hidden="false" collective="false" import="true" targetId="5fb4-282e-7957-1492" type="selectionEntryGroup"/>
-          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -7579,6 +7578,9 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       <categoryLinks>
         <categoryLink name="SA or IM Unit" hidden="false" id="82a2-cd04-8cb1-47a6" targetId="4aca-2849-7f41-0200" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Provenance Options" hidden="false" id="d424-2660-1a6e-ae95" collective="false" targetId="5fb4-282e-7957-1492" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="987d-3f99-2c52-3da4" name="IM - Sentinel Squadron" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -8035,7 +8037,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="725e-7672-9633-835e" type="max"/>
               </constraints>
               <modifiers>
-                <modifier type="set" field="725e-7672-9633-835e" value="3">
+                <modifier type="increment" field="725e-7672-9633-835e" value="3">
                   <repeats>
                     <repeat field="selections" scope="fbb6-c597-3edb-1506" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f40-258b-c404-87ab" repeats="1" roundUp="false"/>
                   </repeats>
@@ -8312,7 +8314,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
           <entryLinks>
             <entryLink id="be80-aa31-a7f1-a4fb" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink id="a5d6-4b05-d208-99e3" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
@@ -8486,6 +8488,10 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83c2-c02c-a452-e5b5" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c38-e03e-e76e-566a" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -8547,6 +8553,10 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bac8-31d1-d15e-69b5" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a219-0bc4-95ca-3096" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -10048,11 +10058,6 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba89-cb56-a36e-54fe" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="9aaa-6ea2-0db7-17c7" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-                  </costs>
-                </entryLink>
                 <entryLink id="e526-0ee3-1062-7b45" name="Blast Pistol" hidden="false" collective="false" import="true" targetId="2460-375d-31f4-4bdf" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
@@ -10116,6 +10121,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       </selectionEntries>
       <entryLinks>
         <entryLink id="93f1-4fba-7e2b-9f33" name="Provenance Options" hidden="false" collective="false" import="true" targetId="5fb4-282e-7957-1492" type="selectionEntryGroup"/>
+        <entryLink import="true" name="The Ætheric Dominion (X)" hidden="false" id="ad5d-1ed0-8998-fd46" type="selectionEntryGroup" targetId="002f-0e40-9d49-2a22"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -10616,7 +10622,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="equalTo"/>
+            <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10625,12 +10631,57 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         <categoryLink id="7a15-dc82-ffcd-db05" name="Bound Sub-type" hidden="false" targetId="40f3-05e8-5ddc-636a" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c53d-e01a-7483-aa48" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
         <entryLink id="3d84-14ff-b8ef-51b1" name="Bound Daemon Brute" hidden="false" collective="false" import="true" targetId="12a1-9b89-fe2e-29dd" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Beasts (Rogue Psyker)" hidden="false" id="d4a1-49ca-a50c-938a">
       <costs>
@@ -10650,7 +10701,6 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="850d-2b23-959e-b06d" targetId="caad-e621-38e5-cb5f"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Traitor" hidden="false" type="rule" id="fa15-d302-8a5d-cbc0" targetId="eff2-8b0e-21da-2f0d"/>
@@ -10666,9 +10716,10 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         </infoLink>
         <infoLink id="20ad-3b87-7f90-13ae" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
+            <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="bd4-3569-8ef7-b242" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10677,10 +10728,56 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Brutes (Rogue Psyker)" hidden="false" id="742c-94f0-7102-2b4a">
       <costs>
@@ -10691,7 +10788,6 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Daemon Brute" hidden="false" type="selectionEntry" id="8838-1f4d-99ad-c5a6" targetId="e3e-4f46-2300-a35"/>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="c199-83a6-b057-7da4" targetId="caad-e621-38e5-cb5f"/>
       </entryLinks>
       <infoLinks>
         <infoLink id="ce10-5041-d503-82f7" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
@@ -10704,26 +10800,12 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
             <modifier type="set" value="Bulky (3)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink id="804f-8506-4a73-bb73" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Hammer of Wrath (2)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="cb3c-85a9-7bc2-5508" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
       </infoLinks>
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10743,6 +10825,52 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Swarms (Rogue Psyker)" hidden="false" id="35ce-dce-186d-4000">
       <costs>
@@ -10752,15 +10880,6 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         <categoryLink targetId="e699-d9cd-e68e-46d9" id="4c49-865a-fc97-7c58" primary="false" name="Daemon Unit Type"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink id="48c7-6e7a-dca2-a2b7" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink name="Support Squad" hidden="false" type="rule" id="3b6e-32f8-5d2a-3c89" targetId="768e-56d6-ca52-24ae"/>
         <infoLink name="Swarm" hidden="false" type="rule" id="bb0a-6a7c-f9c-96bf" targetId="0bc2-fcb2-dd25-c10a"/>
         <infoLink id="6961-8f0c-258d-85d0" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
@@ -10768,14 +10887,59 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="e10c-2d2d-4422-98bf" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Daemon Swarm" hidden="false" type="selectionEntry" id="9561-3d96-affe-6942" targetId="cb8c-b27a-ea4e-1c91"/>
       </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Lesser Daemons (Rogue Psyker)" hidden="false" id="1add-d983-171e-cd1d">
       <costs>
@@ -10785,7 +10949,6 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         <categoryLink targetId="e699-d9cd-e68e-46d9" id="f504-44e8-e7f5-54d3" primary="false" name="Daemon Unit Type"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="1a90-ab1a-5dff-166a" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Lesser Daemon" hidden="false" type="selectionEntry" id="9f17-1c62-e6ab-7996" targetId="5da5-c15b-dfe5-d1b5"/>
       </entryLinks>
       <selectionEntryGroups>
@@ -10814,24 +10977,61 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
             <modifier type="set" field="name" value="Æthereal Invulnerability (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="f9e5-eb89-d5b3-e7f9" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="8030-7271-51-55b5" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
       </infoLinks>
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Militia Triaros Conveyor" hidden="false" id="620a-5824-8cea-f025" publicationId="bde1-6db1-163b-3b76" page="38">
       <costs>
@@ -10934,11 +11134,17 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     <condition type="equalTo" value="1" field="selections" scope="7ca9-9eae-7f93-79fa" childId="566b-4fc6-9d5c-10cd" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="3" field="51fb-b7d9-aa59-863d"/>
               </modifiers>
             </infoLink>
           </infoLinks>
           <entryLinks>
-            <entryLink import="true" name="Searchlights" hidden="false" type="selectionEntry" id="b02d-4863-e6f-994" targetId="4ae3-79b4-6051-505e"/>
+            <entryLink import="true" name="Searchlights" hidden="false" type="selectionEntry" id="b02d-4863-e6f-994" targetId="4ae3-79b4-6051-505e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f42a-f1ad-bbb3-26a2" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3f5-f84f-f804-ad97" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>

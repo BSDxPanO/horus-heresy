@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy x Panoptica" revision="121" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy x Panoptica" revision="127" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -518,7 +518,7 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
       <rules>
         <rule id="e02b-5fd3-aa3b-4fc4" name="Skirmish Sub-type" publicationId="817a-6288-e016-7469" page="95" hidden="false">
           <description>• A unit that includes only models with the Skirmish Sub-type has a unit coherency range of 3&quot; rather than 2&quot;
-• A unit that includes only models with the Skirmish Sub-type increases all Cover Saves granted by tarrian by one (i.e, from 6+ to 5+). This only increase existing Cover Saves and does not grant one when in terrain that does not normally grant Cover Saves. This rule cannot increase a Cover Save to better than 2+.</description>
+• A unit that includes only models with the Skirmish Sub-type increases all Cover Saves granted by terrian by one (i.e, from 6+ to 5+). This only increase existing Cover Saves and does not grant one when in terrain that does not normally grant Cover Saves. This rule cannot increase a Cover Save to better than 2+.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -920,7 +920,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </categoryEntry>
     <categoryEntry id="0ea2-efb5-b7af-226e" name="Fast Sub-type" hidden="false">
       <rules>
-        <rule id="2cbf-c1a1-844a-6456" name="Fast Vehicles" hidden="false">
+        <rule id="2cbf-c1a1-844a-6456" name="Fast Vehicles" hidden="true">
           <description>When a Fast Vehicle moves, other than to pivot in place, it is always considered to have moved at Combat Speed regardless of how many inches it moves, unless it chooses to move Flat-out.
 In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</description>
         </rule>
@@ -1119,7 +1119,17 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6098-fe90-8855-def8" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="4303-1348-cce4-9501" name="Antigrav Sub-type" hidden="false"/>
+    <categoryEntry id="4303-1348-cce4-9501" name="Antigrav Sub-type" hidden="false">
+      <rules>
+        <rule name="Antigrav Sub-type" id="d33c-5dd3-b848-885d" hidden="false">
+          <description>The following rules apply to all models with the Antigrav
+sub-type:
+• A unit that includes only models with the Antigrav sub-type may ignore the effects of any and all terrain it passes over during movement, including passing over vertical terrain and Impassable Terrain without penalty
+or restriction. However, such units may not begin or end their movement in Impassable Terrain, and if beginning or ending their movement in Dangerous Terrain must take Dangerous Terrain tests as normal.
+• Models with the Antigrav sub-type may never benefit from Cover Saves of any kind.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry id="e333-681c-ddca-24f6" name="Crusade" hidden="false"/>
     <categoryEntry id="4aca-2849-7f41-0200" name="SA or IM Unit" hidden="false">
       <modifiers>
@@ -1454,15 +1464,15 @@ In addition, the Leadership Characteristic of a model with the Anathema Unit Sub
     <categoryEntry name="Ruinous Cybernetica" id="7b4a-8a9b-3ef3-01d0" hidden="false" publicationId="4934-46f7-208b-b4af" page="151">
       <rules>
         <rule name="Ruinous Cybernetica" id="5acc-f755-c152-07f7" hidden="false" publicationId="4934-46f7-208b-b4af" page="151">
-          <description>At the start of the controlling player&apos;s Shooting phase, that player can make a Leadership test for any units made up entirely of models with this special rule.
+          <description>At the start of the controlling player&apos;s Shooting phase, that player can make a Leadership test for any units made up entirely of models with this special rule.
 
-If that test is passed, until the end of the turn: 
+If that test is passed, until the end of the turn:
 
-All models in the unit are not subject to the Programmed Behaviour provision, as detailed in the Cybernetica Unit Sub-type.
+All models in the unit are not subject to the Programmed Behaviour provision, as detailed in the Cybernetica Unit Sub-type.
 
-At the start of the Charge sub-phase, a Charge must be declared for this unit if there is an enemy unit within 2&quot;, and the closest enemy unit must always be selected as the target of this Charge if possible (if multiple eligible units are equally distant then the controlling player must select one of those eligible units to be the target of the Charge).
+At the start of the Charge sub-phase, a Charge must be declared for this unit if there is an enemy unit within 2&quot;, and the closest enemy unit must always be selected as the target of this Charge if possible (if multiple eligible units are equally distant then the controlling player must select one of those eligible units to be the target of the Charge).
 
-If that test is failed, the unit suffers one Wound, allocated by the controlling player. No Saving Throws or Damage Mitigation rolls of any kind may be made against this Wound.</description>
+If that test is failed, the unit suffers one Wound, allocated by the controlling player. No Saving Throws or Damage Mitigation rolls of any kind may be made against this Wound.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -1942,6 +1952,12 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
             </modifier>
             <modifier type="set" value="0" field="a59f-bf8a-6c0a-c006">
               <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="807e-0cf8-7f28-7b6d" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Questoris household has no HQ choices</comment>
+            </modifier>
+            <modifier type="set" value="0" field="e335-2401-dec4-2d28">
+              <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
               </conditions>
               <comment>In Disgrace All Are Equal</comment>
@@ -2090,6 +2106,12 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
               </conditions>
               <comment>In Disgrace All Are Equal</comment>
             </modifier>
+            <modifier type="set" value="0" field="efa5-391f-c0d5-86f2">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="807e-0cf8-7f28-7b6d" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Questoris household has no HQ choices</comment>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="efa5-391f-c0d5-86f2" type="min"/>
@@ -2125,9 +2147,6 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
           </constraints>
         </categoryLink>
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="a036-22f7-6cbf-6ebd"/>
-      </constraints>
     </forceEntry>
     <forceEntry id="5430-5be1-1613-be44" name="ZM 1. Mortalis Assault Force Organisation Chart" hidden="false">
       <categoryLinks>
@@ -2238,7 +2257,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b005-74c0-bea4-d9bb"/>
           </constraints>
           <modifiers>
-            <modifier type="set" value="2" field="ced2-b32d-8ebf-c863">
+            <modifier type="set" value="6" field="ced2-b32d-8ebf-c863">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
               </conditions>
@@ -2252,7 +2271,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
         </categoryLink>
         <categoryLink id="5993-fb7c-61e3-5ebe" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1123-aa10-36fb-11cb" type="max"/>
+            <constraint field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1123-aa10-36fb-11cb" type="max"/>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="59b1-dec2-1330-6a5a" type="min"/>
           </constraints>
           <modifiers>
@@ -2588,7 +2607,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="7d8-ddbf-ce7b-78f9">
+    <selectionEntry type="upgrade" import="true" name="How to add an allied or lord of war detachment" hidden="false" id="7d8-ddbf-ce7b-78f9">
       <categoryLinks>
         <categoryLink targetId="ed41-7006-3494-4c24" id="8e06-717c-a608-c888" primary="true" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;"/>
       </categoryLinks>
@@ -2596,13 +2615,18 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edec-c227-3cb6-85ff"/>
       </constraints>
       <rules>
-        <rule name="LoW (where are they?) THIS ENTRY CAN BE REMOVED FROM YOUR ROSTER WITHOUT ISSUE" hidden="false" id="b1e1-9f1d-7934-c233">
-          <description>To add Lords of War you now need to add the additional detachment to your list. To do this:
+        <rule name="How to add an allied or lord of war detachment THIS ENTRY CAN BE REMOVED FROM YOUR ROSTER WITHOUT ISSUE" hidden="false" id="b1e1-9f1d-7934-c233">
+          <description>To add Lords of War or allied detachments, you now need to add the additional detachment to your list. To do this:
+In New Recruit:
+* Select List Options in the top right corner.
+* Select &quot;Add Force&quot;
+* Select the appropriate faction.
+* Select the appropriate optional detachment (lord of war or allied) to add it to your list.
 
-A - On Mobile, after adding your initial detachment, press the + sign at the bottom left
-B - On Desktop after adding your first force then just press add force again
-Then choose the army you wish to have a lord of war from, then pick &quot;Lord of War Detachment&quot;. This allows the choice of any LoW from any army as per the rules of HH2 (apart from the new Ruinstorm Deamons one can only be taken in a Lord of War Detachment for Ruinstorm Daemons).
-THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEFULLY EVERYONE WILL BE USED TO WHERE THE NEW LOCATION IS, AND I DON’T GET 100S OF BUG REPORTS FROM PEOPLE NOT BEING ABLE TO FIND THEIR LOW</description>
+On Battlescribe Mobile, after adding your initial detachment, press the + sign at the bottom left
+On Battlescribe Desktop, after adding your first force then just press add force again
+
+Then choose the army you wish to have a lord of war from, then pick &quot;Lord of War Detachment&quot;. This allows the choice of any LoW from any army as per the rules of HH2 (apart from the new Ruinstorm Deamons one can only be taken in a Lord of War Detachment for Ruinstorm Daemons).</description>
         </rule>
       </rules>
       <modifiers>
@@ -4100,7 +4124,6 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       </profiles>
       <infoLinks>
         <infoLink id="bbbb-18a8-0f9b-d084" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-        <infoLink id="0e9f-cc9d-d76a-0abf" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="45cf-4851-7209-02f5" name="Graviton Collapse" hidden="false" targetId="60d8-5964-8671-7f3b" type="rule"/>
         <infoLink id="d186-5492-2c42-c67f" name="Torsion Crusher" hidden="false" targetId="2cef-a40d-97b8-7d4e" type="rule"/>
         <infoLink id="1183-84e2-fdd7-3006" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
@@ -7453,7 +7476,7 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47f0-bba9-6d89-9baa" type="equalTo"/>
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="58a7-8821-3cd9-c73" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
                 <condition type="equalTo" value="1" field="selections" scope="roster" childId="092d-3716-36f8-8988" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -7474,14 +7497,9 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="0" field="5617-ada9-bf10-f9b0">
+        <modifier type="set" value="0" field="ff71-da3d-5afc-3d74">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="0" field="1028-fef6-d630-344c">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7490,6 +7508,7 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4024-fa03-dada-cc4b" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0dff-37d2-448b-45a6" type="min"/>
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="1028-fef6-d630-344c" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ff71-da3d-5afc-3d74" includeChildSelections="false"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -7506,7 +7525,6 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ae-8da7-ad16-cea6" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c74-7db8-469e-8327" type="max"/>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dadb-f5a9-20c8-f415" type="max"/>
       </constraints>
       <profiles>
         <profile id="9e5f-b65f-2f13-f24e" name="Advanced Reaction: Scornful Fire" publicationId="bde1-6db1-163b-3b76" page="17" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
@@ -10945,11 +10963,11 @@ Be aware that we are actively trying to find a solution to this, but it is less 
     <selectionEntry type="upgrade" import="true" name="Shattered Legions" hidden="false" id="9950-2cd2-fd88-9bb1">
       <rules>
         <rule name="Shattered Legions Detachments" id="79f1-6428-98a0-b454" hidden="false" publicationId="d882-d2a-5da1-92c4" page="134">
-          <description>A Shattered Legions Detachment is a Detachment with the Legiones Astartes Faction, in which every unit has the Legiones Astartes (Shattered Legions) special rule. A Shattered Legions Detachment must be the army’s Primary Detachment, and an army whose Primary Detachment is a Shattered Legions Detachment cannot include any other Detachments. A Shattered Legions Detachment may not include any models with the Primarch or Daemon Primarch Unit Types.
-When you add a Shattered Legions Detachment to your army, you must select either two or three different Legions from the following and note them on your army roster:
-• Dark Angels • Emperor’s Children • Iron Warriors • White Scars • Space Wolves • Imperial Fists • Night Lords • Blood Angels • Iron Hands • World Eaters • Ultramarines • Death Guard • Thousand Sons • Sons of Horus • Word Bearers • Salamanders • Raven Guard • Alpha Legion
-Every model in this Detachment must represent one of your selected Legions. A model ‘represents’ a Legion when it clearly displays the Legion iconography and heraldry of that Legion. If any model does not clearly display iconography or colours that obviously identify it as a member of a single specific Legion, then it represents no Legion and is not counted for determining the Majority or Minority of a unit (see page 135 ). The number of models in a unit that represent each Legion is at your discretion, but each unit on your army roster must contain models representing as many of your selected Legions as possible (e.g., a unit with two models must represent two different Legions and a unit of three or more models must contain at least one model representing each selected Legion).
-Models with the Independent Character special rule can select options (excluding Legiones Consularis upgrades) from the Armoury page of the Legion they are representing as if they had the equivalent version of the Legiones Astartes (X) special rule. For example, a model with the Independent Character special rule that is representing the Imperial Fists Legion could select options from the Armoury of the Imperial Fists pages of Liber Astartes as if they had the Legiones Astartes (Imperial Fists) special rule. Note that restrictions based on Allegiance will still apply.</description>
+          <description>A Shattered Legions Detachment is a Detachment with the Legiones Astartes Faction, in which every unit has the Legiones Astartes (Shattered Legions) special rule. A Shattered Legions Detachment must be the army’s Primary Detachment, and an army whose Primary Detachment is a Shattered Legions Detachment cannot include any other Detachments. A Shattered Legions Detachment may not include any models with the Primarch or Daemon Primarch Unit Types.
+When you add a Shattered Legions Detachment to your army, you must select either two or three different Legions from the following and note them on your army roster:
+• Dark Angels • Emperor’s Children • Iron Warriors • White Scars • Space Wolves • Imperial Fists • Night Lords • Blood Angels • Iron Hands • World Eaters • Ultramarines • Death Guard • Thousand Sons • Sons of Horus • Word Bearers • Salamanders • Raven Guard • Alpha Legion
+Every model in this Detachment must represent one of your selected Legions. A model ‘represents’ a Legion when it clearly displays the Legion iconography and heraldry of that Legion. If any model does not clearly display iconography or colours that obviously identify it as a member of a single specific Legion, then it represents no Legion and is not counted for determining the Majority or Minority of a unit (see page 135 ). The number of models in a unit that represent each Legion is at your discretion, but each unit on your army roster must contain models representing as many of your selected Legions as possible (e.g., a unit with two models must represent two different Legions and a unit of three or more models must contain at least one model representing each selected Legion).
+Models with the Independent Character special rule can select options (excluding Legiones Consularis upgrades) from the Armoury page of the Legion they are representing as if they had the equivalent version of the Legiones Astartes (X) special rule. For example, a model with the Independent Character special rule that is representing the Imperial Fists Legion could select options from the Armoury of the Imperial Fists pages of Liber Astartes as if they had the Legiones Astartes (Imperial Fists) special rule. Note that restrictions based on Allegiance will still apply.</description>
         </rule>
         <rule name="Legiones Astartes (Shattered Legions)" id="c1cf-0560-c663-4994" hidden="false" publicationId="d882-d2a-5da1-92c4" page="135">
           <description>LEGIONES ASTARTES (SHATTERED LEGIONS)
@@ -10960,29 +10978,29 @@ All models with this special rule are subject to the following provisions:
 excluding Legiones Astartes (Shattered Legions), unless another rule states otherwise.</description>
         </rule>
         <rule name="Majority and Minority" id="487a-bdca-ae8c-f9bc" hidden="false" page="135" publicationId="d882-d2a-5da1-92c4">
-          <description>For the purposes of determining which bonuses are available to units that include models with the Legiones Astartes (Shattered Legions) special rule, at the start of each Phase the controlling player will need to determine which of their selected Legions has the greatest number among the models in that unit:
-Majority – The Legion that is represented by the greatest number of models in the unit is said to be in the Majority If the number is tied between two or more Legions then the controlling player can select one of the tied Legions to be the Majority.
-Minority – The Legion that is represented by the fewest models in the unit is said to be in the Minority. If the number is tied between two or more Legions then the controlling player can select one of the tied Legions to be the Minority.
-When counting models in a unit, all models are counted no matter what unit type they have – excepting only Dedicated Transports which are not considered part of the unit. Models that include multiple crew or operators as part of a single model, such as Legion Javelins, are considered to represent the Legion whose icons or colours are displayed on the main component of that model. For example, a Legion Javelin that has two crew models, one in Raven Guard colours and one in Salamanders colours, represents the Legion whose colours are on the Javelin itself, ignoring the crew.
-The calculated Majority and Minority Legions apply until the end of that Phase, and so do not require recalculating during a Phase as units take casualties and models are removed.
+          <description>For the purposes of determining which bonuses are available to units that include models with the Legiones Astartes (Shattered Legions) special rule, at the start of each Phase the controlling player will need to determine which of their selected Legions has the greatest number among the models in that unit:
+Majority – The Legion that is represented by the greatest number of models in the unit is said to be in the Majority If the number is tied between two or more Legions then the controlling player can select one of the tied Legions to be the Majority.
+Minority – The Legion that is represented by the fewest models in the unit is said to be in the Minority. If the number is tied between two or more Legions then the controlling player can select one of the tied Legions to be the Minority.
+When counting models in a unit, all models are counted no matter what unit type they have – excepting only Dedicated Transports which are not considered part of the unit. Models that include multiple crew or operators as part of a single model, such as Legion Javelins, are considered to represent the Legion whose icons or colours are displayed on the main component of that model. For example, a Legion Javelin that has two crew models, one in Raven Guard colours and one in Salamanders colours, represents the Legion whose colours are on the Javelin itself, ignoring the crew.
+The calculated Majority and Minority Legions apply until the end of that Phase, and so do not require recalculating during a Phase as units take casualties and models are removed.
 
 
 Designer’s Note:
 Calculating Majority and Minority
-While you should calculate the Majority and Minority Legions in each unit at the start of each Phase, in practicality, you might find it easier to only worry about calculating which traits apply when it becomes relevant in a given Phase, such as the first time you select that unit to make attacks, or the first time that unit is targeted by an enemy unit. You may also find that if, for example, you have not selected any Legions whose traits interact with the Movement phase, then it is not necessary to calculate the Majority and Minority Legions during that Phase. Similarly, in your opponent’s Shooting phase, you may find it easier to calculate the Majority and Minority Legions the first time a unit from your army is selected as the target of a Shooting Attack, or the first time it is eligible to make a Reaction. In your opponent’s Assault phase, you may find many of your units are not Locked in Combat or eligible to be Charged (because there are no enemy units within range) and so it will not be necessary to calculate the Majority and Minority Legions for those units during that Phase. This approach will save some time during the battle, and ensure you do not spend time calculating which rules apply to a unit that will not need to use them during that Phase. This process of judgement will become easier as you fight more battles with your Shattered Legions army and become more familiar with when and how the traits for your selected Legions become active or relevant within the various Phases of a battle.</description>
+While you should calculate the Majority and Minority Legions in each unit at the start of each Phase, in practicality, you might find it easier to only worry about calculating which traits apply when it becomes relevant in a given Phase, such as the first time you select that unit to make attacks, or the first time that unit is targeted by an enemy unit. You may also find that if, for example, you have not selected any Legions whose traits interact with the Movement phase, then it is not necessary to calculate the Majority and Minority Legions during that Phase. Similarly, in your opponent’s Shooting phase, you may find it easier to calculate the Majority and Minority Legions the first time a unit from your army is selected as the target of a Shooting Attack, or the first time it is eligible to make a Reaction. In your opponent’s Assault phase, you may find many of your units are not Locked in Combat or eligible to be Charged (because there are no enemy units within range) and so it will not be necessary to calculate the Majority and Minority Legions for those units during that Phase. This approach will save some time during the battle, and ensure you do not spend time calculating which rules apply to a unit that will not need to use them during that Phase. This process of judgement will become easier as you fight more battles with your Shattered Legions army and become more familiar with when and how the traits for your selected Legions become active or relevant within the various Phases of a battle.</description>
         </rule>
         <rule name="Mutable Tactics" id="0709-363e-95d8-afd6" hidden="false" publicationId="d882-d2a-5da1-92c4" page="137">
-          <description>In the following section you will find Mutable Tactics traits for each Legion that can be represented in your Shattered Legions force. Each set of Mutable Tactics traits has four rules, each of which may apply to a unit that contains models representing that Legion, based on whether that Legion is in the Majority in that unit, in the Minority in that unit, or represented by a model with the Independent Character special rule. Each set of Mutable Tactics traits also details a Flaw which may apply to the unit under certain circumstances.
+          <description>In the following section you will find Mutable Tactics traits for each Legion that can be represented in your Shattered Legions force. Each set of Mutable Tactics traits has four rules, each of which may apply to a unit that contains models representing that Legion, based on whether that Legion is in the Majority in that unit, in the Minority in that unit, or represented by a model with the Independent Character special rule. Each set of Mutable Tactics traits also details a Flaw which may apply to the unit under certain circumstances.
 Hero Traits
-Models with both the Legiones Astartes (Shattered Legions) and Independent Character special rules gain the &apos;Hero&apos; trait for the Legion they are representing. If such a model joins a unit composed entirely of models with the Legiones Astartes (Shattered Legions) special rule, it is also bound by the ‘Major’ and ‘Minor’ traits that apply to that unit, as well as any ‘Flaw’ traits.
+Models with both the Legiones Astartes (Shattered Legions) and Independent Character special rules gain the &apos;Hero&apos; trait for the Legion they are representing. If such a model joins a unit composed entirely of models with the Legiones Astartes (Shattered Legions) special rule, it is also bound by the ‘Major’ and ‘Minor’ traits that apply to that unit, as well as any ‘Flaw’ traits.
 Models with the Vehicle Unit Type can never benefit from Hero traits.
 Major, Minor and Flaw Traits
-Models with the Legiones Astartes (Shattered Legions) special rule, but not the Independent Character special rule, gain traits depending on both the Legion that they represent and the composition of the unit that they are part of:
-• All models with the Legiones Astartes (Shattered Legions) special rule in a unit composed entirely of models representing a single Legion gain the Minor benefits shown under the Mutable Tactics traits for that Legion and suffer from the Flaw listed for that Legion.
-• All models with the Legiones Astartes (Shattered Legions) special rule in a unit composed of models representing two or more different Legions gain the Major benefit from the Mutable Tactics traits for the Legion represented by the majority of models and the Minor benefit from the Mutable Tactics traits for the Legion represented by the minority of models in that unit. In addition, all models with the Legiones Astartes (Shattered Legions) special rule in that unit also suffer the Flaw from the Mutable Tactics traits of the Legion with the minority of models in the unit.
-• Units composed of a single model, or units that are split after deployment (such as a Legion Contemptor Dreadnought Talon) with the Legiones Astartes (Shattered Legions) special rule, gain the Minor Mutable Tactics trait of the Legion they represent and also the Flaw of the Legion they represent.
-Note that as detailed above, the Majority and Minority Legions in a unit are determined at the start of the Phase, and so the benefits gained will not change and Majority and Minority Legions do not need to be recalculated during a Phase as casualties are removed.
-Where the effects of a Mutable Tactics trait contradict another, Flaws take priority over all other traits and Major traits take priority over Minor traits. If a trait requires a Leadership test to be taken for a unit which does not have a Leadership Characteristic, treat that unit’s Leadership Characteristic as ‘10’.</description>
+Models with the Legiones Astartes (Shattered Legions) special rule, but not the Independent Character special rule, gain traits depending on both the Legion that they represent and the composition of the unit that they are part of:
+• All models with the Legiones Astartes (Shattered Legions) special rule in a unit composed entirely of models representing a single Legion gain the Minor benefits shown under the Mutable Tactics traits for that Legion and suffer from the Flaw listed for that Legion.
+• All models with the Legiones Astartes (Shattered Legions) special rule in a unit composed of models representing two or more different Legions gain the Major benefit from the Mutable Tactics traits for the Legion represented by the majority of models and the Minor benefit from the Mutable Tactics traits for the Legion represented by the minority of models in that unit. In addition, all models with the Legiones Astartes (Shattered Legions) special rule in that unit also suffer the Flaw from the Mutable Tactics traits of the Legion with the minority of models in the unit.
+• Units composed of a single model, or units that are split after deployment (such as a Legion Contemptor Dreadnought Talon) with the Legiones Astartes (Shattered Legions) special rule, gain the Minor Mutable Tactics trait of the Legion they represent and also the Flaw of the Legion they represent.
+Note that as detailed above, the Majority and Minority Legions in a unit are determined at the start of the Phase, and so the benefits gained will not change and Majority and Minority Legions do not need to be recalculated during a Phase as casualties are removed.
+Where the effects of a Mutable Tactics trait contradict another, Flaws take priority over all other traits and Major traits take priority over Minor traits. If a trait requires a Leadership test to be taken for a unit which does not have a Leadership Characteristic, treat that unit’s Leadership Characteristic as ‘10’.</description>
         </rule>
       </rules>
     </selectionEntry>
