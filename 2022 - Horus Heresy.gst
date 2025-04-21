@@ -1124,9 +1124,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         <rule name="Antigrav Sub-type" id="d33c-5dd3-b848-885d" hidden="false">
           <description>The following rules apply to all models with the Antigrav
 sub-type:
-• A unit that includes only models with the Antigrav sub-type may ignore the effects of any and all terrain it passes over during movement, including passing over vertical terrain and Impassable Terrain without penalty
-or restriction. However, such units may not begin or end their movement in Impassable Terrain, and if beginning or ending their movement in Dangerous Terrain must take Dangerous Terrain tests as normal.
-• Models with the Antigrav sub-type may never benefit from Cover Saves of any kind.</description>
+• A unit that includes only models with the Antigrav sub-type may ignore the effects of any and all terrain it passes over during movement, including passing over vertical terrain and Impassable Terrain without penalty
+or restriction. However, such units may not begin or end their movement in Impassable Terrain, and if beginning or ending their movement in Dangerous Terrain must take Dangerous Terrain tests as normal.
+• Models with the Antigrav sub-type may never benefit from Cover Saves of any kind.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -2618,7 +2618,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
         <rule name="How to add an allied or lord of war detachment THIS ENTRY CAN BE REMOVED FROM YOUR ROSTER WITHOUT ISSUE" hidden="false" id="b1e1-9f1d-7934-c233">
           <description>To add Lords of War or allied detachments, you now need to add the additional detachment to your list. To do this:
 In New Recruit:
-* Select List Options in the top right corner. 
+* Select List Options in the top right corner.
 * Select &quot;Add Force&quot;
 * Select the appropriate faction.
 * Select the appropriate optional detachment (lord of war or allied) to add it to your list.
