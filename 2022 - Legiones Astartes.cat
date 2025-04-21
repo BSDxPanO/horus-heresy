@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="203" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="210" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -66703,7 +66703,7 @@ If the Psychic check is successful then until that Shooting Attack is resolved, 
         <rule id="34da-6158-0050-f6c2" name="Avatar of the Sacred Flames" publicationId="d0df-7166-5cd3-89fd" page="67" hidden="false">
           <description>As long as no HQ choices other than Xiaphas Jurr and Nârik Dreygur are included in the same Detachment, Cassian Dracos Reborn may be selected as the army’s Warlord. If selected as the army’s Warlord, Cassian Dracos must use the Bloody-handed Warlord Trait.
 
-In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a Blackshields Detachment, you can include  Salamanders Adherents Squads as part of that Detachment. If you do so, replace their Legiones Astartes (Salamanders)  special rule with the Legiones Astartes (Blackshields) special rule and remove their Support Squad special rule.</description>
+In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a Blackshields Detachment, you can include  Salamanders Adherents Squads as part of that Detachment. If you do so, replace their Legiones Astartes (Salamanders)  special rule with the Legiones Astartes (Blackshields) special rule and remove their Support Squad special rule.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -66959,7 +66959,7 @@ In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a B
                 <characteristic name="Text" typeId="c68e-2cda-b67b-baca">As long as Xiaphas Jurr has not been removed from play, is in Reserve or Embarked upon a model with the Transport Sub-type, a single friendly unit comprised of models with the Legiones Astartes (Salamanders) special rules may choose to use Xiaphas Jurr’s unmodified Leadership value instead of their own, when making a Morale check or Pinning test in any turn.
 
 
-In addition, if Xiaphas Jurr is selected as the army’s Warlord in a Blackshields Detachment, you can include Salamanders Adherents Squads as part of that Detachment. If you do so, replace  their Legiones Astartes (Salamanders) special rule with the Legiones Astartes (Blackshields) special rule and remove their Support Squad special rule.</characteristic>
+In addition, if Xiaphas Jurr is selected as the army’s Warlord in a Blackshields Detachment, you can include Salamanders Adherents Squads as part of that Detachment. If you do so, replace  their Legiones Astartes (Salamanders) special rule with the Legiones Astartes (Blackshields) special rule and remove their Support Squad special rule.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -67365,7 +67365,7 @@ In addition, if Xiaphas Jurr is selected as the army’s Warlord in a Blackshiel
       <profiles>
         <profile name="The Revenant&apos;s Pawn" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1653-9be8-e7bc-0335" publicationId="d0df-7166-5cd3-89fd" page="77">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Nârik Dreygur gains +1 Attack and the Stubborn special rule when within 12&quot; of Cassian Dracos Reborn.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Nârik Dreygur gains +1 Attack and the Stubborn special rule when within 12&quot; of Cassian Dracos Reborn.</characteristic>
           </characteristics>
         </profile>
         <profile name="Cortex Designator" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6f1f-aa38-af41-b5b4" publicationId="d0df-7166-5cd3-89fd" page="77">
@@ -67641,7 +67641,7 @@ In addition, if Xiaphas Jurr is selected as the army’s Warlord in a Blackshiel
           </categoryLinks>
           <rules>
             <rule name="The Shattered Xth" id="6266-0858-c62e-9f92" hidden="false">
-              <description>You can include this model in a Shattered Legions Detachment that includes models representing the Iron Hands Legion. When you do so, replace this model’s Legiones Astartes (Iron Hands) special rule with the Legiones Astartes (Shattered Legions) special rule. This is an exception to the normal rules for Legiones Astartes (Shattered Legions). When included in a Shattered Legions Detachment, this model must represent the Iron Hands Legion.</description>
+              <description>You can include this model in a Shattered Legions Detachment that includes models representing the Iron Hands Legion. When you do so, replace this model’s Legiones Astartes (Iron Hands) special rule with the Legiones Astartes (Shattered Legions) special rule. This is an exception to the normal rules for Legiones Astartes (Shattered Legions). When included in a Shattered Legions Detachment, this model must represent the Iron Hands Legion.</description>
             </rule>
           </rules>
           <modifiers>
@@ -73273,7 +73273,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XV: Thousand Sons (MT | Hero)" hidden="true" id="5162-8374-5488-a09b" publicationId="d882-d2a-5da1-92c4" sortIndex="13" page="146">
           <rules>
             <rule name="MT|TS Master Of Farseeing (Hero)" id="63f1-4786-88b5-9b7a" hidden="false" publicationId="d882-d2a-5da1-92c4" page="146">
-              <description>This model gains the Psyker Unit Sub-type and the Divination Psychic Discipline.</description>
+              <description>This model gains the Psyker Unit Sub-type and the Divination Psychic Discipline.</description>
             </rule>
           </rules>
           <entryLinks>
@@ -73366,7 +73366,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XIX: Raven Guard (MT | Hero)" hidden="true" id="1c64-9b54-4f24-b9e0" publicationId="d882-d2a-5da1-92c4" sortIndex="17" page="148">
           <rules>
             <rule name="MT|RG Scion Of The Shadow Master (Hero)" id="fa15-54f7-d993-9071" hidden="false" publicationId="d882-d2a-5da1-92c4" page="148">
-              <description>This model gains the Precision Shots (6+) and Precision Strikes (6+) special rules.</description>
+              <description>This model gains the Precision Shots (6+) and Precision Strikes (6+) special rules.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -73395,7 +73395,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XX: Alpha Legion (MT | Hero)" hidden="true" id="ecc5-ccf4-5e50-c931" publicationId="d882-d2a-5da1-92c4" sortIndex="18" page="148">
           <rules>
             <rule name="MT|AL Master of Subterfuge (Hero)" id="3405-3e8f-0ea7-1277" hidden="false" publicationId="d882-d2a-5da1-92c4" page="148">
-              <description>This model gains the False Colours special rule (see Alpha Legion Saboteur Consul, Liber Hereticus).</description>
+              <description>This model gains the False Colours special rule (see Alpha Legion Saboteur Consul, Liber Hereticus).</description>
             </rule>
           </rules>
           <infoLinks>
@@ -73655,7 +73655,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="I: Dark Angels (MT | Major)" hidden="true" id="2611-606a-d359-1b70" publicationId="d882-d2a-5da1-92c4" page="140" sortIndex="1">
           <rules>
             <rule name="MT|DA Ruthless Bladesmen (Major)" id="6ad2-cfd9-fc21-3bb6" hidden="false" publicationId="d882-d2a-5da1-92c4" page="140">
-              <description>If this unit is the winner in an Assault, each enemy unit that lost suffers an additional -1 penalty to the resulting Morale check.</description>
+              <description>If this unit is the winner in an Assault, each enemy unit that lost suffers an additional -1 penalty to the resulting Morale check.</description>
             </rule>
           </rules>
           <constraints>
@@ -73672,7 +73672,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="III: Emperor&apos;s Children (MT | Major)" hidden="true" id="6459-8ea8-08d4-b7d2" publicationId="d882-d2a-5da1-92c4" page="140" sortIndex="2">
           <rules>
             <rule name="MT|EC Unparalleled Skill (Major)" id="cc0f-ca91-37c7-6c3e" hidden="false" publicationId="d882-d2a-5da1-92c4" page="140">
-              <description>When making a To Hit roll in the Assault phase for a model in this unit, a result of 4+ is always successful.</description>
+              <description>When making a To Hit roll in the Assault phase for a model in this unit, a result of 4+ is always successful.</description>
             </rule>
           </rules>
           <constraints>
@@ -73689,7 +73689,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="IV: Iron Warriors (MT | Major)" hidden="true" id="2db0-1fff-f251-862d" publicationId="d882-d2a-5da1-92c4" page="141" sortIndex="3">
           <rules>
             <rule name="MT|IW Ruthless Precision (Major)" id="9fad-cf42-cdb1-469b" hidden="false" publicationId="d882-d2a-5da1-92c4" page="141">
-              <description>When making a Shooting Attack, this unit gains a bonus of +1 to all Armour Penetration rolls, and a bonus of +1 to To Wound rolls made against units with the Automata or Dreadnought Unit Types.</description>
+              <description>When making a Shooting Attack, this unit gains a bonus of +1 to all Armour Penetration rolls, and a bonus of +1 to To Wound rolls made against units with the Automata or Dreadnought Unit Types.</description>
             </rule>
           </rules>
           <constraints>
@@ -73706,7 +73706,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="V: White Scars (MT | Major)" hidden="true" id="4af0-98db-27b6-6bc4" publicationId="d882-d2a-5da1-92c4" page="141" sortIndex="4">
           <rules>
             <rule name="MT|WS Swift Of Action (Major)" id="eb7a-cd23-4dc5-5e50" hidden="false" publicationId="d882-d2a-5da1-92c4" page="141">
-              <description>Each time this unit runs, it gains the Shrouded (5+) special rule until the start of the Active player’s next turn.</description>
+              <description>Each time this unit runs, it gains the Shrouded (5+) special rule until the start of the Active player’s next turn.</description>
             </rule>
           </rules>
           <constraints>
@@ -73723,7 +73723,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="VI: Space Wolves (MT | Major)" hidden="true" id="034a-f25d-55a0-4aea" publicationId="d882-d2a-5da1-92c4" page="142" sortIndex="5">
           <rules>
             <rule name="MT|SW Spirit Of Fenris (Major)" id="aba0-3282-7198-1d13" hidden="false" publicationId="d882-d2a-5da1-92c4" page="142">
-              <description>During a turn in which this unit successfully Charges, all models in this unit gain a bonus of +1 To Wound.</description>
+              <description>During a turn in which this unit successfully Charges, all models in this unit gain a bonus of +1 To Wound.</description>
             </rule>
           </rules>
           <constraints>
@@ -73740,7 +73740,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="VII: Imperial Fists (MT | Major)" hidden="true" id="b1e1-ecc2-5e7d-d6c2" publicationId="d882-d2a-5da1-92c4" page="142" sortIndex="6">
           <rules>
             <rule name="MT|IF Devastating Volleys (Major)" id="ee4d-3d15-8235-f0ef" hidden="false" publicationId="d882-d2a-5da1-92c4" page="142">
-              <description>The unit gains a bonus of +1 to all To Wound rolls with bolt pistols, combi-bolters and bolters as part of any Shooting Attack (including as part of any Reaction).</description>
+              <description>The unit gains a bonus of +1 to all To Wound rolls with bolt pistols, combi-bolters and bolters as part of any Shooting Attack (including as part of any Reaction).</description>
             </rule>
           </rules>
           <constraints>
@@ -73757,7 +73757,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="VIII: Night Lords (MT | Major)" hidden="true" id="c221-efc6-d394-e350" publicationId="d882-d2a-5da1-92c4" page="143" sortIndex="7">
           <rules>
             <rule name="MT|NL Murderous Intent (Major)" id="3f3d-bc9c-a706-f664" hidden="false" publicationId="d882-d2a-5da1-92c4" page="143">
-              <description>At the start of the Fight sub-phase, if this unit outnumbers the enemy models in that combat, models in this unit gain a bonus of +1 to To Hit rolls until the end of the Phase. Models with the Bulky (X) special rule count as a number of models equal to the value included as part of that special rule.</description>
+              <description>At the start of the Fight sub-phase, if this unit outnumbers the enemy models in that combat, models in this unit gain a bonus of +1 to To Hit rolls until the end of the Phase. Models with the Bulky (X) special rule count as a number of models equal to the value included as part of that special rule.</description>
             </rule>
           </rules>
           <constraints>
@@ -73774,7 +73774,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="IX: Blood Angels (MT | Major)" hidden="true" id="26aa-b8f8-9497-e7d1" publicationId="d882-d2a-5da1-92c4" page="143" sortIndex="8">
           <rules>
             <rule name="MT|BA Vengeful Blow (Major)" id="d1c9-055a-9dc1-224e" hidden="false" publicationId="d882-d2a-5da1-92c4" page="143">
-              <description>During a turn in which this unit successfully Charges, or is successfully Charged, all models in this unit gain a bonus of +1 To Wound when making attacks with weapons that do not have the Unwieldy special rule.</description>
+              <description>During a turn in which this unit successfully Charges, or is successfully Charged, all models in this unit gain a bonus of +1 To Wound when making attacks with weapons that do not have the Unwieldy special rule.</description>
             </rule>
           </rules>
           <constraints>
@@ -73791,7 +73791,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="X: Iron Hands (MT | Major)" hidden="true" id="c9b0-88b6-1ade-70a2" publicationId="d882-d2a-5da1-92c4" page="144" sortIndex="9">
           <rules>
             <rule name="MT|IH Unleash The Storm (Major)" id="6fc5-5c8b-0841-9ca0" hidden="false" publicationId="d882-d2a-5da1-92c4" page="144">
-              <description>Each time a model in this unit makes a Shooting Attack that targets a unit within 12&quot;, it gains a bonus of +1 to all To Wound rolls made during that Shooting Attack.</description>
+              <description>Each time a model in this unit makes a Shooting Attack that targets a unit within 12&quot;, it gains a bonus of +1 to all To Wound rolls made during that Shooting Attack.</description>
             </rule>
           </rules>
           <constraints>
@@ -73808,7 +73808,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XII: World Eaters (MT | Major)" hidden="true" id="1b39-8677-de2f-8520" publicationId="d882-d2a-5da1-92c4" page="144" sortIndex="10">
           <rules>
             <rule name="MT|WE Violent Intent (Major)" id="96de-3a6f-9bd0-fd29" hidden="false" publicationId="d882-d2a-5da1-92c4" page="144">
-              <description>When making a Charge roll for this unit, roll one additional D6 and discard one of the results.</description>
+              <description>When making a Charge roll for this unit, roll one additional D6 and discard one of the results.</description>
             </rule>
           </rules>
           <constraints>
@@ -73825,7 +73825,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XIII: Ultramarines (MT | Major)" hidden="true" id="fb8c-3021-e7c5-f3a5" publicationId="d882-d2a-5da1-92c4" page="145" sortIndex="11">
           <rules>
             <rule name="MT|UM Methodical Fighters (Major)" id="32ec-a5bd-91a5-c5aa" hidden="false" publicationId="d882-d2a-5da1-92c4" page="145">
-              <description>Each time this unit makes a Shooting Attack or declares a Charge, if an enemy unit declares a Reaction, its controlling player must make a Leadership test for that unit before expending a point from their Reaction Allotment. If that test is failed, that unit cannot make a Reaction during this Phase.</description>
+              <description>Each time this unit makes a Shooting Attack or declares a Charge, if an enemy unit declares a Reaction, its controlling player must make a Leadership test for that unit before expending a point from their Reaction Allotment. If that test is failed, that unit cannot make a Reaction during this Phase.</description>
             </rule>
           </rules>
           <constraints>
@@ -73842,7 +73842,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XIV: Death Guard (MT | Major)" hidden="true" id="75d7-1918-8dfc-a526" publicationId="d882-d2a-5da1-92c4" page="145" sortIndex="12">
           <rules>
             <rule name="MT|DG Inexorable Assault (Major)" id="5f32-7a60-9ed3-d524" hidden="false" publicationId="d882-d2a-5da1-92c4" page="145">
-              <description>If every model in this unit has not moved more than 7&quot; in the controlling player’s Movement phase, it is counted as Stationary when making Shooting Attacks until the start of the controlling player’s next turn. This does not apply to units with the Vehicle Unit Type or Artillery Unit Sub-type.</description>
+              <description>If every model in this unit has not moved more than 7&quot; in the controlling player’s Movement phase, it is counted as Stationary when making Shooting Attacks until the start of the controlling player’s next turn. This does not apply to units with the Vehicle Unit Type or Artillery Unit Sub-type.</description>
             </rule>
           </rules>
           <constraints>
@@ -73859,8 +73859,8 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XV: Thousand Sons (MT | Major)" hidden="true" id="0df7-81bd-808a-9f56" publicationId="d882-d2a-5da1-92c4" page="146" sortIndex="13">
           <rules>
             <rule name="MT|TS Wielders Of The Warp (Major)" id="b224-c37c-33eb-c8ea" hidden="false" publicationId="d882-d2a-5da1-92c4" page="146">
-              <description>One non-Vehicle Thousand Sons model in this unit gains the Prosperine Wrath Psychic Weapon, and is treated as having the Psyker Unit Sub-type for the purposes of using it (note that this does not give that model access to any other Psychic Disciplines).
-*The Strength Characteristic of this Psychic Weapon is equal to 3 plus the number of Thousand Sons models in this unit, to a maximum of Strength 10.
+              <description>One non-Vehicle Thousand Sons model in this unit gains the Prosperine Wrath Psychic Weapon, and is treated as having the Psyker Unit Sub-type for the purposes of using it (note that this does not give that model access to any other Psychic Disciplines).
+*The Strength Characteristic of this Psychic Weapon is equal to 3 plus the number of Thousand Sons models in this unit, to a maximum of Strength 10.
 (BS Note: Psyker Unit type not added on BS as it only applies to 1 model each phase, and only if they are the major component of the unit.)</description>
             </rule>
           </rules>
@@ -73891,7 +73891,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XVI: Sons of Horus (MT | Major)" hidden="true" id="173f-9084-c487-eeb8" publicationId="d882-d2a-5da1-92c4" page="146" sortIndex="14">
           <rules>
             <rule name="MT|SoH Punishing Volley (Major)" id="ddbb-5a7b-517d-873f" hidden="false" publicationId="d882-d2a-5da1-92c4" page="146">
-              <description>Each time a model in this unit makes a Shooting Attack that targets a unit within 12&quot;, it gains a bonus of +1 to all To Hit rolls made during that Shooting Attack</description>
+              <description>Each time a model in this unit makes a Shooting Attack that targets a unit within 12&quot;, it gains a bonus of +1 to all To Hit rolls made during that Shooting Attack</description>
             </rule>
           </rules>
           <constraints>
@@ -73908,7 +73908,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XVII: Word Bearers (MT | Major)" hidden="true" id="b2c5-1e9a-5955-ab39" publicationId="d882-d2a-5da1-92c4" page="147" sortIndex="15">
           <rules>
             <rule name="MT|WB Zealous Devotion (Major)" id="5511-0371-868b-946f" hidden="false" publicationId="d882-d2a-5da1-92c4" page="147">
-              <description>During a turn in which this unit has successfully Charged, if it is part of a combat that results in a draw, then a side that includes this unit is counted as having won the combat by 1 point. If both sides include models with this special rule then the combat remains a draw.</description>
+              <description>During a turn in which this unit has successfully Charged, if it is part of a combat that results in a draw, then a side that includes this unit is counted as having won the combat by 1 point. If both sides include models with this special rule then the combat remains a draw.</description>
             </rule>
           </rules>
           <constraints>
@@ -73925,7 +73925,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XVIII: Salamanders (MT | Major)" hidden="true" id="61e0-0593-e4ff-122a" publicationId="d882-d2a-5da1-92c4" page="147" sortIndex="16">
           <rules>
             <rule name="MT|SAL Scions Of The Flame (Major)" id="27b4-aa61-fb1e-553f" hidden="false" publicationId="d882-d2a-5da1-92c4" page="147">
-              <description>When a model in this unit makes a Shooting Attack, attacks made with weapons with the Flame, Melta, Plasma or Volkite types gain a bonus of +1 To Wound.</description>
+              <description>When a model in this unit makes a Shooting Attack, attacks made with weapons with the Flame, Melta, Plasma or Volkite types gain a bonus of +1 To Wound.</description>
             </rule>
           </rules>
           <constraints>
@@ -73942,7 +73942,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XIX: Raven Guard (MT | Major)" hidden="true" id="efc0-bfc4-1544-9ed4" publicationId="d882-d2a-5da1-92c4" page="148" sortIndex="17">
           <rules>
             <rule name="MT|RG Expert Snipers (Major)" id="e6d7-e2a2-8016-d49f" hidden="false" publicationId="d882-d2a-5da1-92c4" page="148">
-              <description>Each time this unit makes a Shooting Attack (excluding attacks made with Heavy or Ordnance weapons), the controlling player can allocate the first Wound.</description>
+              <description>Each time this unit makes a Shooting Attack (excluding attacks made with Heavy or Ordnance weapons), the controlling player can allocate the first Wound.</description>
             </rule>
           </rules>
           <constraints>
@@ -73959,7 +73959,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XX: Alpha Legion (MT | Major)" hidden="true" id="f2fa-68cd-0c59-2cee" publicationId="d882-d2a-5da1-92c4" page="148" sortIndex="18">
           <rules>
             <rule name="MT|AL Assassination Tactics (Major)" id="8bd7-1028-8a58-a828" hidden="false" publicationId="d882-d2a-5da1-92c4" page="148">
-              <description>During a turn in which this unit has successfully Charged, Alpha Legion models in this unit have the Precision Strikes (5+) special rule.</description>
+              <description>During a turn in which this unit has successfully Charged, Alpha Legion models in this unit have the Precision Strikes (5+) special rule.</description>
             </rule>
           </rules>
           <constraints>
@@ -73987,7 +73987,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
               <description>This unit makes all Snap Shots at BS 2 instead of BS 1.</description>
             </rule>
             <rule name="MT|DA Bound By The Hekonystika (Flaw)" id="8adc-b287-3288-08d2" hidden="false" publicationId="d882-d2a-5da1-92c4" page="140">
-              <description>Reduce the Leadership Characteristic of all models in this unit by -1.
+              <description>Reduce the Leadership Characteristic of all models in this unit by -1.
 (BS Note: Stats not changed on BS)</description>
             </rule>
           </rules>
@@ -74005,11 +74005,11 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="III: Emperor&apos;s Children (MT | Minor/Flaw)" hidden="true" id="14a1-6b82-5950-0431" publicationId="d882-d2a-5da1-92c4" page="140" sortIndex="2">
           <rules>
             <rule name="MT|EC Expert Duellists (Minor)" id="7ca7-45d9-0052-5e6a" hidden="false" publicationId="d882-d2a-5da1-92c4" page="140">
-              <description>Emperor’s Children models in this unit gain the Chosen Warriors special rule.
+              <description>Emperor’s Children models in this unit gain the Chosen Warriors special rule.
 (BS Note: Stats not changed on BS)</description>
             </rule>
             <rule name="MT|EC Warrior&apos;s Pride (Flaw)" id="892f-9fa9-05e9-71d0" hidden="false" publicationId="d882-d2a-5da1-92c4" page="140">
-              <description>If you choose to refuse a Challenge and there was an eligible Emperor’s Children model from this unit that could have accepted, models in this unit suffer a -1 penalty to all To Hit rolls until the end of that turn.</description>
+              <description>If you choose to refuse a Challenge and there was an eligible Emperor’s Children model from this unit that could have accepted, models in this unit suffer a -1 penalty to all To Hit rolls until the end of that turn.</description>
             </rule>
           </rules>
           <constraints>
@@ -74026,10 +74026,10 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="IV: Iron Warriors (MT | Minor/Flaw)" hidden="true" id="7bd8-caf0-a666-9ec7" publicationId="d882-d2a-5da1-92c4" page="141" sortIndex="3">
           <rules>
             <rule name="MT|IW Accustomed To Devastation (Minor)" id="a1b0-63a9-738c-677c" hidden="false" publicationId="d882-d2a-5da1-92c4" page="141">
-              <description>Models in this unit are considered to have a Leadership Characteristic of 10 when resolving Morale checks in the Shooting phase.</description>
+              <description>Models in this unit are considered to have a Leadership Characteristic of 10 when resolving Morale checks in the Shooting phase.</description>
             </rule>
             <rule name="MT|IW Uncontrolled Volleys (Flaw)" id="c539-41a3-2791-bb32" hidden="false" publicationId="d882-d2a-5da1-92c4" page="141">
-              <description>When making a Shooting Attack as part of a Reaction, weapons used for that Shooting Attack by Iron Warriors models in this unit have the Gets Hot special rule.</description>
+              <description>When making a Shooting Attack as part of a Reaction, weapons used for that Shooting Attack by Iron Warriors models in this unit have the Gets Hot special rule.</description>
             </rule>
           </rules>
           <constraints>
@@ -74046,10 +74046,10 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="V: White Scars (MT | Minor/Flaw)" hidden="true" id="8160-4e10-1086-6ace" publicationId="d882-d2a-5da1-92c4" page="141" sortIndex="4">
           <rules>
             <rule name="MT|WS Fleet-Footed (Minor)" id="d787-6f8a-c0b8-3960" hidden="false" publicationId="d882-d2a-5da1-92c4" page="141">
-              <description>When Running, making Sweeping Advances or moving as part of a Reaction, all models in this unit count their Initiative as 6.</description>
+              <description>When Running, making Sweeping Advances or moving as part of a Reaction, all models in this unit count their Initiative as 6.</description>
             </rule>
             <rule name="MT|WS Restless Temperament (Flaw)" id="f99c-0fb4-5a61-a761" hidden="false" publicationId="d882-d2a-5da1-92c4" page="141">
-              <description>If every model in this unit does not end the Movement phase at least 4&quot; from where it began that Phase, each model in that unit suffers a -1 penalty to its Leadership Characteristic until the start of the Active player’s next turn.</description>
+              <description>If every model in this unit does not end the Movement phase at least 4&quot; from where it began that Phase, each model in that unit suffers a -1 penalty to its Leadership Characteristic until the start of the Active player’s next turn.</description>
             </rule>
           </rules>
           <constraints>
@@ -74066,10 +74066,10 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="VI: Space Wolves (MT | Minor/Flaw)" hidden="true" id="2044-e799-3a0f-a59a" publicationId="d882-d2a-5da1-92c4" page="142" sortIndex="5">
           <rules>
             <rule name="MT|SW One Hand On Their Blade (Minor)" id="c7a1-bdf0-3780-309a" hidden="false" publicationId="d882-d2a-5da1-92c4" page="142">
-              <description>Models in this unit can still fire bolters or bolt pistols in a turn in which they have Run. If they do so, they must fire Snap Shots.</description>
+              <description>Models in this unit can still fire bolters or bolt pistols in a turn in which they have Run. If they do so, they must fire Snap Shots.</description>
             </rule>
             <rule name="MT|SW Undisciplined Assault (Flaw)" id="9427-ee37-d9f0-5647" hidden="false" publicationId="d882-d2a-5da1-92c4" page="142">
-              <description>Each time this unit is selected to make a Charge, the controlling player must make a Leadership test for it. If that test is failed, that Charge is Disordered.</description>
+              <description>Each time this unit is selected to make a Charge, the controlling player must make a Leadership test for it. If that test is failed, that Charge is Disordered.</description>
             </rule>
           </rules>
           <constraints>
@@ -74086,10 +74086,10 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="VII: Imperial Fists (MT | Minor/Flaw)" hidden="true" id="c982-169b-7ea2-c217" publicationId="d882-d2a-5da1-92c4" page="142" sortIndex="6">
           <rules>
             <rule name="MT|IF Defensive Instincts (Minor)" id="52c6-5262-e5d1-3381" hidden="false" publicationId="d882-d2a-5da1-92c4" page="142">
-              <description>Improve the cover save models in this unit have by 1 (e.g., a model in this unit who has a 5+ Cover Save instead has a 4+ Cover Save). This does not grant a Cover Save to a model that is not eligible for one.</description>
+              <description>Improve the cover save models in this unit have by 1 (e.g., a model in this unit who has a 5+ Cover Save instead has a 4+ Cover Save). This does not grant a Cover Save to a model that is not eligible for one.</description>
             </rule>
             <rule name="MT|IF Surety Of Action (Flaw)" id="50ab-0fd7-5f00-6876" hidden="false" publicationId="d882-d2a-5da1-92c4" page="142">
-              <description>If the controlling player has any of their Reaction Allotment remaining, this unit must make a Reaction if eligible to do so.</description>
+              <description>If the controlling player has any of their Reaction Allotment remaining, this unit must make a Reaction if eligible to do so.</description>
             </rule>
           </rules>
           <constraints>
@@ -74106,7 +74106,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="VIII: Night Lords (MT | Minor/Flaw)" hidden="true" id="8a17-6b6b-4f2d-7439" publicationId="d882-d2a-5da1-92c4" page="143" sortIndex="7">
           <rules>
             <rule name="MT|NL Trophy Takers (Minor)" id="60fd-0ae8-3077-986d" hidden="false" publicationId="d882-d2a-5da1-92c4" page="143">
-              <description>When making a Sweeping Advance with this unit, you can roll an additional D6 and discard one of them.</description>
+              <description>When making a Sweeping Advance with this unit, you can roll an additional D6 and discard one of them.</description>
             </rule>
             <rule name="MT|NL Wary Of A Fair Fight (Flaw)" id="81ba-8aae-c95f-a998" hidden="false" publicationId="d882-d2a-5da1-92c4" page="143">
               <description>This unit may not declare a Charge unless it outnumbers the target unit. Models with the Bulky (X) special rule count as a number of models equal to the value included as part of that special rule. In addition, if this unit is the closer in an Assault, it suffers an additional -1 penalty to the resulting Morale check.</description>
@@ -74126,10 +74126,10 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="IX: Blood Angels (MT | Minor/Flaw)" hidden="true" id="a4c8-4d0a-abab-0709" publicationId="d882-d2a-5da1-92c4" page="143" sortIndex="8">
           <rules>
             <rule name="MT|BA Encarmine Guile (Minor)" id="9c53-21ab-e630-d697" hidden="false" publicationId="d882-d2a-5da1-92c4" page="143">
-              <description>During a turn in which this unit successfully Charged, Blood Angels models in this unit gain the Hammer of Wrath (1) special rule.</description>
+              <description>During a turn in which this unit successfully Charged, Blood Angels models in this unit gain the Hammer of Wrath (1) special rule.</description>
             </rule>
             <rule name="MT|BA Furious Bloodlust (Flaw)" id="7b34-f6c7-261e-d260" hidden="false" publicationId="d882-d2a-5da1-92c4" page="143">
-              <description>This unit must declare a Charge in any of the controlling player’s Assault phases if it is eligible to do so and there is at least one model from any enemy unit within 12&quot; and line of sight of it.</description>
+              <description>This unit must declare a Charge in any of the controlling player’s Assault phases if it is eligible to do so and there is at least one model from any enemy unit within 12&quot; and line of sight of it.</description>
             </rule>
           </rules>
           <constraints>
@@ -74146,7 +74146,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="X: Iron Hands (MT | Minor/Flaw)" hidden="true" id="2f1f-a953-2f24-0998" publicationId="d882-d2a-5da1-92c4" page="144" sortIndex="9">
           <rules>
             <rule name="MT|IH Iron Resolve (Minor)" id="f8a5-20c5-acd7-601a" hidden="false" publicationId="d882-d2a-5da1-92c4" page="144">
-              <description>Each time a Shooting Attack is allocated to an Iron Hands model in this unit, that model gains the Feel No Pain (5+) special rule against that attack.</description>
+              <description>Each time a Shooting Attack is allocated to an Iron Hands model in this unit, that model gains the Feel No Pain (5+) special rule against that attack.</description>
             </rule>
             <rule name="MT|IH Overly Cautous (Flaw)" id="4c94-cbc9-79a7-2ab5" hidden="false" publicationId="d882-d2a-5da1-92c4" page="144">
               <description>This unit may not Run or make Sweeping Advances</description>
@@ -74166,10 +74166,10 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XII: World Eaters (MT | Minor/Flaw)" hidden="true" id="e218-edc9-d8c9-dbff" publicationId="d882-d2a-5da1-92c4" page="144" sortIndex="10">
           <rules>
             <rule name="MT|WE Raging Slayers (Minor)" id="9735-2b30-3683-ba7b" hidden="false" publicationId="d882-d2a-5da1-92c4" page="144">
-              <description>During a turn in which this unit successfully Charges, the first failed Armour Saving throw for this unit in that Fight sub-phase is ignored (this has no effect if the weapon’s Armour Piercing value is equal to or lower than the model’s Armour Save).</description>
+              <description>During a turn in which this unit successfully Charges, the first failed Armour Saving throw for this unit in that Fight sub-phase is ignored (this has no effect if the weapon’s Armour Piercing value is equal to or lower than the model’s Armour Save).</description>
             </rule>
             <rule name="MT|WE Berserker Frustration (Flaw)" id="57c2-d0c9-1e94-f452" hidden="false" publicationId="d882-d2a-5da1-92c4" page="144">
-              <description>If this unit is within 12&quot; of an enemy unit and a Charge is not declared for it during the controlling player’s Assault phase, the controlling player must make a Pinning test for this unit.</description>
+              <description>If this unit is within 12&quot; of an enemy unit and a Charge is not declared for it during the controlling player’s Assault phase, the controlling player must make a Pinning test for this unit.</description>
             </rule>
           </rules>
           <constraints>
@@ -74186,10 +74186,10 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XIII: Ultramarines (MT | Minor/Flaw)" hidden="true" id="f153-c2b4-59d3-e118" publicationId="d882-d2a-5da1-92c4" page="145" sortIndex="11">
           <rules>
             <rule name="MT|UM Prepared Attack (Minor)" id="040a-1869-b523-dabb" hidden="false" publicationId="d882-d2a-5da1-92c4" page="145">
-              <description>Each time this unit makes a Shooting Attack as part of a Reaction, add +1 to To Hit rolls for that Shooting Attack.</description>
+              <description>Each time this unit makes a Shooting Attack as part of a Reaction, add +1 to To Hit rolls for that Shooting Attack.</description>
             </rule>
             <rule name="MT|UM Strict Chain Of Command (Flaw)" id="839b-c3bb-7da5-44aa" hidden="false" publicationId="d882-d2a-5da1-92c4" page="145">
-              <description>Each time this unit is selected to make a Reaction, make a Leadership test for this unit before expending a point from your Reaction Allotment. If this Test is failed, that unit cannot make a Reaction during this Phase.</description>
+              <description>Each time this unit is selected to make a Reaction, make a Leadership test for this unit before expending a point from your Reaction Allotment. If this Test is failed, that unit cannot make a Reaction during this Phase.</description>
             </rule>
           </rules>
           <constraints>
@@ -74206,10 +74206,10 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XIV: Death Guard (MT | Minor/Flaw)" hidden="true" id="9fbb-e5ec-4857-2a9d" publicationId="d882-d2a-5da1-92c4" page="145" sortIndex="12">
           <rules>
             <rule name="MT|DG Children Of Barbarus (Minor)" id="987b-0ad3-d2b9-e4dc" hidden="false" publicationId="d882-d2a-5da1-92c4" page="145">
-              <description>Non-Vehicle models in this unit gain a 3+ Invulnerable Save against Wounds suffered as a result of Dangerous Terrain tests.</description>
+              <description>Non-Vehicle models in this unit gain a 3+ Invulnerable Save against Wounds suffered as a result of Dangerous Terrain tests.</description>
             </rule>
             <rule name="MT|DG Unhurried Death (Flaw)" id="e088-c140-173e-fb25" hidden="false" publicationId="d882-d2a-5da1-92c4" page="145">
-              <description>When this unit Runs, makes a Sweeping Advance or moves as part of a Reaction, models in this unit are treated as having an Initiative Characteristic of 2.</description>
+              <description>When this unit Runs, makes a Sweeping Advance or moves as part of a Reaction, models in this unit are treated as having an Initiative Characteristic of 2.</description>
             </rule>
           </rules>
           <constraints>
@@ -74226,10 +74226,10 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XV: Thousand Sons (MT | Minor/Flaw)" hidden="true" id="693e-669f-1496-429b" publicationId="d882-d2a-5da1-92c4" page="146" sortIndex="13">
           <rules>
             <rule name="MT|TS Conjured Illusions (Minor)" id="4566-2051-ae79-9d3a" hidden="false" publicationId="d882-d2a-5da1-92c4" page="146">
-              <description>If this unit Falls Back from combat, models in this unit are treated as having an Initiative Characteristic of 6 for the purposes of Sweeping Advances.</description>
+              <description>If this unit Falls Back from combat, models in this unit are treated as having an Initiative Characteristic of 6 for the purposes of Sweeping Advances.</description>
             </rule>
             <rule name="MT|TS Undisciplined Mystics (Flaw)" id="027e-d662-96ef-5b2b" hidden="false" publicationId="d882-d2a-5da1-92c4" page="146">
-              <description>Whenever a result of 11 or 12 is rolled for a Morale check or Pinning test for this unit, this unit suffers Perils of the Warp.</description>
+              <description>Whenever a result of 11 or 12 is rolled for a Morale check or Pinning test for this unit, this unit suffers Perils of the Warp.</description>
             </rule>
           </rules>
           <constraints>
@@ -74246,10 +74246,10 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XVI: Sons of Horus (MT | Minor/Flaw)" hidden="true" id="fe36-6bda-fb4c-d693" publicationId="d882-d2a-5da1-92c4" page="146" sortIndex="14">
           <rules>
             <rule name="MT|SoH Legacy Of Brutality (Minor)" id="d06f-6e45-cbd9-61c0" hidden="false" publicationId="d882-d2a-5da1-92c4" page="146">
-              <description>At the start of the Fight sub-phase, if this unit is outnumbered by enemy models in that combat, models in this unit gain a bonus of +1 to To Hit rolls until the end of the phase. Models with the Bulky (X) special rule count as a number of models equal to the value included as part of that special rule.</description>
+              <description>At the start of the Fight sub-phase, if this unit is outnumbered by enemy models in that combat, models in this unit gain a bonus of +1 to To Hit rolls until the end of the phase. Models with the Bulky (X) special rule count as a number of models equal to the value included as part of that special rule.</description>
             </rule>
             <rule name="MT|SoH Towering Arrogance (Flaw)" id="7a33-4d44-f9c0-7d01" hidden="false" publicationId="d882-d2a-5da1-92c4" page="146">
-              <description>Each time this unit is eligible to declare a Reaction to a Shooting Attack or Charge declared by an enemy unit if this unit outnumbers that enemy unit, this unit is not eligible to make a Reaction. Models with the Bulky (X) special rule count as a number of models equal to the value included as part of that special rule.</description>
+              <description>Each time this unit is eligible to declare a Reaction to a Shooting Attack or Charge declared by an enemy unit if this unit outnumbers that enemy unit, this unit is not eligible to make a Reaction. Models with the Bulky (X) special rule count as a number of models equal to the value included as part of that special rule.</description>
             </rule>
           </rules>
           <constraints>
@@ -74266,10 +74266,10 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XVII: Word Bearers (MT | Minor/Flaw)" hidden="true" id="06a7-4d59-98f3-9fbb" publicationId="d882-d2a-5da1-92c4" page="147" sortIndex="15">
           <rules>
             <rule name="MT|WB Righteous Determination (Minor)" id="d52c-7a62-2b9f-d4ff" hidden="false" publicationId="d882-d2a-5da1-92c4" page="147">
-              <description>When making a Morale check or Pinning test for this unit, roll one additional D6 and discard one before determining the result.</description>
+              <description>When making a Morale check or Pinning test for this unit, roll one additional D6 and discard one before determining the result.</description>
             </rule>
             <rule name="MT|WB Eternal Penitents (Flaw)" id="fc8d-7e67-8abb-d717" hidden="false" publicationId="d882-d2a-5da1-92c4" page="147">
-              <description>When this unit fails a Leadership test, Morale check or Pinning test, it suffers one automatic Wound with no saves or Damage Mitigation rolls of any kind allowed.</description>
+              <description>When this unit fails a Leadership test, Morale check or Pinning test, it suffers one automatic Wound with no saves or Damage Mitigation rolls of any kind allowed.</description>
             </rule>
           </rules>
           <constraints>
@@ -74286,10 +74286,10 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XVIII: Salamanders (MT | Minor/Flaw)" hidden="true" id="3063-a59a-ed33-02b8" publicationId="d882-d2a-5da1-92c4" page="147" sortIndex="16">
           <rules>
             <rule name="MT|SAL Steadfast Bulwark (Minor)" id="2636-f334-c602-ed42" hidden="false" publicationId="d882-d2a-5da1-92c4" page="147">
-              <description>During a turn in which this unit is successfully Charged, all models in this unit gain the Feel No Pain (5+) special rule until the end of the turn.</description>
+              <description>During a turn in which this unit is successfully Charged, all models in this unit gain the Feel No Pain (5+) special rule until the end of the turn.</description>
             </rule>
             <rule name="MT|SAL Prudent Fighters (Flaw)" id="69f2-175f-c745-8f31" hidden="false" publicationId="d882-d2a-5da1-92c4" page="147">
-              <description>This unit may not declare Shooting Attacks or Charges that target units that are Falling Back and may not make Sweeping Advances.</description>
+              <description>This unit may not declare Shooting Attacks or Charges that target units that are Falling Back and may not make Sweeping Advances.</description>
             </rule>
           </rules>
           <constraints>
@@ -74306,10 +74306,10 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XIX: Raven Guard (MT | Minor/Flaw)" hidden="true" id="dfea-1145-fc23-2889" publicationId="d882-d2a-5da1-92c4" page="148" sortIndex="17">
           <rules>
             <rule name="MT|RG Masters Of Obfuscation (Minor)" id="5913-86c8-ea33-43da" hidden="false" publicationId="d882-d2a-5da1-92c4" page="148">
-              <description>Each time an enemy unit makes a Shooting Attack that targets this unit, if the closest model in this unit is more than 18&quot; away, all models in this unit have the Shrouded (6+) special rule against that Shooting Attack.</description>
+              <description>Each time an enemy unit makes a Shooting Attack that targets this unit, if the closest model in this unit is more than 18&quot; away, all models in this unit have the Shrouded (6+) special rule against that Shooting Attack.</description>
             </rule>
             <rule name="MT|RG Shadowkin (Flaw)" id="fe87-b409-e7ed-210d" hidden="false" publicationId="d882-d2a-5da1-92c4" page="148">
-              <description>Each time this unit makes a Morale check, if it is not wholly within a zone of Area Terrain, subtract -1 from the Leadership Characteristic of models in this unit.</description>
+              <description>Each time this unit makes a Morale check, if it is not wholly within a zone of Area Terrain, subtract -1 from the Leadership Characteristic of models in this unit.</description>
             </rule>
           </rules>
           <constraints>
@@ -74326,10 +74326,10 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         <selectionEntry type="upgrade" import="true" name="XX: Alpha Legion (MT | Minor/Flaw)" hidden="true" id="4428-5e7a-caec-9108" publicationId="d882-d2a-5da1-92c4" page="148" sortIndex="18">
           <rules>
             <rule name="MT|AL Masters Of Misdirection (Minor)" id="3805-9693-2e77-2cdc" hidden="false" publicationId="d882-d2a-5da1-92c4" page="148">
-              <description>If an enemy unit makes a Shooting Attack that targets this unit, and there is another eligible target unit that is closer to the enemy unit making the Shooting Attack, models in this unit gain the Shrouded (6+) special rule for the duration of that Shooting Attack.</description>
+              <description>If an enemy unit makes a Shooting Attack that targets this unit, and there is another eligible target unit that is closer to the enemy unit making the Shooting Attack, models in this unit gain the Shrouded (6+) special rule for the duration of that Shooting Attack.</description>
             </rule>
             <rule name="MT|AL Look After Their Own (Flaw)" id="cd97-0c67-3e00-080c" hidden="false" publicationId="d882-d2a-5da1-92c4" page="148">
-              <description>When allocating Wounds to models in this unit, the controlling player must allocate Wounds to a non-Alpha Legion model if possible.</description>
+              <description>When allocating Wounds to models in this unit, the controlling player must allocate Wounds to a non-Alpha Legion model if possible.</description>
             </rule>
           </rules>
           <constraints>
