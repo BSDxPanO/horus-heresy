@@ -3212,6 +3212,11 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Æther-Fire Blaster" hidden="false" id="ab71-f78e-787b-4760" type="selectionEntry" targetId="d078-5f42-c02b-c73d">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>

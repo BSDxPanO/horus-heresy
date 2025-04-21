@@ -574,6 +574,10 @@ Additional rules are given to units based on Legion and Unit.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3086-fe32-6b9f-432c" includeChildSelections="true"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="0233-7a05-1e6b-394a" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="2e70-3f4a-5a2d-3791" primary="false" name="Unit:"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Ruinstorm Daemon Beasts (Esoterist)" hidden="false" type="selectionEntry" id="38f-596b-5c0a-69ad" targetId="9438-9ba4-c7dc-f2bc">
       <modifiers>
@@ -1314,7 +1318,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="Legion Standard" field="name"/>
@@ -1327,7 +1331,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="Legion Standard" field="name"/>
@@ -2991,7 +2995,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </profiles>
       <infoLinks>
         <infoLink id="c4a1-2af0-dd45-581e" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
-        <infoLink id="f02f-c925-7617-114a" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+        <infoLink id="f02f-c925-7617-114a" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
         <infoLink id="30ec-1835-cd1c-dfb9" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Breaching (4+)"/>
@@ -11156,27 +11160,27 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08be-6994-6a63-6279" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b254-abfc-a57f-ab28" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ffe-2820-9b97-99db" type="equalTo"/>
+                        <condition field="selections" scope="b9fd-2c7d-ab6a-89af" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08be-6994-6a63-6279" type="equalTo"/>
+                        <condition field="selections" scope="b9fd-2c7d-ab6a-89af" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b254-abfc-a57f-ab28" type="equalTo"/>
+                        <condition field="selections" scope="b9fd-2c7d-ab6a-89af" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ffe-2820-9b97-99db" type="equalTo"/>
                       </conditions>
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b254-abfc-a57f-ab28" type="equalTo"/>
-                            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08be-6994-6a63-6279" type="equalTo"/>
+                            <condition field="selections" scope="b9fd-2c7d-ab6a-89af" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b254-abfc-a57f-ab28" type="equalTo"/>
+                            <condition field="selections" scope="b9fd-2c7d-ab6a-89af" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08be-6994-6a63-6279" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ffe-2820-9b97-99db" type="equalTo"/>
-                            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08be-6994-6a63-6279" type="equalTo"/>
+                            <condition field="selections" scope="b9fd-2c7d-ab6a-89af" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ffe-2820-9b97-99db" type="equalTo"/>
+                            <condition field="selections" scope="b9fd-2c7d-ab6a-89af" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08be-6994-6a63-6279" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b254-abfc-a57f-ab28" type="equalTo"/>
-                            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ffe-2820-9b97-99db" type="equalTo"/>
+                            <condition field="selections" scope="b9fd-2c7d-ab6a-89af" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b254-abfc-a57f-ab28" type="equalTo"/>
+                            <condition field="selections" scope="b9fd-2c7d-ab6a-89af" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ffe-2820-9b97-99db" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -20121,7 +20125,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink id="64b2-134f-162b-8ece" name="Asphyx Bolt Pistol" hidden="true" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
+                <entryLink id="64b2-134f-162b-8ece" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c1d-3812-2e73-7b7a" type="max"/>
                   </constraints>
@@ -20910,9 +20914,16 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                           <conditionGroups>
                             <conditionGroup type="and">
                               <conditions>
-                                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
                                 <condition field="selections" scope="4357-930e-165a-a6e3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e05-7d1e-16e4-1669" type="equalTo"/>
                               </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="equalTo" value="1" field="selections" scope="force" childId="3edc-a1b9-6dc6-b1ea" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                    <condition type="equalTo" value="1" field="selections" scope="force" childId="268b-74a8-395f-6f27" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
                             </conditionGroup>
                           </conditionGroups>
                         </modifier>
@@ -21476,7 +21487,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="1a56-86b0-d89f-c7d4" name="Chainaxe" hidden="false" collective="false" import="true" targetId="ed76-dace-31e4-b174" type="selectionEntry">
+                    <entryLink id="1a56-86b0-d89f-c7d4" name="Chainaxe" hidden="true" collective="false" import="true" targetId="ed76-dace-31e4-b174" type="selectionEntry">
                       <modifiers>
                         <modifier type="set" field="d2ee-04cb-5f8a-2642" value="1">
                           <conditionGroups>
@@ -27634,7 +27645,7 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditionGroups>
-                        <conditionGroup type="and">
+                        <conditionGroup type="or">
                           <conditions>
                             <condition type="equalTo" value="1" field="selections" scope="force" childId="c0df-c1fa-5ddc-9ee5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                             <condition type="equalTo" value="1" field="selections" scope="force" childId="01b4-57c7-bf61-2abf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -29533,6 +29544,11 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                       </costs>
                     </entryLink>
                     <entryLink import="true" name="Xenos Deathlock" hidden="false" id="427c-637b-b36e-25d6" type="selectionEntry" targetId="2c50-304f-b74a-33da">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Alchem Flamer" hidden="false" id="3a52-8a89-08a0-1bf5" collective="false" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
@@ -33811,6 +33827,8 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                           <conditions>
                             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
                             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c1a3-e5fd-cd35-d4e3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b4a1-c10c-0fa4-52b9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -40699,8 +40717,8 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
-                            <condition type="equalTo" value="1" field="selections" scope="force" childId="c7be-f327-8718-3dfb" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="a736-43ca-ed95-a08f" childId="7d72-7f6d-6330-6871" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="a736-43ca-ed95-a08f" childId="07f7-c486-f597-a1b9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -45665,6 +45683,16 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" value="8f42-a824-fb5f-8fea" field="category">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="aa7f-bd4c-5231-d459" childId="8c3a-f99e-4226-e519" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="06cc-c559-d71e-b75e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -52703,6 +52731,10 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
           <modifiers>
             <modifier type="set" value="Centreline-mounted Magna-Melta Cannon" field="name"/>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f23-9d25-1407-5e7a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6de-8560-2035-8b34" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -53462,7 +53494,6 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
       <categoryLinks>
         <categoryLink id="bd2a-3b6a-6bc2-faf2" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="0fbb-025e-4fde-5df9" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="1d22-179e-b939-31de" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="5477-cc2b-ef70-878d" name="Malcador Assault Tank" hidden="false" collective="false" import="true" type="model">
@@ -60979,6 +61010,8 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
             <conditionGroup type="and">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="bfc9-c99c-bf8a-3917" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="f9cd-f32b-da51-5c68" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="8bf2-740f-f301-a479" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -64080,7 +64113,6 @@ Models with the Shackled Artificia Unit Type can never count as scoring units, n
         <categoryLink id="3bab-e4a3-06db-476b" name="Bound Sub-type" hidden="false" targetId="40f3-05e8-5ddc-636a" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="e262-be47-7bfc-1a73" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
         <entryLink id="b063-43ef-4f08-e0da" name="Bound Daemon Brute" hidden="false" collective="false" import="true" targetId="12a1-9b89-fe2e-29dd" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -64349,7 +64381,6 @@ Models with the Shackled Artificia Unit Type can never count as scoring units, n
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="f96a-65db-f5de-fd14" targetId="caad-e621-38e5-cb5f"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Traitor" hidden="false" type="rule" id="5620-1af1-3c36-951a" targetId="eff2-8b0e-21da-2f0d"/>
@@ -64363,23 +64394,60 @@ Models with the Shackled Artificia Unit Type can never count as scoring units, n
             <modifier type="set" value="Bulky (3)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink id="ebe2-9d5e-9ca4-ce30" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Brutes (Esoterist)" hidden="false" id="9e8f-5f12-3581-b499">
       <costs>
@@ -64390,7 +64458,6 @@ Models with the Shackled Artificia Unit Type can never count as scoring units, n
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Daemon Brute" hidden="false" type="selectionEntry" id="41b0-3159-b8b-b771" targetId="e3e-4f46-2300-a35"/>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="59a5-f924-927a-daab" targetId="caad-e621-38e5-cb5f"/>
       </entryLinks>
       <infoLinks>
         <infoLink id="2420-1679-83c5-d0a3" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
@@ -64403,33 +64470,24 @@ Models with the Shackled Artificia Unit Type can never count as scoring units, n
             <modifier type="set" value="Bulky (3)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink id="211-b862-2dcb-7d96" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Hammer of Wrath (2)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="4705-e395-cc4b-52ac" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
       </infoLinks>
       <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" hidden="false" id="c38e-1036-d2b7-5a27">
           <entryLinks>
-            <entryLink import="true" name="Infernal Armaments" hidden="false" type="selectionEntry" id="3708-c0ea-3bce-53b4" targetId="9abc-11e8-9031-d104" defaultAmount="3"/>
+            <entryLink import="true" name="Infernal Armaments" hidden="false" type="selectionEntry" id="3708-c0ea-3bce-53b4" targetId="9abc-11e8-9031-d104" defaultAmount="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="677e-247a-6dec-8e41"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87c1-32c8-15d8-6205"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea32-4405-9ceb-1532"/>
@@ -64437,6 +64495,52 @@ Models with the Shackled Artificia Unit Type can never count as scoring units, n
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Swarms (Esoterist)" hidden="false" id="ba83-50a5-58b2-d96e">
       <costs>
@@ -64448,30 +64552,66 @@ Models with the Shackled Artificia Unit Type can never count as scoring units, n
         <categoryLink targetId="59a4-7b61-600a-c457" id="73bf-bea3-6e7d-b048" primary="false" name="Skirmish Sub-type"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink id="dccb-1e29-655d-8622" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink name="Support Squad" hidden="false" type="rule" id="2b65-23f8-cb25-cb89" targetId="768e-56d6-ca52-24ae"/>
         <infoLink name="Swarm" hidden="false" type="rule" id="2ffb-b558-544c-a869" targetId="0bc2-fcb2-dd25-c10a"/>
         <infoLink id="11c1-73fc-89ab-a189" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
       </infoLinks>
       <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="eac6-8f2-7708-a84b" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Daemon Swarm" hidden="false" type="selectionEntry" id="19d5-5f3f-27a3-f610" targetId="cb8c-b27a-ea4e-1c91"/>
       </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Lesser Daemons (Esoterist)" hidden="false" id="da98-9795-9def-6664">
       <costs>
@@ -64482,7 +64622,6 @@ Models with the Shackled Artificia Unit Type can never count as scoring units, n
         <categoryLink targetId="6399-5c65-7833-1025" id="dd50-fc8e-8642-581d" primary="false" name="Line Sub-type"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="340a-40fd-9a87-13c1" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Lesser Daemon" hidden="false" type="selectionEntry" id="35a0-82ce-949f-1d39" targetId="5da5-c15b-dfe5-d1b5"/>
       </entryLinks>
       <selectionEntryGroups>
@@ -64511,24 +64650,61 @@ Models with the Shackled Artificia Unit Type can never count as scoring units, n
             <modifier type="set" field="name" value="Æthereal Invulnerability (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="1741-b1b2-2f7d-c412" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="fc5f-32d1-fa10-8989" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
       </infoLinks>
       <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="AAA" hidden="false" id="2534-7bff-d40f-da82">
       <infoLinks>
@@ -65698,9 +65874,6 @@ If the Psychic check is successful then until that Shooting Attack is resolved, 
       <rules>
         <rule name="Company Command" id="3460-96e7-4b94-bbda" hidden="false" page="202" publicationId="d882-d2a-5da1-92c4">
           <description>The Command Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. The Command Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Command Squad during play. A Legion Company Command Squad may not be selected as part of an army without a Leader.</description>
-        </rule>
-        <rule name="Company Standard" id="f01d-9df4-4800-88e4" hidden="false" page="202" publicationId="d882-d2a-5da1-92c4">
-          <description>All of the controlling player’s units with the same variant of the Legiones Astartes (X) special rule within 6&quot; of a friendly model with a company standard are considered to have a Leadership Characteristic of 9 when resolving Morale checks or Pinning tests (but not Psychic checks). In addition, all models in a unit that includes a company standard gain the Line Sub-type as long as they remain part of that unit – this benefit is lost immediately if the model with the company standard is removed as a casualty.</description>
         </rule>
       </rules>
       <selectionEntryGroups>
@@ -67429,7 +67602,7 @@ In addition, if Xiaphas Jurr is selected as the army’s Warlord in a Blackshiel
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
                 <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
                 <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
@@ -67694,7 +67867,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink targetId="11f2-472f-c1d1-9ae9" id="7566-50c-6c1-33ba" primary="false" name="Legiones Astartes"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Hibou Khan" hidden="false" id="2cc6-4d2f-decb-9931">
+        <selectionEntry type="model" import="true" name="Hibou Khan" hidden="false" id="2cc6-4d2f-decb-9931" publicationId="d882-d2a-5da1-92c4" page="194">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -67733,7 +67906,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a045-ea2b-b5f4-461b" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="The Breath of the Storm" hidden="false" id="c946-5def-8525-e8a8">
+        <selectionEntry type="upgrade" import="true" name="The Breath of the Storm" hidden="false" id="c946-5def-8525-e8a8" publicationId="d882-d2a-5da1-92c4" page="195">
           <profiles>
             <profile name="The Breath of the Storm" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="20cb-60e0-c132-62b3">
               <characteristics>
@@ -67783,11 +67956,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49ec-221e-adb0-6b4e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Seeker of Atonement" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="91c4-d6ae-846d-ddfd">
+            <profile name="Seeker of Atonement" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="91c4-d6ae-846d-ddfd" publicationId="d882-d2a-5da1-92c4" page="194">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Warlord: 
-Hibou Khan has accepted his exile, seeking out Traitor forces at every turn,slaying as many as he can before his life is ended by an enemy&apos;s blade and his honour is restored. If chosen as the army&apos;s Warlord, Hibou Khan automatically has the Seeker of Atonement Warlord Trait and may not select any other. 
-Seeker of Atonement - If Hibou Khan is the army&apos;s Warlord, then both Hibou Khan and any unit he joins gain the Rampage(2) special rule.
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Warlord:
+Hibou Khan has accepted his exile, seeking out Traitor forces at every turn, slaying as many as he can before his life is ended by an enemy&apos;s blade and his honour is restored. If chosen as the army&apos;s Warlord, Hibou Khan automatically has the Seeker of Atonement Warlord Trait and may not select any other.
+Seeker of Atonement - If Hibou Khan is the army&apos;s Warlord, then both Hibou Khan and any unit he joins gain the Rampage (2) special rule.
 
 
 In addition:
@@ -67798,6 +67971,13 @@ In addition:
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink name="Rampage (X)" id="c776-2f75-f6aa-05f1" hidden="false" type="rule" targetId="3efb-2a2c-2d0b-92fc" publicationId="e77a-823a-da94-16b9" page="245">
+              <modifiers>
+                <modifier type="set" value="Rampage (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </entryLink>
         <entryLink import="true" name="Bolt Pistol" hidden="false" id="1c6e-e5d4-4e2c-9759" collective="false" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
           <constraints>
@@ -68554,6 +68734,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
                 </entryLink>
               </entryLinks>
             </entryLink>
+            <entryLink import="true" name="The Ætheric Dominion (X)" hidden="false" id="7c4e-de85-56c7-dbbb" type="selectionEntryGroup" targetId="002f-0e40-9d49-2a22"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
@@ -70502,7 +70683,7 @@ Any Solar Auxilia Rifles Sections included through the use of the Overseer’s R
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
           </costs>
         </entryLink>
-        <entryLink id="4123-9851-52ba-4f34" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry"/>
+        <entryLink id="4123-9851-52ba-4f34" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry" defaultAmount="1"/>
         <entryLink id="391a-a1cd-2a6c-88dd" name="Raven&apos;s Talon" hidden="true" collective="false" import="true" targetId="09d8-64f5-1936-e8ab" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="d2ee-04cb-5f8a-2642" value="5">

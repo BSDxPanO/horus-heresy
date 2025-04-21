@@ -2023,6 +2023,22 @@ When you do so, replace this model’s Legiones Astartes (Salamanders) special r
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7fc3-26cb-8d07-533c" includeChildSelections="true"/>
       </constraints>
     </entryLink>
+    <entryLink import="true" name="Decimator" hidden="false" id="f56d-7900-8a80-1070" type="selectionEntry" targetId="b1a5-42a-a6ee-2223">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="roster" childId="bbbd-74d7-7754-8af4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="168e-aded-bc6b-64c1" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="0b7f-f04f-b898-d037" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink name="Compulsory Heavy Support:" hidden="false" id="0915-0f77-7ebd-1c47" targetId="030f-3801-4f54-e7f8" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legions Astartes" id="efcb-808e-1ce0-2a87" targetId="6393-649c-7213-a327" importRootEntries="true"/>
