@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="210" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="211" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -1305,6 +1305,12 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <infoLink id="e9ff-9f4a-0607-1626" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Skilled Rider" id="c7b9-f9df-d7e5-b747" hidden="false" targetId="89cc-21e0-bee2-6a89" type="rule"/>
+        <infoLink name="Battle-Hardened (X)" id="d0e4-5b5f-0252-36b6" hidden="false" targetId="5c3b-ed0b-4ad0-d547" type="rule">
+          <modifiers>
+            <modifier type="set" value="Battle-Hardened (1)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -3965,7 +3971,19 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
           </modifiers>
         </infoLink>
         <infoLink id="46a2-3d86-88b1-d658" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-        <infoLink id="ce6d-e0da-1c86-9d52" name="Ungainly" targetId="1cb6-d7f2-0c79-d208" type="rule"/>
+        <infoLink id="ce6d-e0da-1c86-9d52" name="Ungainly" targetId="1cb6-d7f2-0c79-d208" type="rule">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="A model may only attack with this weapon on a turn in which it makes a Charge (even if that Charge is Disordered), but does not gain a bonus attack for Charging or from any Special Rules that would normally grant additional Attacks" field="description" join=""/>
+                <modifier type="set" value="Pano 5.3 pg 85" field="annotation"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -63123,6 +63141,18 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="All models with this Special Rule add +1 to their Movement Characteristic and whenever called upon to make a roll to determine which player will take the First Turn or to Seize the Initiative (or otherwise has Strategic Advantage), the Controlling Player of an army whose Primary Detachment has this Special Rule may roll an additional dice and discard the lowest rolled dice before determining the result. 
+" field="description" join=""/>
+                <modifier type="set" value="Pano 5.3 pg 84" field="annotation"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
         <infoLink id="f067-3881-4a36-3dba" name="Legiones Astartes (Imperial Fists)" hidden="false" targetId="e876-4f8f-a30f-8b22" type="rule">
           <modifiers>
