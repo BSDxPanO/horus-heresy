@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="72ba-61c2-37ad-c785" name="LA -   III: Emperor&apos;s Children" revision="45" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="72ba-61c2-37ad-c785" name="LA -   III: Emperor&apos;s Children" revision="46" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="a119-3943-4b8b-b651" name="Captain Lucius" hidden="true" collective="false" import="false" targetId="0707-1e4b-27da-9cd4" type="selectionEntry">
       <modifiers>
@@ -3322,6 +3322,19 @@ A unit with this special rule gains +1 to the score used to calculate the winner
         </infoLink>
         <infoLink name="Stubborn" hidden="false" type="rule" id="cff0-6431-d93a-dc2d" targetId="7989-1f2c-a43d-82ae"/>
         <infoLink id="dff4-89f0-a334-fbb9" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
+        <infoLink name="Chosen Warriors" id="6217-acd1-e5e0-6384" hidden="false" targetId="13d1-9270-6539-08ed" type="rule">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden" join=""/>
+                <modifier type="set" value="Pano 5.3 pg 88" field="annotation"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="99d4-024f-39b9-f2dd" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -3442,6 +3455,17 @@ A unit with this special rule gains +1 to the score used to calculate the winner
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
                 <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Infantry" field="ddd7-6f5c-a939-b69e" join=""/>
+                    <modifier type="set" value="Pano 5.3 pg 88" field="annotation"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -4281,6 +4305,19 @@ A unit with this special rule gains +1 to the score used to calculate the winner
                 <modifier type="set" field="name" value="Preferred Enemy (Emperor&apos;s Children)"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Shattered Legionary" id="8a4b-44d8-9b40-f2f1" hidden="false" targetId="40f6-a46f-4f1a-8516" type="rule">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden" join=""/>
+                    <modifier type="set" value="Pano 5.3 pg 88" field="annotation"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </infoLink>
           </infoLinks>
           <entryLinks>
             <entryLink id="412d-2060-fddc-cccc" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
@@ -5090,7 +5127,23 @@ If any of these are true then Captain Saul Tarvitz and any friendly units with a
           <entryLinks>
             <entryLink id="fac2-096b-ca3e-9da9" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
             <entryLink id="7c5f-8a55-7cb3-dc9f" name="Volkite Culverin" hidden="false" collective="false" import="true" targetId="170d-44e0-455c-8207" type="selectionEntry"/>
-            <entryLink id="f161-d3a8-e0d2-b274" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry"/>
+            <entryLink id="f161-d3a8-e0d2-b274" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
+              <entryLinks>
+                <entryLink import="true" name="Suspensor Web" hidden="false" id="cc99-d432-eddb-848e" collective="false" targetId="6472-db7f-08b0-d7c7" type="selectionEntry" defaultAmount="1">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden" join=""/>
+                        <modifier type="set" value="Pano 5.3 pg 117" field="annotation"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
+                </entryLink>
+              </entryLinks>
+            </entryLink>
             <entryLink id="957b-ffdf-b69d-cbfb" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="43f5-3815-6b3a-a363" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -5930,6 +5983,17 @@ If any of these are true then Captain Saul Tarvitz and any friendly units with a
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden" join=""/>
+                    <modifier type="set" value="Pano 5.3 pg 88" field="annotation"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -6068,6 +6132,17 @@ In addition, the first Reaction made in each Game Turn by Fulgrim Transfigured a
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
                 <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="9" field="cc42-7ed5-7092-5c84" join=""/>
+                    <modifier type="set" value="Pano 5.3 pg 117" field="annotation"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <rules>
@@ -6090,6 +6165,20 @@ A model with Resplendent Wings may still Run if it would normally be able to Run
 
 
 During a Reaction made in any Phase, a player may not choose to activate a model’s Resplendent Wings to gain any bonus to its Movement Characteristic.</description>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value=" Fulgrim Transfigured is counted as having a Legion Warhawk Jump Pack for rules and interactions that affect or require that wargear.
+" field="description" join="
+
+"/>
+                    <modifier type="set" value="Pano 5.3 pg 117" field="annotation"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </rule>
           </rules>
           <infoLinks>
@@ -6104,6 +6193,20 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value=" For the purposes of Movement, Shooting Attacks, and Charges, a model deployed via this Special Rule should be treated as though they were deployed via a Deep Strike Assault.
+" field="description" join="
+
+"/>
+                    <modifier type="set" value="Pano 5.3 pg 117" field="annotation"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </infoLink>
           </infoLinks>
           <entryLinks>
