@@ -3601,6 +3601,17 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="remove" value="9231-183c-b97b-63f9" field="category" join=""/>
+            <modifier type="set" value="Pano 5.3 pg 85" field="annotation"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="eb44-e977-2ce5-b239" name="Ebon Keshig Cohort" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
