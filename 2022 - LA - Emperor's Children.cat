@@ -5156,6 +5156,9 @@ If any of these are true then Captain Saul Tarvitz and any friendly units with a
               <modifiers>
                 <modifier type="set" value="true" field="hidden" join=""/>
               </modifiers>
+              <infoLinks>
+                <infoLink name="Suspensor Web" id="52ee-696b-4021-dadf" hidden="false" targetId="457c-1f2c-ca90-1bf3" type="profile"/>
+              </infoLinks>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5186,19 +5189,6 @@ If any of these are true then Captain Saul Tarvitz and any friendly units with a
           </constraints>
         </entryLink>
         <entryLink id="6d14-2b42-0ed6-39b1" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Suspensor Web" hidden="false" id="46d8-0573-2765-c557" collective="false" targetId="6472-db7f-08b0-d7c7" type="selectionEntry" defaultAmount="">
-          <modifierGroups>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden" join=""/>
-                <modifier type="set" value="Pano 5.3 pg 117" field="annotation"/>
-              </modifiers>
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifierGroup>
-          </modifierGroups>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
