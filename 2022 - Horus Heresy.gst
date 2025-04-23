@@ -18815,7 +18815,7 @@ Any Legion Centrurions, Legion Cataphractii Centurions and Legion Tartaros Centu
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="append" value="All models with this Special Rule add +1 to their Movement Characteristic and whenever called upon to make a roll to determine which player will take the First Turn or to Seize the Initiative (or otherwise has Strategic Advantage), the Controlling Player of an army whose Primary Detachment has this Special Rule may roll an additional dice and discard the lowest rolled dice before determining the result. 
+            <modifier type="set" value="Swift of Action: All models with this Special Rule add +1 to their Movement Characteristic and whenever called upon to make a roll to determine which player will take the First Turn or to Seize the Initiative (or otherwise has Strategic Advantage), the Controlling Player of an army whose Primary Detachment has this Special Rule may roll an additional dice and discard the lowest rolled dice before determining the result. 
 " field="description" join=""/>
             <modifier type="set" value="Pano 5.3 pg 84" field="annotation"/>
           </modifiers>
