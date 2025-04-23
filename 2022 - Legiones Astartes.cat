@@ -1307,11 +1307,34 @@ During a Reaction made in any Phase, a player may not choose to activate a model
             <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Skilled Rider" id="c7b9-f9df-d7e5-b747" hidden="false" targetId="89cc-21e0-bee2-6a89" type="rule"/>
+        <infoLink name="Skilled Rider" id="c7b9-f9df-d7e5-b747" hidden="false" targetId="89cc-21e0-bee2-6a89" type="rule">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden" join=""/>
+                <modifier type="set" value="Pano 5.3 pg 84" field="annotation"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
         <infoLink name="Battle-Hardened (X)" id="d0e4-5b5f-0252-36b6" hidden="false" targetId="5c3b-ed0b-4ad0-d547" type="rule">
           <modifiers>
             <modifier type="set" value="Battle-Hardened (1)" field="name"/>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden" join=""/>
+                <modifier type="set" value="Pano 5.3 pg 84" field="annotation"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
       </infoLinks>
       <entryLinks>

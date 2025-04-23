@@ -3843,6 +3843,17 @@
               </modifiers>
             </entryLink>
           </entryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden" join=""/>
+                <modifier type="set" value="Pano 5.3 pg 85" field="annotation"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -5249,7 +5260,19 @@
         <infoLink id="0a34-2f3c-43da-dc08" name="Hit &amp; Run" hidden="false" targetId="5986-e960-d432-affd" type="rule"/>
         <infoLink id="337f-0774-bea7-a762" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
         <infoLink id="056d-2b1f-e7f3-4c45" name="Pathfinder" hidden="false" targetId="ec97-7aa8-49f5-b298" type="rule"/>
-        <infoLink name="Outflank" id="67b6-bd31-eed2-4c8f" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule"/>
+        <infoLink name="Outflank" id="67b6-bd31-eed2-4c8f" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden" join=""/>
+                <modifier type="set" value="Pano 5.3 pg 84" field="annotation"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f5c8-2bd1-122d-be0e" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
