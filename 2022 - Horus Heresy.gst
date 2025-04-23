@@ -18126,10 +18126,7 @@ No matter how many times a unit has taken saved or unsaved Wounds from an attack
             <modifier type="set" value="Any unit hit by one or more models or weapons with this Special Rule must take a Leadership test once the attack is fully resolved. If the test is passed, there is no further effect. If the Leadership test is failed, all models in the unit suffer a penalty to their Weapon Skill equal to the value in brackets until the end of their Controlling Player’s next turn. Should the attacking unit hit themselves, they automatically pass the Leadership test. Any model that does not have a Leadership Characteristic (for example, Vehicles, Buildings, etc) are unaffected by this Special Rule.
 
 
-If a single unit has been the target of several Concussive attacks with different values and fails the Leadership test, then it suffers the effects of the highest single modifier among those attacks – the effects do not stack or otherwise become cumulative." field="description" join="">
-              <comment>
-</comment>
-            </modifier>
+If a single unit has been the target of several Concussive attacks with different values and fails the Leadership test, then it suffers the effects of the highest single modifier among those attacks – the effects do not stack or otherwise become cumulative." field="description" join=""/>
             <modifier type="set" value="Pano 5.3 pg 74" field="annotation"/>
           </modifiers>
           <conditions>
@@ -18815,6 +18812,18 @@ Any Legion Centrurions, Legion Cataphractii Centurions and Legion Tartaros Centu
     </rule>
     <rule id="4b54-8bd0-9fdd-cbc4" name="Legiones Astartes (White Scars)" publicationId="817a-6288-e016-7469" page="176" hidden="false">
       <description>Swift of Action: All models with this special rule add +1 to their Movement Characteristic and whenever called upon to make a roll to determine which player will take the First Turn or to Seize the Initiative, the controlling player of an army whose Primary Detachment has this special rule may roll an additional dice and discard the lowest rolled dice before determining the result.</description>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="append" value="All models with this Special Rule add +1 to their Movement Characteristic and whenever called upon to make a roll to determine which player will take the First Turn or to Seize the Initiative (or otherwise has Strategic Advantage), the Controlling Player of an army whose Primary Detachment has this Special Rule may roll an additional dice and discard the lowest rolled dice before determining the result. 
+" field="description" join=""/>
+            <modifier type="set" value="Pano 5.3 pg 84" field="annotation"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </rule>
     <rule id="21ba-24fc-3fad-00fe" name="Legiones Astartes (Word Bearers)" publicationId="09c5-eeae-f398-b653" page="302" hidden="false">
       <description>True Believers: A model with this special rule may never have a Leadership Characteristic modified below a value of 6. Furthermore if one or more models with this special rule are part of a combat that results in a draw, then the side that includes one or more models at the end of the fight sub-phase with this special rule is counted as having won the combat by 1 point. If both sides include models with this special rule then the combat remains a draw.</description>

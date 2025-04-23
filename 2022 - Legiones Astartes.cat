@@ -63141,18 +63141,6 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
               </conditions>
             </modifier>
           </modifiers>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier type="append" value="All models with this Special Rule add +1 to their Movement Characteristic and whenever called upon to make a roll to determine which player will take the First Turn or to Seize the Initiative (or otherwise has Strategic Advantage), the Controlling Player of an army whose Primary Detachment has this Special Rule may roll an additional dice and discard the lowest rolled dice before determining the result. 
-" field="description" join=""/>
-                <modifier type="set" value="Pano 5.3 pg 84" field="annotation"/>
-              </modifiers>
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifierGroup>
-          </modifierGroups>
         </infoLink>
         <infoLink id="f067-3881-4a36-3dba" name="Legiones Astartes (Imperial Fists)" hidden="false" targetId="e876-4f8f-a30f-8b22" type="rule">
           <modifiers>
