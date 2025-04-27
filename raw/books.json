@@ -53,5 +53,99 @@
         "type": "weapon_profile_pages"
       }
     ]
+  },
+  {
+    "file_name": "Pano - HH2 - Liber Antiquia - 1.6.pdf",
+    "pub_id": "a368-64f0-10c7-c49d",
+    "page_ranges": [
+      {
+        "start": 12,
+        "end": 103,
+        "target_file_name": "PO - Asuryani.cat"
+      },
+      {
+        "start": 106,
+        "end": 133,
+        "target_file_name": "PO - Saedath.cat"
+      },
+      {
+        "start": 136,
+        "end": 165,
+        "target_file_name": "Panoptica Library.cat"
+      }
+    ]
+  },
+  {
+    "file_name": "Pano - HH2 - Liber Centura - 1.6.pdf",
+    "pub_id": "9c07-3edc-5aa8-9304",
+    "page_ranges": [
+      {
+        "start": 6,
+        "end": 61,
+        "target_file_name": "PO - Centura Library.cat"
+      },
+      {
+        "start": 78,
+        "end": 91,
+        "target_file_name": "Panoptica Library.cat"
+      }
+    ]
+  },
+  {
+    "file_name": "Pano - HH2 - Liber Imperatus - 1.2.pdf",
+    "pub_id": "f505-5fc8-ee53-1cec",
+    "page_ranges": [
+      {
+        "start": 8,
+        "end": 51,
+        "target_file_name": "PO - Traders Militant.cat"
+      },
+      {
+        "start": 54,
+        "end": 87,
+        "target_file_name": "PO - Legio Custodes.cat"
+      },
+      {
+        "start": 92,
+        "end": 117,
+        "target_file_name": "PO - Sisters of Silence.cat"
+      },
+      {
+        "start": 120,
+        "end": 193,
+        "target_file_name": "PO - Solar Auxilia.cat"
+      },
+      {
+        "start": 194,
+        "end": 263,
+        "target_file_name": "PO - Imperialis Militia.cat"
+      },
+      {
+        "start": 270,
+        "end": 314,
+        "target_file_name": "Panoptica Library.cat"
+      }
+    ]
+  },
+  {
+    "file_name": "Pano - HH2 - Liber Ingenium - 1.3.pdf",
+    "pub_id": "89c5-118c-61fb-e6d8",
+    "page_ranges": [
+      {
+        "start": 6,
+        "end": 67,
+        "target_file_name": "PO - Mechanicum.cat"
+      },
+      {
+        "start": 71,
+        "end": 75,
+        "target_file_name": "PO - Questoris Knights.cat"
+      },
+      {
+        "start": 82,
+        "end": 110,
+        "target_file_name": "Panoptica Library.cat"
+      }
+    ]
   }
 ]
