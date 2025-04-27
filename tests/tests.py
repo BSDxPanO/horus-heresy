@@ -24,7 +24,7 @@ class GameTests(unittest.TestCase):
         driver.delete_all_cookies()
         self.wait = ui.WebDriverWait(driver, 30)  # timeout after 30 seconds
         self.driver = driver
-        driver.get("https://www.newrecruit.eu/app/MySystems")
+        driver.get("https://www.newrecruit.eu/app")
         print("Loading NR")
 
         driver.execute_script('localStorage.setItem("local", "true")')
@@ -123,7 +123,7 @@ class GameTests(unittest.TestCase):
     def test_crusade_6_errors(self):
         self.load_list('Empty Validation Test')
         errors = self.get_error_list()
-        self.assertEqual(6, len(errors), "There should be 6 errors in an empty crusade force org marine list")
+        self.assertEqual(6, len(errors), "There should be 7 errors in an empty crusade force org marine list")
 
     def test_dt_does_not_affect_squad_cost(self):
         self.load_list('Dedicated Transport Squad Costs')
