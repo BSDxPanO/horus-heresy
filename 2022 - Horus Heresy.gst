@@ -4801,6 +4801,17 @@ Could not find rule: †Graviton Collapse</comment>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Armourbane (Melta), Twin-linked</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Multi-Melta With Suspensor Web" field="name" join=""/>
+                <modifier type="set" value="Pano 5.3 pg 117" field="annotation"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
