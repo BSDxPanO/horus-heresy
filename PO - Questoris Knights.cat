@@ -1,2 +1,468 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="0cdd-352b-9b44-bb19" name="PO - Questoris Knights" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="128" revision="1" battleScribeVersion="2.03" type="catalogue"/>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="0cdd-352b-9b44-bb19" name="PO - Questoris Knights" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="128" revision="1" battleScribeVersion="2.03" type="catalogue">
+  <sharedSelectionEntries>
+    <selectionEntry name="Questoris Knight Moirax Talon" type="unit" id="d01b-092d-47d1-9f67" page="71" publicationId="89c5-118c-61fb-e6d8">
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="0d10-540e-4b98-81ba"/>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" primary="true" id="ab1b-4333-4054-ac94" name="Troops"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" name="Questoris Knight Moirax" id="4d86-33a4-465f-a51d" page="71" publicationId="89c5-118c-61fb-e6d8">
+          <profiles>
+            <profile id="179e-96f3-4a86-bed3" name="Questoris Knight Moirax" typeId="4bb2-cb95-e6c8-5a21">
+              <characteristics>
+                <characteristic typeId="893e-2d76-8f04-44e5" name="Move">8</characteristic>
+                <characteristic typeId="cc42-7ed5-7092-5c84" name="WS">4</characteristic>
+                <characteristic typeId="74ae-c840-0036-d244" name="BS">4</characteristic>
+                <characteristic typeId="e478-41d4-a092-48a8" name="S">7</characteristic>
+                <characteristic typeId="c32b-5fdd-3fbe-9b1f" name="T">7</characteristic>
+                <characteristic typeId="57ee-1126-32a9-5672" name="W">6</characteristic>
+                <characteristic typeId="62d3-22d7-2d49-52dc" name="I">4</characteristic>
+                <characteristic typeId="f111-2ce5-dd12-d6b0" name="A">3</characteristic>
+                <characteristic typeId="e8a6-1da9-d384-8727" name="Ld">8</characteristic>
+                <characteristic typeId="e593-6b3c-f169-04f0" name="Save">3+</characteristic>
+                <characteristic typeId="ddd7-6f5c-a939-b69e" name="Unit Type">Armiger</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="225"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e06a-c9f3-483c-a94f"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="58ac-490d-45fb-bded"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Ionic Deflector" hidden="false" type="selectionEntry" targetId="c587-8d02-aaba-ce19" id="fe37-fd29-4e06-9a09">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="342f-a881-48db-83a4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb54-c205-4d25-be81"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Rad Furnace" hidden="false" type="selectionEntry" targetId="f06b-b100-401a-b201" id="1921-1687-468b-9df2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4a2-1eba-4bbf-83b5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd27-5908-4c70-b959"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Questoris Knight Moirax may exchange its Volkite Veuglaire and/or its Siege Claw with in-built Irad-Cleanser for any of the following weapons:" id="d983-e4d7-4a27-aaa2">
+              <entryLinks>
+                <entryLink name="Volkite Veuglaire" hidden="false" type="selectionEntry" targetId="5806-18ad-4e22-bcde" id="a6e2-38e5-46e9-994a">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="22bc-d159-448a-abd5"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Siege Claw with in-built Irad-Cleanser" hidden="false" type="selectionEntry" targetId="6a06-cbf5-fbbf-85fe" id="391a-3c2f-4798-b85f">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3e43-83d4-4695-8094"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Lightning Lock" hidden="false" type="selectionEntry" targetId="dd74-951d-8540-5ea1" id="c200-5213-42cc-b45b">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bfc8-5e0d-4add-b911"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Conversion Beam Cannon" hidden="false" type="selectionEntry" targetId="5775-0d94-8e13-8c1f" id="2dd0-1610-4273-a5e6">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fbc8-eabf-4728-a4d2"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Graviton Pulsar" hidden="false" type="selectionEntry" targetId="115a-86e7-896f-b872" id="daf5-04fa-4abc-8c2e">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="07da-4bea-4b12-8e38"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a9e0-a68d-4ee0-bcb9"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="41ff-7fc9-d4a0-da2" id="20f9-1926-40c6-881f" name="Armiger" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Fleet (X)" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2" id="65de-9249-49d5-be08">
+          <modifiers>
+            <modifier type="set" field="name" value="Fleet (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Move Through Cover" hidden="false" type="rule" targetId="2b6f-bfec-759e-1746" id="d042-293a-4e1a-8582"/>
+        <infoLink name="Night Vision" hidden="false" type="rule" targetId="683e-b4f2-f032-d31b" id="09da-08eb-48d2-904d"/>
+        <infoLink name="Support Squad" hidden="false" type="rule" targetId="768e-56d6-ca52-24ae" id="96d0-27bc-4555-942d"/>
+      </infoLinks>
+      <comment>!BSC Errors from 20250427-1812
+Could not find rule: Greuso Protocol
+Could not find rule: Moirax Talon</comment>
+    </selectionEntry>
+    <selectionEntry name="Knight Maeliviax" type="unit" id="32c2-1872-4cf5-a1a4" page="72" publicationId="89c5-118c-61fb-e6d8">
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="91b6-50c1-470a-b48e"/>
+        <categoryLink targetId="c658-dc6b-727b-c488" primary="true" id="d6f5-6105-4f6e-adf5" name="Lords of War"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="400"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" name="Knight Maeliviax" id="e416-37db-4b13-88cb" page="72" publicationId="89c5-118c-61fb-e6d8">
+          <profiles>
+            <profile id="1282-52f1-436e-9ae6" name="Knight Maeliviax" typeId="75b5-9f7a-156e-6889">
+              <characteristics>
+                <characteristic typeId="7f12-0cc3-9dcd-25bc" name="Move">12</characteristic>
+                <characteristic typeId="4227-8eed-0c5c-a2d9" name="WS">4</characteristic>
+                <characteristic typeId="6c5a-df71-fefa-2ee3" name="BS">4</characteristic>
+                <characteristic typeId="02ba-082e-e385-1ede" name="S">8</characteristic>
+                <characteristic typeId="0d00-68d8-0535-e898" name="Front">13</characteristic>
+                <characteristic typeId="cb92-5809-d327-6981" name="Side">12</characteristic>
+                <characteristic typeId="8fa4-6e34-29c4-d8c6" name="Rear">12</characteristic>
+                <characteristic typeId="91b3-4335-71bf-3fa9" name="I">4</characteristic>
+                <characteristic typeId="d54a-56a6-68c5-ae72" name="A">3</characteristic>
+                <characteristic typeId="2490-aa2f-f5db-6070" name="HP">6</characteristic>
+                <characteristic typeId="3c44-1e2a-23fe-c9e0" name="Unit Type">Vehicle (Knight)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="None"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="05b2-2864-49e3-96b8"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5d8-7bbf-4632-99e3"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Ion Shield" hidden="false" type="selectionEntry" targetId="dde9-961b-5765-21a2" id="0996-17d1-4a49-bfa3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="54ad-8a9c-4c63-8ee8"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a8c-58bf-4c8f-a1f8"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="A Knight Maeliviax may exchange its Arm Mounted Reaper Chainsword for one of the following Arm Mounted weapons:" id="8a54-6e1a-4378-b2ed">
+              <entryLinks>
+                <entryLink name="Reaper Chainsword" hidden="false" type="selectionEntry" targetId="fc7d-5dde-401b-bbe1" id="c9a2-29a7-47e4-a3b2">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Arm Mounted Reaper Chainsword"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3163-1c20-48f1-b994"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Thunderstrike Gauntlet" hidden="false" type="selectionEntry" targetId="923a-c8cb-bcf8-b530" id="9a4d-8908-44bf-ae92">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e34-f9ea-46d6-bf79"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Electroscourge Flail" hidden="false" type="selectionEntry" targetId="b696-0984-4f92-a142" id="257f-b349-4ed6-abbf">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb69-c834-41da-a60d"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eafa-fe13-4de8-9aad"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="A Knight Maeliviax may exchange its Arm Mounted Avenger Gatling Cannon for one of the following Arm Mounted weapons:" id="3923-4ffc-4d3d-ac79">
+              <entryLinks>
+                <entryLink name="Avenger Gatling Cannon" hidden="false" type="selectionEntry" targetId="13f4-be52-e1a7-4e51" id="2efa-3af8-4fbe-8c65">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Arm Mounted Avenger Gatling Cannon"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfd6-baa5-4cb1-936a"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Volkite Combustor" hidden="false" type="selectionEntry" targetId="41b1-9f17-47e2-bb30" id="447d-bf19-4724-8eec">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c66-88f9-489a-a290"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Neutron Spear" hidden="false" type="selectionEntry" targetId="5ca9-06fc-48e5-a7ec" id="9b34-a797-4d24-80c8">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a75-36f0-4987-8785"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3aa5-c36a-4ae8-81b1"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="The Knight Maeliviax may exchange its Hull (Front) Mounted Heavy Stubber with:" id="148d-7691-431d-876b">
+              <entryLinks>
+                <entryLink name="Heavy Stubber" hidden="false" type="selectionEntry" targetId="f227-a61a-3215-932b" id="3be2-953e-4a51-8130">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull (Front) Mounted Heavy Stubber"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc93-0e99-4208-bd4c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Multi-Laser" hidden="false" type="selectionEntry" targetId="003b-af4b-0094-f5c3" id="d3d4-809d-4d36-81de">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull (Front) Mounted Multi-Laser"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f4b-f887-41aa-b936"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Meltagun" hidden="false" type="selectionEntry" targetId="4ebd-57e0-3560-e568" id="5dd4-5795-40c3-b126">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull (Front) Mounted Meltagun"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b913-0075-4399-a19a"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9f6-4bbf-42d9-b7d3"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Any Knight Maeliviax may purchase:" id="70ca-e493-44a9-902c">
+              <entryLinks>
+                <entryLink name="Searchlights" hidden="false" type="selectionEntry" targetId="1031-4d90-4113-871f" id="d8c2-4d3f-4d35-b72a">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d880-662b-4566-891c"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9282-5454-4de3-b8c3"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="e2b6-b770-784c-9e95" id="2590-2bfc-4235-90f1" name="Vehicle" primary="false"/>
+            <categoryLink targetId="437f-7773-a0d0-6061" id="ab2b-4839-43ad-bc3a" name="Knight" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Fleet (X)" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2" id="4d29-b7d9-4868-9673">
+          <modifiers>
+            <modifier type="set" field="name" value="Fleet (3)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Knight Dominus" type="unit" id="45bf-0a99-403e-b5a8" page="73" publicationId="89c5-118c-61fb-e6d8">
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="5b07-dbc2-4c76-bc39"/>
+        <categoryLink targetId="c658-dc6b-727b-c488" primary="true" id="366b-e7c8-44d1-8d12" name="Lords of War"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="375"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" name="Knight Dominus" id="2c7b-b199-4242-90de" page="73" publicationId="89c5-118c-61fb-e6d8">
+          <profiles>
+            <profile id="7653-c556-45d9-814b" name="Knight Dominus" typeId="75b5-9f7a-156e-6889">
+              <characteristics>
+                <characteristic typeId="7f12-0cc3-9dcd-25bc" name="Move">10</characteristic>
+                <characteristic typeId="4227-8eed-0c5c-a2d9" name="WS">4</characteristic>
+                <characteristic typeId="6c5a-df71-fefa-2ee3" name="BS">4</characteristic>
+                <characteristic typeId="02ba-082e-e385-1ede" name="S">9</characteristic>
+                <characteristic typeId="0d00-68d8-0535-e898" name="Front">13</characteristic>
+                <characteristic typeId="cb92-5809-d327-6981" name="Side">13</characteristic>
+                <characteristic typeId="8fa4-6e34-29c4-d8c6" name="Rear">12</characteristic>
+                <characteristic typeId="91b3-4335-71bf-3fa9" name="I">3</characteristic>
+                <characteristic typeId="d54a-56a6-68c5-ae72" name="A">2</characteristic>
+                <characteristic typeId="2490-aa2f-f5db-6070" name="HP">8</characteristic>
+                <characteristic typeId="3c44-1e2a-23fe-c9e0" name="Unit Type">Vehicle (Knight)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="None"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9250-884d-486b-9f9b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62ea-6617-46f0-8d4b"/>
+          </constraints>
+          <comment>!BSC Errors from 20250427-1812
+Could not find wargear Three Carapace Mounted Siegebreaker Cannons
+	 Checked under Siegebreaker Cannons</comment>
+          <entryLinks>
+            <entryLink name="Twin-Linked Meltagun" hidden="false" type="selectionEntry" targetId="fb5a-c4c9-f96d-1400" id="511c-ce8d-481a-b48c">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Hull (Front) Mounted Twin-Linked Meltaguns"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e27-2ac9-4a56-9592"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e75-c7b4-4df8-8f44"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Ion Shield" hidden="false" type="selectionEntry" targetId="dde9-961b-5765-21a2" id="15cb-a2ff-463d-8855">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cdeb-bf83-4f63-a306"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="994f-ee19-4867-9301"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Knight Dominus must select two of the following Arm Mounted weapon options, in any combination:" id="1982-fb24-420c-b134">
+              <entryLinks>
+                <entryLink name="Conflagration Cannon" hidden="false" type="selectionEntry" targetId="f99c-1fcd-46e1-b006" id="eaf2-3f45-4667-9870">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Arm Mounted Conflagration Cannon"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eed8-6e6e-4808-8d02"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Thundercoil Harpoon" hidden="false" type="selectionEntry" targetId="3af8-845b-4c5d-9ec4" id="0e48-55fa-41da-9c8b">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Arm Mounted Thundercoil Harpoon"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="412a-e837-437f-85bc"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Plasma Decimator" hidden="false" type="selectionEntry" targetId="0b97-08b6-44a1-ab72" id="5148-be38-492b-a4bb">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Arm Mounted Plasma Decimator"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c8f-a66a-4dfc-9b30"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Sonic Pulsar" hidden="false" type="selectionEntry" targetId="b190-c31f-47c0-aaee" id="63a1-ebb9-456a-af06">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Arm Mounted Sonic Pulsar"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3177-dc8f-4906-b256"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Volcano Lance" hidden="false" type="selectionEntry" targetId="0f76-8b78-4e6c-a407" id="7076-2280-45bd-931d">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Arm Mounted Volcano Lance"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80b1-9102-496d-a31a"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68ba-5650-4eb8-b660"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Any Knight Dominus may exchange any of its Carapace Mounted Siegebreaker Cannons for:" id="19d7-93e1-4164-9ff6">
+              <entryLinks>
+                <entryLink name="Shieldbreaker Missile" hidden="false" type="selectionEntry" targetId="37a0-8044-4eab-b7a1" id="3c8c-45e2-4f6c-b941">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two Carapace Mounted Shieldbreaker Missiles"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="947e-0f0e-4579-8b12"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Twin-Linked Icarus Autocannon" hidden="false" type="selectionEntry" targetId="bd87-e395-1602-d73a" id="2a9f-1697-4bf3-9ae5">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Carapace Mounted Twin-Linked Icarus Autocannon"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c68-9839-47af-bf4e"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ede5-5f9b-4efa-91bc"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Any Knight Dominus may exchange a single one of its Carapace Mounted Siegebreaker Cannons for:" id="9e3b-6cba-4bf9-a248">
+              <entryLinks>
+                <entryLink name="Flare Shield" hidden="false" type="selectionEntry" targetId="0e77-6285-22bb-1534" id="7eb5-8d8e-44d6-8212">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5523-c50c-46e8-b086"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d80-0142-42ac-8187"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Any Knight Dominus may purchase:" id="2cc1-44b4-44f7-81ee">
+              <entryLinks>
+                <entryLink name="Searchlights" hidden="false" type="selectionEntry" targetId="1031-4d90-4113-871f" id="3c8d-6651-47b2-b345">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8833-0dc3-4c4a-a681"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa35-3fce-45b0-bb89"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="e2b6-b770-784c-9e95" id="623e-fa8c-483b-8bb0" name="Vehicle" primary="false"/>
+            <categoryLink targetId="437f-7773-a0d0-6061" id="26fe-3020-49d5-aed5" name="Knight" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

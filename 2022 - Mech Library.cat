@@ -7330,6 +7330,18 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance1, Barrage, Large Blast (5&quot;), Pinning, Ignores Cover</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="12 -72&quot;" field="95ba-cda7-b831-6066"/>
+                <modifier type="set" value="3" field="f7a6-e0d8-7973-cd8d"/>
+                <modifier type="set" value="Ordnance 1, Barrage, Large Blast (5&quot;), Pinning, Shell Shock (1),Ignores Cover, Wrecker" field="2f86-c8b4-b3b4-3ff9"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -7338,6 +7350,25 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
         <infoLink id="9f39-3c74-f8aa-7d63" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="655b-b583-fc24-19ba" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="fbc3-b924-7ba4-01cb" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+        <infoLink name="Shell Shock (X)" hidden="false" type="rule" targetId="46b7-63a1-941c-96a5" id="a253-d150-4a56-8303">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (1)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Wrecker" hidden="false" type="rule" targetId="ba77-a802-55df-da67" id="cb3e-4ca5-41b0-9e95">
+          <modifiers>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>

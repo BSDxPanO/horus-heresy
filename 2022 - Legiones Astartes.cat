@@ -3307,6 +3307,19 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Breaching (6+), Pinning</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="48&quot;" field="95ba-cda7-b831-6066"/>
+                <modifier type="set" value="8" field="24d9-b8e1-a355-2458"/>
+                <modifier type="set" value="3" field="f7a6-e0d8-7973-cd8d"/>
+                <modifier type="set" value="Ordnance 1, Armourbane (Ranged), Blast (3&quot;), Breaching (5+),Pinning, Shell Shock (1), Ignores Cover, Murderous Strike (6+),Sonic Pulse" field="2f86-c8b4-b3b4-3ff9"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -3316,10 +3329,62 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
           </modifiers>
         </infoLink>
         <infoLink id="e20f-706f-e3c7-61ec" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink name="Armourbane (X)" hidden="false" type="rule" targetId="cb59-f920-f071-7cd4" id="1970-d5a5-477a-9ae0">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Ranged)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Blast" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8" id="74e6-978e-4cb2-9a2b">
+          <modifiers>
+            <modifier type="set" field="name" value="Blast (3&quot;)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shell Shock (X)" hidden="false" type="rule" targetId="46b7-63a1-941c-96a5" id="103a-08fb-4d9f-bfe5">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (1)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Ignores Cover" hidden="false" type="rule" targetId="fdb5-59e2-c446-1cbc" id="51d7-4404-43ae-adcd">
+          <modifiers>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Murderous Strike (X)" hidden="false" type="rule" targetId="93b9-1454-0e7c-42ae" id="4df6-8457-49d1-b8fb">
+          <modifiers>
+            <modifier type="set" field="name" value="Murderous Strike (6+)"/>
+            <modifier type="set" value="hidden" field="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1231-877a-96d9-cacd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <comment>!BSC Errors from 20250427-1812
+Rule needs changed from &apos;Breaching (6+)&apos; to &apos;Breaching (5+)&apos;
+Could not find rule: Sonic Pulse</comment>
     </selectionEntry>
     <selectionEntry id="cb7e-e113-9008-6bdc" name="Spear Of Perdition" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -3487,6 +3552,8 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <comment>!BSC Errors from 20250427-1812
+Rule needs changed from &apos;Rending (5+)&apos; to &apos;Rending (6+)&apos;</comment>
     </selectionEntry>
     <selectionEntry id="8415-e375-6940-2117" name="Tainted Claw" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -51924,6 +51991,8 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <comment>!BSC Errors from 20250427-1812
+Profile changed type</comment>
     </selectionEntry>
     <selectionEntry id="880e-822b-0170-cff5" name="Two Shrapnel Pistols" hidden="true" collective="true" import="true" type="upgrade">
       <modifiers>
